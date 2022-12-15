@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_etl_field">
+    <sys_rte_eb_etl_field action="DELETE">
+        <coalesce>false</coalesce>
+        <coercion_action>create</coercion_action>
+        <field>corporate_compliance_override_date</field>
+        <name>Compliance Override Date</name>
+        <sys_class_name>sys_rte_eb_etl_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-10 11:38:40</sys_created_on>
+        <sys_id>e7cc5e06970fd1108c6e7b771153af9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Compliance Override Date</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Supplier ETL">d8899a42970fd1108c6e7b771153afca</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="Supplier Data">d34b124e97cbd1108c6e7b771153af4b</sys_rte_eb_entity>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_rte_eb_etl_field_e7cc5e06970fd1108c6e7b771153af9d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-10 11:38:40</sys_updated_on>
+    </sys_rte_eb_etl_field>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</application>
+        <file_path/>
+        <instance_id>e73c7985db2b8c949df22f17d496193f</instance_id>
+        <instance_name>dev103044</instance_name>
+        <name>sys_rte_eb_etl_field_e7cc5e06970fd1108c6e7b771153af9d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_etl_field"><sys_rte_eb_etl_field action="INSERT_OR_UPDATE"><coalesce>false</coalesce><coercion_action>create</coercion_action><field>corporate_compliance_override_date</field><name>Compliance Override Date</name><sys_class_name>sys_rte_eb_etl_field</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-11-10 11:38:40</sys_created_on><sys_id>e7cc5e06970fd1108c6e7b771153af9d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Compliance Override Date</sys_name><sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package><sys_policy/><sys_rte_eb_definition display_value="Supplier ETL">d8899a42970fd1108c6e7b771153afca</sys_rte_eb_definition><sys_rte_eb_entity display_value="Supplier Data">d34b124e97cbd1108c6e7b771153af4b</sys_rte_eb_entity><sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope><sys_update_name>sys_rte_eb_etl_field_e7cc5e06970fd1108c6e7b771153af9d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-11-10 11:38:40</sys_updated_on></sys_rte_eb_etl_field></record_update>]]></payload>
+        <payload_hash>-953652515</payload_hash>
+        <record_name>Compliance Override Date</record_name>
+        <reverted_from/>
+        <source>6e57675a97dd11108c6e7b771153af5f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-10 11:38:40</sys_created_on>
+        <sys_id>a18d1a46970fd1108c6e7b771153af73</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1846155c1520000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-10 11:38:40</sys_updated_on>
+        <type>ETL Entity field</type>
+        <update_guid>e98d1a46f40fd1108258c991c9bd2572</update_guid>
+        <update_guid_history>e98d1a46f40fd1108258c991c9bd2572:-953652515</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-10 11:39:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_rte_eb_etl_field">sys_rte_eb_etl_field</sys_db_object>
+        <sys_id>0887b6d55be047148485a1ee0f3c4f90</sys_id>
+        <sys_metadata>e7cc5e06970fd1108c6e7b771153af9d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Compliance Override Date</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_scope_delete display_value="">d2e3570b4d07421aa50b19977f977ea4</sys_scope_delete>
+        <sys_update_name>sys_rte_eb_etl_field_e7cc5e06970fd1108c6e7b771153af9d</sys_update_name>
+        <sys_update_version display_value="sys_rte_eb_etl_field_e7cc5e06970fd1108c6e7b771153af9d">a18d1a46970fd1108c6e7b771153af73</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-10 11:39:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

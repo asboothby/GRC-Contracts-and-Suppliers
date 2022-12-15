@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Supplier" max_length="40" name="x_631631_grc_contr_supplier" sizeclass="1006" type="collection">
+        <element label="Corporate Compliance Override Date" max_length="40" name="corporate_compliance_override_date" type="glide_date"/>
+        <element label="Corporate Compliance Override Set By" max_length="32" name="corporate_compliance_override_set_by" reference="sys_user" type="reference"/>
+        <element label="Corporate ID" max_length="20" name="corporate_id" type="string_full_utf8"/>
+        <element label="Corporate Risk Override Date" max_length="40" name="corporate_risk_override_date" type="glide_date"/>
+        <element label="Corporate Risk Override Set By" max_length="32" name="corporate_risk_override_set_by" reference="sys_user" type="reference"/>
+        <element label="Cyber Security Self-Assessement Capability Level" max_length="40" name="cyber_security_self_assessement_capability_level" type="integer"/>
+        <element label="Cyber Security Self-Assessment Date" max_length="40" name="cyber_security_self_assessment_date" type="glide_date"/>
+        <element label="Cyber Security Self-Assessment Overall Score" max_length="20" name="cyber_security_self_assessment_overall_score" type="decimal"/>
+        <element label="Cyber Security Self-Assessment Rating" max_length="40" name="cyber_security_self_assessment_rating" type="string"/>
+        <element label="Cyber Security Self-Assessment Score" max_length="20" name="cyber_security_self_assessment_score" type="decimal"/>
+        <element label="Domestic DUNS Number" max_length="20" name="domestic_duns_number" type="string"/>
+        <element label="Enterprise CSC Risk Supplier Override Exists" max_length="40" name="enterprise_csc_risk_supplier_override_exists" type="boolean"/>
+        <element label="Enterprise DFARS Supplier Override Exists" max_length="40" name="enterprise_dfars_supplier_override_exists" type="boolean"/>
+        <element label="Generate Assessment" max_length="40" name="generate_assessment" type="boolean"/>
+        <element label="Global DUNS" max_length="20" name="global_duns" type="string"/>
+        <element label="Global DUNS Company Name" max_length="200" name="global_duns_company_name" type="string"/>
+        <element label="ID2FA Compliant Flag" max_length="40" name="id2fa_compliant_flag" type="boolean"/>
+        <element label="Local Company" max_length="32" name="local_company" reference="core_company" type="reference"/>
+        <element label="Local DUNS" max_length="20" name="local_duns" type="string"/>
+        <element label="NIST Compliant" max_length="40" name="nist_compliant" type="boolean"/>
+        <element label="NIST ECD" max_length="40" name="nist_ecd" type="glide_date"/>
+        <element label="NIST Compliance % Without POAM" max_length="40" name="nist_percent_compliance_without_poam" type="integer"/>
+        <element label="NIST % Compliant" max_length="40" name="nist_percent_compliant" type="integer"/>
+        <element label="NIST Remediation Plan" max_length="4000" name="nist_remediation_plan" type="string"/>
+        <element label="NIST Remediation Plan Closure Date" max_length="40" name="nist_remediation_plan_closure_date" type="glide_date"/>
+        <element label="NIST Remediation Plan Indicator" max_length="10" name="nist_remediation_plan_indicator" type="string"/>
+        <element label="NIST Remediation Plan Last Contact Date" max_length="40" name="nist_remediation_plan_last_contact_date" type="glide_date"/>
+        <element label="NIST Remediation Plan Submit Date" max_length="40" name="nist_remediation_plan_submit_date" type="glide_date"/>
+        <element label="NIST Self-Assessment Date" max_length="40" name="nist_self_assessment_date" type="glide_date"/>
+        <element label="NIST Validation Percent Comp without POAM" max_length="40" name="nist_validation_percent_comp_without_poam" type="integer"/>
+        <element label="Override SPRS Assessment Date" max_length="40" name="override_sprs_assessment_date" type="glide_date"/>
+        <element label="Override SPRS Confidence Level" max_length="50" name="override_sprs_confidence_level" type="string"/>
+        <element label="POC Supplier Compliance Validator" max_length="32" name="poc_supplier_compliance_validator" reference="sys_user" type="reference"/>
+        <element label="POC Supplier Compliance Validator Business Area" max_length="32" name="poc_supplier_compliance_validator_business_area" reference="core_company" type="reference"/>
+        <element label="POC Supplier Risk Validator" max_length="32" name="poc_supplier_risk_validator" reference="sys_user" type="reference"/>
+        <element label="POC Supplier Risk Validator Business Area" max_length="32" name="poc_supplier_risk_validator_business_area" reference="core_company" type="reference"/>
+        <element display="true" label="Supplier Name" max_length="200" name="supplier_name" type="string"/>
+        <element label="Supplier Profile Status" max_length="50" name="supplier_profile_status" type="string"/>
+        <element label="Supplier Status Code" max_length="20" name="supplier_status_code" type="string"/>
+        <element attributes="format=none" label="System ID" max_length="40" name="system_id" type="integer"/>
+        <index name="index">
+            <element name="local_company"/>
+        </index>
+        <index name="index2">
+            <element name="corporate_id"/>
+        </index>
+        <index name="index3">
+            <element name="poc_supplier_risk_validator"/>
+        </index>
+        <index name="index4">
+            <element name="corporate_risk_override_set_by"/>
+        </index>
+    </element>
+</database>

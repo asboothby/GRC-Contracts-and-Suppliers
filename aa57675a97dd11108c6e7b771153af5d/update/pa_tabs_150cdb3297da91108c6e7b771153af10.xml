@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_tabs">
+    <pa_tabs action="INSERT_OR_UPDATE">
+        <canvas_page display_value="PA GRC Contracts Enterp - New Tab">5d0cdb3297da91108c6e7b771153af0d</canvas_page>
+        <name>GRC Contracts Enterp - New Tab</name>
+        <page display_value="PA GRC Contracts Enterp - New Tab">d50cdb3297da91108c6e7b771153af0c</page>
+        <sys_class_name>pa_tabs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-06 17:20:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>150cdb3297da91108c6e7b771153af10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GRC Contracts Enterp - New Tab</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>pa_tabs_150cdb3297da91108c6e7b771153af10</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-06 17:20:05</sys_updated_on>
+    </pa_tabs>
+</record_update>

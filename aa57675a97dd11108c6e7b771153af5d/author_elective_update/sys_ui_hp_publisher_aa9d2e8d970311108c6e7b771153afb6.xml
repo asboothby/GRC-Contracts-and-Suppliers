@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_hp_publisher">
+    <sys_ui_hp_publisher action="DELETE">
+        <allow_database_view_filter>false</allow_database_view_filter>
+        <allow_extended_table>false</allow_extended_table>
+        <boolean_field/>
+        <boolean_table/>
+        <date_filter/>
+        <default_boolean_field/>
+        <default_choice/>
+        <default_date_filter/>
+        <default_reference_field_value/>
+        <description/>
+        <exclusion_choice_list/>
+        <look_up_name/>
+        <name>Supplier</name>
+        <reference_conditions/>
+        <reference_table>x_631631_grc_contr_supplier</reference_table>
+        <remove_all_option>false</remove_all_option>
+        <source_field>slf_supplier_name</source_field>
+        <source_table>x_631631_grc_contr_contract_suppliers</source_table>
+        <sys_class_name>sys_ui_hp_publisher</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 10:17:53</sys_created_on>
+        <sys_id>aa9d2e8d970311108c6e7b771153afb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Supplier</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_ui_hp_publisher_aa9d2e8d970311108c6e7b771153afb6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 10:17:53</sys_updated_on>
+        <type>2</type>
+        <ui_control_type>2</ui_control_type>
+    </sys_ui_hp_publisher>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</application>
+        <file_path/>
+        <instance_id>e73c7985db2b8c949df22f17d496193f</instance_id>
+        <instance_name>dev103044</instance_name>
+        <name>sys_ui_hp_publisher_aa9d2e8d970311108c6e7b771153afb6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_hp_publisher"><sys_ui_hp_publisher action="INSERT_OR_UPDATE"><allow_database_view_filter>false</allow_database_view_filter><allow_extended_table>false</allow_extended_table><boolean_field/><boolean_table/><date_filter/><default_boolean_field/><default_choice/><default_date_filter/><default_reference_field_value/><description/><exclusion_choice_list/><look_up_name/><name>Supplier</name><reference_conditions/><reference_table>x_631631_grc_contr_supplier</reference_table><remove_all_option>false</remove_all_option><source_field>slf_supplier_name</source_field><source_table>x_631631_grc_contr_contract_suppliers</source_table><sys_class_name>sys_ui_hp_publisher</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-11-07 10:17:53</sys_created_on><sys_id>aa9d2e8d970311108c6e7b771153afb6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Supplier</sys_name><sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package><sys_policy/><sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope><sys_update_name>sys_ui_hp_publisher_aa9d2e8d970311108c6e7b771153afb6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-11-07 10:17:53</sys_updated_on><type>2</type><ui_control_type>2</ui_control_type></sys_ui_hp_publisher></record_update>]]></payload>
+        <payload_hash>-281531084</payload_hash>
+        <record_name>Supplier</record_name>
+        <reverted_from/>
+        <source>6e57675a97dd11108c6e7b771153af5f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 10:17:54</sys_created_on>
+        <sys_id>814e66cd970311108c6e7b771153af85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1845198b8910000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 10:17:54</sys_updated_on>
+        <type>Interactive Filter</type>
+        <update_guid>c94e66cdb10311103a3395223cfd6d84</update_guid>
+        <update_guid_history>c94e66cdb10311103a3395223cfd6d84:-281531084</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 10:20:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_hp_publisher">sys_ui_hp_publisher</sys_db_object>
+        <sys_id>07aadc7afe5d43fc900134f6d3532b84</sys_id>
+        <sys_metadata>aa9d2e8d970311108c6e7b771153afb6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Supplier</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_scope_delete display_value="">d2e3570b4d07421aa50b19977f977ea4</sys_scope_delete>
+        <sys_update_name>sys_ui_hp_publisher_aa9d2e8d970311108c6e7b771153afb6</sys_update_name>
+        <sys_update_version display_value="sys_ui_hp_publisher_aa9d2e8d970311108c6e7b771153afb6">814e66cd970311108c6e7b771153af85</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 10:20:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

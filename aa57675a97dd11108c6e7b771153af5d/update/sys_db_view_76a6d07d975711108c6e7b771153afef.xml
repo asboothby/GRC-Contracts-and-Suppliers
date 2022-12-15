@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view">
+    <sys_db_view action="INSERT_OR_UPDATE">
+        <description/>
+        <label/>
+        <name>x_631631_grc_contr_bus_app_compliance_fields</name>
+        <plural/>
+        <sys_class_name>sys_db_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-21 17:27:21</sys_created_on>
+        <sys_id>76a6d07d975711108c6e7b771153afef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_631631_grc_contr_bus_app_compliance_fields</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_db_view_76a6d07d975711108c6e7b771153afef</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-21 17:27:21</sys_updated_on>
+    </sys_db_view>
+</record_update>

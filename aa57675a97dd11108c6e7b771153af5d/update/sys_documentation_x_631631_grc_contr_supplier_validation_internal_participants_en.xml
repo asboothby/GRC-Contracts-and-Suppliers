@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="internal_participants" label="Internal Participants" language="en" table="x_631631_grc_contr_supplier_validation">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>internal_participants</element>
+            <help/>
+            <hint/>
+            <label>Internal Participants</label>
+            <language>en</language>
+            <name>x_631631_grc_contr_supplier_validation</name>
+            <plural>Internal Participants</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-16 11:37:23</sys_created_on>
+            <sys_id>c1c61584975751108c6e7b771153af13</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Internal Participants</sys_name>
+            <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+            <sys_update_name>sys_documentation_x_631631_grc_contr_supplier_validation_internal_participants_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-16 11:37:23</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

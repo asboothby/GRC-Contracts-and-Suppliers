@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>Supplier Validation Event</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Supplier Validation Event</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Create a new content record" name="Create a new content record">9ffb26b153030200d23c9c25911c0843</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-14 18:28:19</sys_created_on>
+        <sys_id>d1a1a02b97c711108c6e7b771153afca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Supplier Validation Event</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_wizard_answer_d1a1a02b97c711108c6e7b771153afca</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-14 18:28:19</sys_updated_on>
+        <table/>
+        <target_url>x_631631_grc_contr_supplier_validation_event.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

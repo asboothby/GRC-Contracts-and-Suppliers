@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <condition/>
+        <description>Allow write for watch_list in x_631631_grc_contr_supplier_validation, if the ACL script returns true.</description>
+        <name>x_631631_grc_contr_supplier_validation.watch_list</name>
+        <operation display_value="write">write</operation>
+        <script><![CDATA[var currentUser = gs.getUserID();
+answer=(current.assigned_to==currentUser);]]></script>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 17:30:47</sys_created_on>
+        <sys_id>5710d85d978711108c6e7b771153af18</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_631631_grc_contr_supplier_validation.watch_list</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_security_acl_5710d85d978711108c6e7b771153af18</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 17:32:02</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

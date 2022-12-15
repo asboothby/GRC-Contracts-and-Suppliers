@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X 631631 Grc Contr Supplier Ext" max_length="40" name="u_imp_tmpl_x_631631_grc_contr_supplier_ext" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Banner text" label="Banner text" max_length="4000" name="u_banner_text" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=City" label="City" max_length="50" name="u_city" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Contact" label="Contact" max_length="32" name="u_contact" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Coordinates retrieved on" label="Coordinates retrieved on" max_length="40" name="u_coordinates_retrieved_on" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Corporate Compliance Override Set By" label="Corporate Compliance Override Set By" max_length="32" name="u_corporate_co_verride_set_by" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Corporate Compliance Override Date" label="Corporate Compliance Override Date" max_length="40" name="u_corporate_co__override_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Corporate ID" label="Corporate ID" max_length="20" name="u_corporate_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Corporate Risk Override Date" label="Corporate Risk Override Date" max_length="40" name="u_corporate_risk_override_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Corporate Risk Override Set By" label="Corporate Risk Override Set By" max_length="32" name="u_corporate_ri_verride_set_by" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Country" label="Country" max_length="40" name="u_country" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Customer" label="Customer" max_length="40" name="u_customer" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Cyber Security Self-Assessment Rating" label="Cyber Security Self-Assessment Rating" max_length="10" name="u_cyber_securi_essment_rating" type="string"/>
+        <element attributes="import_attribute_name=Cyber Security Self-Assessement Capability Level" label="Cyber Security Self-Assessement Capability Level" max_length="40" name="u_cyber_securi_pability_level" type="integer"/>
+        <element attributes="import_attribute_name=Cyber Security Self-Assessment Score" label="Cyber Security Self-Assessment Score" max_length="20" name="u_cyber_securi_sessment_score" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Cyber Security Self Assessment Date" label="Cyber Security Self Assessment Date" max_length="40" name="u_cyber_securi_ssessment_date" type="glide_date_time"/>
+        <element attributes="import_attribute_name=Cyber Security Self-Assessment Overall Score" label="Cyber Security Self-Assessment Overall Score" max_length="20" name="u_cyber_securi__overall_score" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Discount" label="Discount" max_length="15" name="u_discount" type="string"/>
+        <element attributes="import_attribute_name=Domestic Ultimate DUNS Number" label="Domestic Ultimate DUNS Number" max_length="20" name="u_domestic_ult_te_duns_number" type="float"/>
+        <element attributes="import_attribute_name=DUNS Number" label="DUNS Number" max_length="20" name="u_duns_number" type="float"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Enterprise CSC Risk Supplier Override Exists" label="Enterprise CSC Risk Supplier Override Exists" max_length="40" name="u_enterprise_c_verride_exists" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Enterprise DFARS Supplier Override Exists" label="Enterprise DFARS Supplier Override Exists" max_length="40" name="u_enterprise_d_verride_exists" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ES ID" label="ES ID" max_length="20" name="u_es_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Fax phone" label="Fax phone" max_length="40" name="u_fax_phone" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Fiscal year" label="Fiscal year" max_length="40" name="u_fiscal_year" type="string"/>
+        <element attributes="import_attribute_name=Global Ultimate DUNS Number" label="Global Ultimate DUNS Number" max_length="20" name="u_global_ultimate_duns_number" type="float"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ID2FA Compliant Flag" label="ID2FA Compliant Flag" max_length="40" name="u_id2fa_compliant_flag" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Latitude" label="Latitude" max_length="40" name="u_latitude" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Lat long error" label="Lat long error" max_length="1000" name="u_lat_long_error" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Longitude" label="Longitude" max_length="40" name="u_longitude" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Manufacturer" label="Manufacturer" max_length="40" name="u_manufacturer" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Market cap" label="Market cap" max_length="20" name="u_market_cap" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Name" label="Name" max_length="80" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=New Column Test" label="New Column Test" max_length="40" name="u_new_column_test" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=NIST Compliant" label="NIST Compliant" max_length="40" name="u_nist_compliant" type="string"/>
+        <element attributes="import_attribute_name=NIST Compliance % Without POAM" label="NIST Compliance % Without POAM" max_length="40" name="u_nist_complia___without_poam" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=NIST ECD" label="NIST ECD" max_length="40" name="u_nist_ecd" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=NIST Remediation Plan" label="NIST Remediation Plan" max_length="4000" name="u_nist_remediation_plan" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=NIST Remediation Plan Closure Date" label="NIST Remediation Plan Closure Date" max_length="40" name="u_nist_remedia_n_closure_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=NIST Remediation Plan Indicator" label="NIST Remediation Plan Indicator" max_length="10" name="u_nist_remedia_plan_indicator" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=NIST Remediation Plan Last Contact Date" label="NIST Remediation Plan Last Contact Date" max_length="40" name="u_nist_remedia_t_contact_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=NIST Self-Assessment Date" label="NIST Self-Assessment Date" max_length="40" name="u_nist_self_assessment_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=NIST Validation Percent Comp without POAM" label="NIST Validation Percent Comp without POAM" max_length="40" name="u_nist_validat_p_without_poam" type="string"/>
+        <element attributes="import_attribute_name=NIST % Compliant" label="NIST % Compliant" max_length="40" name="u_nist___compliant" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Notes" label="Notes" max_length="4000" name="u_notes" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Number" label="Number" max_length="40" name="u_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Number of employees" label="Number of employees" max_length="40" name="u_number_of_employees" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Override SPRS Assessment Date" label="Override SPRS Assessment Date" max_length="40" name="u_override_spr_ssessment_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Parent" label="Parent" max_length="32" name="u_parent" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Phone" label="Phone" max_length="40" name="u_phone" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=POC Supplier Compliance Validator" label="POC Supplier Compliance Validator" max_length="32" name="u_poc_supplier_ance_validator" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=POC Supplier Risk Validator" label="POC Supplier Risk Validator" max_length="32" name="u_poc_supplier_risk_validator" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=POC Supplier Compliance Validator Business Area" label="POC Supplier Compliance Validator Business Area" max_length="32" name="u_poc_supplier__business_area" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Primary" label="Primary" max_length="40" name="u_primary" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Profits" label="Profits" max_length="20" name="u_profits" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Publicly traded" label="Publicly traded" max_length="40" name="u_publicly_traded" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Rank tier" label="Rank tier" max_length="40" name="u_rank_tier" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Revenue per year" label="Revenue per year" max_length="20" name="u_revenue_per_year" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=State / Province" label="State / Province" max_length="40" name="u_state___province" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Stock price" label="Stock price" max_length="40" name="u_stock_price" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Stock symbol" label="Stock symbol" max_length="40" name="u_stock_symbol" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Street" label="Street" max_length="255" name="u_street" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Theme" label="Theme" max_length="32" name="u_theme" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Vendor" label="Vendor" max_length="40" name="u_vendor" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Website" label="Website" max_length="1024" name="u_website" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Zip / Postal code" label="Zip / Postal code" max_length="40" name="u_zip___postal_code" type="string"/>
+    </element>
+</database>

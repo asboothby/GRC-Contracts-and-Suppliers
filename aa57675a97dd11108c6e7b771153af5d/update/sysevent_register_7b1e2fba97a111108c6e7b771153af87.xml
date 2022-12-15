@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <description/>
+        <event_name>x_631631_grc_contr.baseline_date_approac</event_name>
+        <fired_by/>
+        <queue/>
+        <suffix>baseline_date_approaching</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-30 16:04:58</sys_created_on>
+        <sys_id>7b1e2fba97a111108c6e7b771153af87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_631631_grc_contr.baseline_date_approac</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sysevent_register_7b1e2fba97a111108c6e7b771153af87</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-30 16:04:58</sys_updated_on>
+        <table>x_631631_grc_contr_contract</table>
+    </sysevent_register>
+</record_update>

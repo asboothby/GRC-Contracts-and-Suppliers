@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="SSP Sections" max_length="40" name="x_631631_grc_contr_ssp_sections" sizeclass="22" type="collection">
+        <element label="Order" max_length="40" name="order" type="integer"/>
+        <element label="Section Name" max_length="100" name="section_name" type="string"/>
+        <element label="Section Text" max_length="8000" name="section_text" type="html"/>
+    </element>
+</database>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Business App Compliance" max_length="40" name="x_631631_grc_contr_business_app_compliance" sizeclass="7" type="collection">
+        <element default="0" label="Associated Contracts" max_length="40" name="associated_contracts" type="integer"/>
+        <element label="Business Application" max_length="32" name="business_application" reference="cmdb_ci_business_app" type="reference"/>
+        <element label="Contract" max_length="32" name="contract" reference="x_631631_grc_contr_contract" type="reference"/>
+        <index name="index">
+            <element name="business_application"/>
+        </index>
+        <index name="index2">
+            <element name="contract"/>
+        </index>
+    </element>
+</database>

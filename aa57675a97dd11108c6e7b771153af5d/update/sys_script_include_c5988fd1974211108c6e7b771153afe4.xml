@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_631631_grc_contr.ContractReportUtilBase</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>ContractReportUtilBase</name>
+        <script><![CDATA[var ContractReportUtilBase = Class.create();
+ContractReportUtilBase.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getRedSuppliers: function()
+	{
+		var arry = [];
+		var arry1 = [];
+		arry1.push('288f6b9a971151108c6e7b771153af5c');
+// 		var gr = new GlideRecord('x_631631_grc_contr_supplier');
+// 		gr.addQuery('cyber_security_self_assessment_rating', 'Red');
+// 		gr.addQuery('supplier_profile_status', 'Active');
+// 		gr.query();
+		
+// 		var gr1 = new GlideRecord('x_631631_grc_contr_contract');
+// 		gr1.query();
+		
+// 		while (gr1.next())
+// 		{
+// 			arry1.push(gr1.getValue('sys_id'));
+// 		}
+		
+		gs.addInfoMessage(arry1.toString());
+		return arry1.toString();
+	},
+    type: 'ContractReportUtilBase'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-19 14:05:09</sys_created_on>
+        <sys_id>c5988fd1974211108c6e7b771153afe4</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>ContractReportUtilBase</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_script_include_c5988fd1974211108c6e7b771153afe4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-19 20:59:08</sys_updated_on>
+    </sys_script_include>
+</record_update>

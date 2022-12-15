@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X 631631 Grc Contr Contract" max_length="40" name="u_imp_tmpl_x_631631_grc_contr_contract" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Award Date" label="Award Date" max_length="40" name="u_award_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Business" label="Business" max_length="40" name="u_business" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Clause Date" label="Clause Date" max_length="48" name="u_clause_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Clause Number" label="Clause Number" max_length="40" name="u_clause_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=CMMC Level" label="CMMC Level" max_length="40" name="u_cmmc_level" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Contract Admin" label="Contract Admin" max_length="40" name="u_contract_admin" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=CONTRACT_ADMIN_NAME" label="CONTRACT_ADMIN_NAME" max_length="40" name="u_contract_admin_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Contract IWTA Indicator" label="Contract IWTA Indicator" max_length="40" name="u_contract_iwta_indicator" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Contract/IWTA Number" label="Contract/IWTA Number" max_length="40" name="u_contract_iwta_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Contract/IWTA Status" label="Contract/IWTA Status" max_length="40" name="u_contract_iwta_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Contract Manager" label="Contract Manager" max_length="40" name="u_contract_manager" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=CONTRACT_MGR_NAME" label="CONTRACT_MGR_NAME" max_length="40" name="u_contract_mgr_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Contract Release Number" label="Contract Release Number" max_length="40" name="u_contract_release_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Customer Name" label="Customer Name" max_length="40" name="u_customer_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=DELETE_FLAG" label="DELETE_FLAG" max_length="40" name="u_delete_flag" type="string"/>
+        <element attributes="import_attribute_name=ECS Contract ID" label="ECS Contract ID" max_length="40" name="u_ecs_contract_id" type="float"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ECS Mod ID" label="ECS Mod ID" max_length="40" name="u_ecs_mod_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ECS_SITE" label="ECS_SITE" max_length="40" name="u_ecs_site" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=GRC System ID" label="GRC System ID" max_length="40" name="u_grc_system_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=IWTA Requesting Business Unit" label="IWTA Requesting Business Unit" max_length="40" name="u_iwta_request__business_unit" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Mod Number" label="Mod Number" max_length="40" name="u_mod_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Mod Type" label="Mod Type" max_length="40" name="u_mod_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=POP End Date" label="POP End Date" max_length="40" name="u_pop_end_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Pop Start Date" label="Pop Start Date" max_length="40" name="u_pop_start_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Prime Contract number" label="Prime Contract number" max_length="40" name="u_prime_contract_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Program" label="Program" max_length="40" name="u_program" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Program Manager" label="Program Manager" max_length="40" name="u_program_manager" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=PROGRAM_MGR_NAME" label="PROGRAM_MGR_NAME" max_length="40" name="u_program_mgr_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Title" label="Title" max_length="40" name="u_title" type="string"/>
+    </element>
+</database>

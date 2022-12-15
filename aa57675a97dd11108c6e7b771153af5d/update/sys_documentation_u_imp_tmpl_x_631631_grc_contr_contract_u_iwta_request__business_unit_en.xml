@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_iwta_request__business_unit" label="IWTA Requesting Business Unit" language="en" table="u_imp_tmpl_x_631631_grc_contr_contract">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_iwta_request__business_unit</element>
+            <help/>
+            <hint/>
+            <label>IWTA Requesting Business Unit</label>
+            <language>en</language>
+            <name>u_imp_tmpl_x_631631_grc_contr_contract</name>
+            <plural>IWTA Requesting Business Units</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-22 11:29:01</sys_created_on>
+            <sys_id>ae654a9697c6d1108c6e7b771153af98</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>IWTA Requesting Business Unit</sys_name>
+            <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+            <sys_update_name>sys_documentation_u_imp_tmpl_x_631631_grc_contr_contract_u_iwta_request__business_unit_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-22 11:29:01</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

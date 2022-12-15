@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_631631_grc_contr.ContractPDFUtilBase</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>ContractPDFUtilBase</name>
+        <script><![CDATA[var ContractPDFUtilBase = Class.create();
+ContractPDFUtilBase.prototype = {
+    initialize: function() {
+    },
+
+	
+	createSsp: function(contractId)
+	{
+		this._createSsp(contractId);
+	},
+	
+	
+	
+	_createSsp: function(contractId)
+	{
+		var pdf = new sn_pdfgeneratorutils.PDFGenerationAPI();
+		var html='';
+		var contractInfo = new GlideRecord('x_631631_grc_contr_contract');
+		contractInfo.get(contractId);
+		var sectionList = new GlideRecord('x_631631_grc_contr_ssp_sections');
+		sectionList.orderBy('order');
+		sectionList.query();
+
+		while (sectionList.next())
+		{
+			html += sectionList.section_text;
+		}
+		
+		var replacementText = new GlideRecord('x_631631_grc_contr_ssp_replacement_text');
+		replacementText.addNotNullQuery();
+		replacementText.query();
+		
+		while(replacementText.next())
+		{
+			var replaceType = replacementText.replacement_type.toString().toLowerCase();
+
+			switch(replaceType)
+			{
+				case 'dot walk':
+					html = html.replaceAll(replacementText.placeholder, contractInfo.getElement(replacementText.replacement_text).toString());
+					break;
+					
+				case 'field':
+					html = html.replaceAll(replacementText.placeholder, contractInfo.getDisplayValue(replacementText.replacement_text));
+					break;
+					
+				case 'table':
+					gs.info('table');
+					gs.info('replacementText: ' + replacementText.placeholder);
+					if(replacementText.replacement_text=='supplier_table')
+					{
+						var replacementHtml = this._createSlfTable(contractInfo.cui_suppliers);
+						html = html.replaceAll(replacementText.placeholder, replacementHtml);
+					}
+					break;
+				default:
+					break;
+			}
+		}
+		var currentDate = new GlideDate();
+		html = html.replaceAll('[DATE]', currentDate.getByFormat('MM-dd-yyyy'));
+		
+		var deletedAttachments = this._deleteSsp(contractId);
+
+		var result = pdf.convertToPDF(html, 'x_631631_grc_contr_contract', contractId, 'ssp');
+		
+		if (deletedAttachments) gs.addInfoMessage('Existing SSP was deleted');
+		parserStr = JSON.stringify(result);
+		
+		parsedStr = JSON.parse(parserStr);
+		if (parsedStr.status == 'success')
+		{
+			gs.addInfoMessage('SSP was successfully created and attached to the record');
+		}
+		else
+		{
+			gs.addInfoMessage('An issue prevented the SSP from being generated');
+		}
+	},
+	
+_deleteSsp: function(contractId)
+{
+	var attachment = new GlideSysAttachment();
+	var attachmentList = attachment.getAttachments('x_631631_grc_contr_contract', contractId);
+	var deletedAttachments = false;
+
+	// gs.addInfoMessage(attachmentList.getRowCount());
+	while (attachmentList.next())
+	{
+		if (attachmentList.getValue('file_name') == 'ssp.pdf')
+		{
+			attachment.deleteAttachment(attachmentList.sys_id);
+			deletedAttachments = true;
+		}
+	}
+
+	return deletedAttachments;
+},
+	
+_createSlfTable: function(supplierList)
+{
+	var tableHtml = '<table border=1 style="border-collapse: collapse; table-layout: fixed"><tr><th>Supplier Name</th><th>Local DUNS</th><th>Global DUNS</th></tr>';
+
+	var queryString = 'sys_idIN' + supplierList;
+	var supplierTable = new GlideRecord('x_631631_grc_contr_supplier');
+	supplierTable.addEncodedQuery(queryString);
+	supplierTable.query();
+	
+	while (supplierTable.next())
+	{
+		tableHtml += '<tr><td style="width: 60%">' + supplierTable.supplier_name + '</td><td style="word-wrap: break-word;">' + supplierTable.local_duns + '</td><td style="width: 20%">' + supplierTable.global_duns + '</td></tr>';
+	}
+	tableHtml += '</table>';
+
+	return tableHtml;
+},
+	
+    type: 'ContractPDFUtilBase'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-29 10:17:41</sys_created_on>
+        <sys_id>f7abc22a972111108c6e7b771153af9b</sys_id>
+        <sys_mod_count>45</sys_mod_count>
+        <sys_name>ContractPDFUtilBase</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_script_include_f7abc22a972111108c6e7b771153af9b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-29 17:43:33</sys_updated_on>
+    </sys_script_include>
+</record_update>

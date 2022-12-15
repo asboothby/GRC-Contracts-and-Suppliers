@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[function invokePromptCallBack(type) {
+	var gdw = GlideDialogWindow.get();
+	if (type == 'ok')
+	{
+		var refValue = my_reference_element.value;
+		var appValue = document.getElementById("includeApps").value;
+		var supplierValue = document.getElementById("includeSuppliers").value;
+		var proceed = (supplierValue == 'true' || appValue=='true') && refValue != '';
+
+		if(proceed)
+		{
+			var contractAjax = new GlideAjax('ContractAjaxUtilBase');
+			contractAjax.addParam('sysparm_name', 'copySuppliers');
+			contractAjax.addParam('source', refValue);
+			contractAjax.addParam('destination', g_form.getUniqueValue());
+			contractAjax.addParam('inclApps',document.getElementById("includeApps").value);
+			contractAjax.addParam('inclSuppliers',document.getElementById("includeSuppliers").value);
+			contractAjax.getXMLAnswer();
+			
+			gdw.destroy();
+			return false;
+		}
+		else
+		{
+			alert('Please select a source contract and at least one checkbox');
+		}
+	}
+	else
+	{
+		gdw.destroy();
+		return false;		
+	}
+}]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_631631_grc_contr_select_source_contract.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+	<p> </p>
+	<div>
+		Select Source Contract: <g:ui_reference name="my_reference_element" id="my_reference_element" table="x_631631_grc_contr_contract" />
+	</div>
+	<p> </p>
+	<table width="100%">
+		<tr>
+			<td>
+				Include:
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<g:ui_checkbox name="includeApps" id="includeApps"/>Apps
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<g:ui_checkbox name="includeSuppliers" id="includeSuppliers"/>Suppliers
+			</td>
+		</tr>
+		<tr>
+			<td>
+				&#160;
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				This process will replace existing relationships. Do you wish to continue?
+			</td>
+		</tr>
+		<tr>
+			<td>
+				&#160;
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				<g:dialog_buttons_ok_cancel
+				ok_text="${gs.getMessage('Ok')}"
+				ok="invokePromptCallBack('ok');"
+				ok_type="button"
+				cancel_text="${gs.getMessage('Cancel')}"
+				cancel="invokePromptCallBack('cancel')"
+				cancel_type="button" />
+			</td>
+		</tr>
+	</table>
+</j:jelly>]]></html>
+        <name>select_source_contract</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-22 12:24:01</sys_created_on>
+        <sys_id>b730dc0a971751108c6e7b771153af82</sys_id>
+        <sys_mod_count>67</sys_mod_count>
+        <sys_name>select_source_contract</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_ui_page_b730dc0a971751108c6e7b771153af82</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-23 17:23:14</sys_updated_on>
+    </sys_ui_page>
+</record_update>

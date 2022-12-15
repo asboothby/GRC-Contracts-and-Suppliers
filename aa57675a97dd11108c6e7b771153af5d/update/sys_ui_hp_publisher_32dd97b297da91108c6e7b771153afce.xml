@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_hp_publisher">
+    <sys_ui_hp_publisher action="INSERT_OR_UPDATE">
+        <allow_database_view_filter>false</allow_database_view_filter>
+        <allow_extended_table>false</allow_extended_table>
+        <boolean_field/>
+        <boolean_table/>
+        <date_filter/>
+        <default_boolean_field/>
+        <default_choice/>
+        <default_date_filter/>
+        <default_reference_field_value/>
+        <description/>
+        <exclusion_choice_list/>
+        <look_up_name>Business</look_up_name>
+        <name>Filter by Business</name>
+        <reference_conditions table="core_company">nameLIKEacme<item endquery="false" field="name" goto="false" newquery="false" operator="LIKE" or="false" value="acme"/>
+        </reference_conditions>
+        <reference_table>core_company</reference_table>
+        <remove_all_option>false</remove_all_option>
+        <source_field/>
+        <source_table/>
+        <sys_class_name>sys_ui_hp_publisher</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-06 17:30:38</sys_created_on>
+        <sys_id>32dd97b297da91108c6e7b771153afce</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Filter by Business</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_ui_hp_publisher_32dd97b297da91108c6e7b771153afce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-06 17:57:59</sys_updated_on>
+        <type>2</type>
+        <ui_control_type>4</ui_control_type>
+    </sys_ui_hp_publisher>
+</record_update>

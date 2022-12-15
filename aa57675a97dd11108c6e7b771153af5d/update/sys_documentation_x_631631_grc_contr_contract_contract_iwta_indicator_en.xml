@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="contract_iwta_indicator" label="Contract IWTA Indicator" language="en" table="x_631631_grc_contr_contract">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>contract_iwta_indicator</element>
+            <help/>
+            <hint/>
+            <label>Contract IWTA Indicator</label>
+            <language>en</language>
+            <name>x_631631_grc_contr_contract</name>
+            <plural>Contract IWTA Indicators</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-08-16 12:25:22</sys_created_on>
+            <sys_id>9b7f2b9a971151108c6e7b771153af7b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Contract IWTA Indicator</sys_name>
+            <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+            <sys_update_name>sys_documentation_x_631631_grc_contr_contract_contract_iwta_indicator_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-08-16 14:05:17</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

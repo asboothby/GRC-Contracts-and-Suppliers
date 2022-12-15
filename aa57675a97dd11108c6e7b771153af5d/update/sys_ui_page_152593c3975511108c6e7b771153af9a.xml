@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[function continueOK() {
+
+    var values = sb.getValues(sb.getRightSelect());
+    var taskID = g_form.getUniqueValue();
+
+    //checks to make sure they did not select nothing
+    if (values == '') {
+        alert("At least one user must be selected");
+        return;
+    }
+	//calls our script include that has the code we want to perform against the values in our list
+    var ajax = new GlideAjax('UI_Page_Utils');
+    ajax.addParam('sysparm_name', 'addUsers');
+    ajax.addParam('sysparm_taskID', taskID);
+    ajax.addParam('sysparm_values', values);
+    ajax.getXML(addUserResponse);
+
+}
+
+function addUserResponse() {
+    GlideDialogWindow.get().destroy();
+    return true;
+}
+
+
+function continueCancel() {
+    GlideDialogWindow.get().destroy();
+    return false;
+}
+
+//This happens when the page loads
+addLoadEvent(function() {
+
+    //This clears the -- that starts out on the right
+    sb.clearSelect(sb.getRightSelect());
+    //This sets the table value 
+
+	//The format for the id of the field is TableNameYouChoose.TableNameField then you set the value to whatever table you are wanting to have the filter apply to
+    document.getElementById("u_affected_user.u_table").value = "sys_user";
+    //This used to be a getElementById but when inspecting the code the id of this changes every time it is loaded
+    var selectBoxChosen = document.getElementsByClassName("select2-chosen");
+    //This sets the table field
+    selectBoxChosen[0].innerHTML = "User [sys_user]";
+
+    //This hides the table select box. The format is s2id_TableNameYouChoose.TableNameField
+    document.getElementById("s2id_u_affected_user.u_table").hide();
+    //This loads the filter field the format is (TableNameYouChoose.ConditionFieldName, TableNameField)
+    loadFilterColumns('u_affected_user.u_user_conditions', 'u_table');
+    //This may be uneeded I have it because otherwise you have to scroll to see the whole filter
+    var filterRow = document.getElementsByClassName("col-xs-10 col-md-9 col-lg-8 form-field input_controls filter_controls-with-overflow");
+	//This just sets the first one. If you were to have multiple filters on the page for different tables then you could iterate them 
+    filterRow[0].style.width = "100%";
+
+
+
+});
+
+
+function addUserQuery() {
+	
+	//starts the loading dialog
+	showLoadingDialog();
+
+	//this gets the filter of the filter field The format is TableNameYouChoose.TableNameField should be the same as the first element in your loadEvent
+    var userFilter = getFilter('u_affected_user.u_user_conditions');
+
+	//This calls our script include where we pass in the query and it return us a list of users
+    var userQueryAjax = new GlideAjax('UI_Page_Utils');
+
+    userQueryAjax.addParam('sysparm_name', 'getUserList');
+    userQueryAjax.addParam('sysparm_query', userFilter);
+
+    userQueryAjax.getXML(userResults);
+}
+
+function userResults(response) {
+    hideLoadingDialog();
+	
+	//Clears our list on the left
+	sb.clearSelect(sb.getLeftSelect());
+	//assigns our response to a var
+    var userList = response.responseXML.documentElement.getAttribute("answer");
+	//parses our JSON string to JSON so we can work with it
+    userListJson = JSON.parse(userList);
+	//Loops through our list and adds each of them to our slushbucet
+    for (var i = 0; i < userListJson.length; i++) {
+        var rowJson = userListJson[i];
+		//adds them to our slushbucket with the format of (value,label)
+        sb.addLeftChoice(rowJson['sys_id'], rowJson['name']);
+    }
+
+}]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_631631_grc_contr_Select with Search.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+	  <g:evaluate jelly="true"></g:evaluate>
+  <g:requires name="elements/element_conditions.jsx"></g:requires>
+  <TABLE BORDER="0">
+    <TR>
+      <TD>
+        <div>Conditions</div>
+		  <!-- you need a table name field and a condition field that is dependent on that table name field here. You can use any table with those two fields but make sure there are no tableChoicesScripts on them or anything or it will mess it up. Get the sys id from the sys_dictionary record of your fields-->
+        <g:ui_element table="u_affected_users" field="u_table" id="ReplaceWithYourTableFieldSysId"></g:ui_element>
+        <g:ui_element table="u_affected_users" field="u_user_conditions" id="ReplaceWithYourConditionFieldSysId"></g:ui_element>
+      </TD>
+    </TR>
+    <TR>
+      <TD>
+        <button class="btn btn-primary" onclick="addUserQuery()">Filter</button>
+      </TD>
+    </TR>
+    <TR>
+      <TD> Please select the users you wish to add. </TD>
+    </TR>
+    <TR>
+      <TD>
+        <!-- Include the 'ui_slushbucket' UI macro -->
+        <div>
+          <g:ui_slushbucket name="sb" left_header="Left Side" right_header="Right Side">
+          </g:ui_slushbucket>
+        </div>
+      </TD>
+    </TR>
+    <TR>
+      <TD align="right">
+        <!-- Include the 'dialog_buttons_ok_cancel' UI macro -->
+        <g:dialog_buttons_ok_cancel ok="return continueOK()" cancel="return continueCancel()" ok_type="button" cancel_type="button" />
+      </TD>
+    </TR>
+  </TABLE>
+	
+</j:jelly>]]></html>
+        <name>Select with Search</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-18 18:27:53</sys_created_on>
+        <sys_id>152593c3975511108c6e7b771153af9a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Select with Search</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_ui_page_152593c3975511108c6e7b771153af9a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-18 18:27:53</sys_updated_on>
+    </sys_ui_page>
+</record_update>

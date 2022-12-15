@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="related_business_applications" label="Related Business Applications" language="en" table="x_631631_grc_contr_contract">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>related_business_applications</element>
+            <help/>
+            <hint/>
+            <label>Related Business Applications</label>
+            <language>en</language>
+            <name>x_631631_grc_contr_contract</name>
+            <plural>Related Business Applications</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-30 13:36:30</sys_created_on>
+            <sys_id>2a48316c97a751108c6e7b771153af8f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Related Business Applications</sys_name>
+            <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+            <sys_update_name>sys_documentation_x_631631_grc_contr_contract_related_business_applications_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-30 13:36:30</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

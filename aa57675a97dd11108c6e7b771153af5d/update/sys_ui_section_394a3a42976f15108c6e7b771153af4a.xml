@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Tab 1" section_id="394a3a42976f15108c6e7b771153af4a" sys_domain="global" table="x_631631_grc_contr_supplier_ext" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>notes</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 10:15:43</sys_created_on>
+            <sys_id>0a4a3a42976f15108c6e7b771153af8a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Tab 1" display_value="Tab 1" name="x_631631_grc_contr_supplier_ext" sys_domain="global" view="Default view">394a3a42976f15108c6e7b771153af4a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-05 10:15:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_es_id</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 10:15:43</sys_created_on>
+            <sys_id>8a4a3a42976f15108c6e7b771153af8a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Tab 1" display_value="Tab 1" name="x_631631_grc_contr_supplier_ext" sys_domain="global" view="Default view">394a3a42976f15108c6e7b771153af4a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-05 10:15:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_corporate_id</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 10:15:43</sys_created_on>
+            <sys_id>0e4a3a42976f15108c6e7b771153af8a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Tab 1" display_value="Tab 1" name="x_631631_grc_contr_supplier_ext" sys_domain="global" view="Default view">394a3a42976f15108c6e7b771153af4a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-05 10:15:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_duns_number</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 10:15:43</sys_created_on>
+            <sys_id>8e4a3a42976f15108c6e7b771153af8a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Tab 1" display_value="Tab 1" name="x_631631_grc_contr_supplier_ext" sys_domain="global" view="Default view">394a3a42976f15108c6e7b771153af4a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-05 10:15:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_global_ultimate_duns_number</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 10:15:43</sys_created_on>
+            <sys_id>024a3a42976f15108c6e7b771153af8b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Tab 1" display_value="Tab 1" name="x_631631_grc_contr_supplier_ext" sys_domain="global" view="Default view">394a3a42976f15108c6e7b771153af4a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-05 10:15:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_domestic_ultimate_duns_number</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 10:15:43</sys_created_on>
+            <sys_id>824a3a42976f15108c6e7b771153af8b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Tab 1" display_value="Tab 1" name="x_631631_grc_contr_supplier_ext" sys_domain="global" view="Default view">394a3a42976f15108c6e7b771153af4a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-05 10:15:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>corporate_compliance_override_date</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 10:15:43</sys_created_on>
+            <sys_id>064a3a42976f15108c6e7b771153af8b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Tab 1" display_value="Tab 1" name="x_631631_grc_contr_supplier_ext" sys_domain="global" view="Default view">394a3a42976f15108c6e7b771153af4a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-05 10:15:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>corporate_compliance_override_set_by</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 10:15:43</sys_created_on>
+            <sys_id>864a3a42976f15108c6e7b771153af8b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Tab 1" display_value="Tab 1" name="x_631631_grc_contr_supplier_ext" sys_domain="global" view="Default view">394a3a42976f15108c6e7b771153af4a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-05 10:15:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>corporate_risk_override_date</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 10:15:43</sys_created_on>
+            <sys_id>0a4a3a42976f15108c6e7b771153af8b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Tab 1" display_value="Tab 1" name="x_631631_grc_contr_supplier_ext" sys_domain="global" view="Default view">394a3a42976f15108c6e7b771153af4a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-05 10:15:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>corporate_risk_override_set_by</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 10:15:43</sys_created_on>
+            <sys_id>8a4a3a42976f15108c6e7b771153af8b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Tab 1" display_value="Tab 1" name="x_631631_grc_contr_supplier_ext" sys_domain="global" view="Default view">394a3a42976f15108c6e7b771153af4a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-05 10:15:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cyber_security_self_assessement_capability_level</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 10:15:43</sys_created_on>
+            <sys_id>0e4a3a42976f15108c6e7b771153af8b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Tab 1" display_value="Tab 1" name="x_631631_grc_contr_supplier_ext" sys_domain="global" view="Default view">394a3a42976f15108c6e7b771153af4a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-05 10:15:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cyber_security_self_assessment_date</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 10:15:43</sys_created_on>
+            <sys_id>8e4a3a42976f15108c6e7b771153af8b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Tab 1" display_value="Tab 1" name="x_631631_grc_contr_supplier_ext" sys_domain="global" view="Default view">394a3a42976f15108c6e7b771153af4a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-05 10:15:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cyber_security_self_assessment_overall_score</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 10:15:43</sys_created_on>
+            <sys_id>024a3a42976f15108c6e7b771153af8c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Tab 1" display_value="Tab 1" name="x_631631_grc_contr_supplier_ext" sys_domain="global" view="Default view">394a3a42976f15108c6e7b771153af4a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-05 10:15:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cyber_security_self_assessment_rating</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 10:15:43</sys_created_on>
+            <sys_id>824a3a42976f15108c6e7b771153af8c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Tab 1" display_value="Tab 1" name="x_631631_grc_contr_supplier_ext" sys_domain="global" view="Default view">394a3a42976f15108c6e7b771153af4a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-05 10:15:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cyber_security_self_assessment_score</element>
+            <position>14</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 10:15:43</sys_created_on>
+            <sys_id>064a3a42976f15108c6e7b771153af8c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Tab 1" display_value="Tab 1" name="x_631631_grc_contr_supplier_ext" sys_domain="global" view="Default view">394a3a42976f15108c6e7b771153af4a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-05 10:15:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>enterprise_csc_risk_supplier_override_exists</element>
+            <position>15</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 10:15:43</sys_created_on>
+            <sys_id>864a3a42976f15108c6e7b771153af8c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Tab 1" display_value="Tab 1" name="x_631631_grc_contr_supplier_ext" sys_domain="global" view="Default view">394a3a42976f15108c6e7b771153af4a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-05 10:15:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>enterprise_dfars_supplier_override_exists</element>
+            <position>16</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 10:15:43</sys_created_on>
+            <sys_id>0a4a3a42976f15108c6e7b771153af8c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Tab 1" display_value="Tab 1" name="x_631631_grc_contr_supplier_ext" sys_domain="global" view="Default view">394a3a42976f15108c6e7b771153af4a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-05 10:15:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>id2fa_compliant_flag</element>
+            <position>17</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 10:15:43</sys_created_on>
+            <sys_id>8a4a3a42976f15108c6e7b771153af8c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Tab 1" display_value="Tab 1" name="x_631631_grc_contr_supplier_ext" sys_domain="global" view="Default view">394a3a42976f15108c6e7b771153af4a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-05 10:15:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>override_sprs_assessment_date</element>
+            <position>18</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 10:15:43</sys_created_on>
+            <sys_id>0e4a3a42976f15108c6e7b771153af8c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Tab 1" display_value="Tab 1" name="x_631631_grc_contr_supplier_ext" sys_domain="global" view="Default view">394a3a42976f15108c6e7b771153af4a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-05 10:15:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>poc_supplier_compliance_validator</element>
+            <position>19</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 10:15:43</sys_created_on>
+            <sys_id>8e4a3a42976f15108c6e7b771153af8c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Tab 1" display_value="Tab 1" name="x_631631_grc_contr_supplier_ext" sys_domain="global" view="Default view">394a3a42976f15108c6e7b771153af4a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-05 10:15:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>poc_supplier_compliance_validator_business_area</element>
+            <position>20</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 10:15:43</sys_created_on>
+            <sys_id>024a3a42976f15108c6e7b771153af8d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Tab 1" display_value="Tab 1" name="x_631631_grc_contr_supplier_ext" sys_domain="global" view="Default view">394a3a42976f15108c6e7b771153af4a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-05 10:15:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>poc_supplier_risk_validator</element>
+            <position>21</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 10:15:43</sys_created_on>
+            <sys_id>824a3a42976f15108c6e7b771153af8d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Tab 1" display_value="Tab 1" name="x_631631_grc_contr_supplier_ext" sys_domain="global" view="Default view">394a3a42976f15108c6e7b771153af4a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-05 10:15:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Tab 1</caption>
+            <header>false</header>
+            <name>x_631631_grc_contr_supplier_ext</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 10:15:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>394a3a42976f15108c6e7b771153af4a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_631631_grc_contr_supplier_ext</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+            <sys_update_name>sys_ui_section_394a3a42976f15108c6e7b771153af4a</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-05 10:15:42</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

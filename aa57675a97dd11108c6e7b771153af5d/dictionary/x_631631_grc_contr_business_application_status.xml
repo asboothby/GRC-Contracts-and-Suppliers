@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Business Application Status" max_length="40" name="x_631631_grc_contr_business_application_status" sizeclass="6" type="collection">
+        <element choice="3" default="no_assessment" label="Assessment State" max_length="40" name="assessment_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No Assessment" sequence="100" value="no_assessment"/>
+                <element inactive_on_update="false" label="Compliant" sequence="110" value="compliant"/>
+                <element inactive_on_update="false" label="Compliant with POAM" sequence="130" value="compliant_poam"/>
+                <element inactive_on_update="false" label="Non-complaint" sequence="140" value="non_compliant"/>
+            </choice>
+        </element>
+        <element choice="3" default="no_assessment" label="Assessment Status" max_length="40" name="assessment_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No Assessment" sequence="100" value="no_assessment"/>
+                <element inactive_on_update="false" label="Assessment Incomplete" sequence="110" value="assessment_incomplete"/>
+                <element inactive_on_update="false" label="Assessment Complete" sequence="120" value="assessment_complete"/>
+            </choice>
+        </element>
+        <element default="0" label="Associated Contract Count" max_length="40" name="associated_countract_count" type="integer"/>
+        <element label="Business Application" max_length="32" name="business_application" reference="cmdb_ci_business_app" type="reference"/>
+        <index name="index">
+            <element name="business_application"/>
+        </index>
+    </element>
+</database>

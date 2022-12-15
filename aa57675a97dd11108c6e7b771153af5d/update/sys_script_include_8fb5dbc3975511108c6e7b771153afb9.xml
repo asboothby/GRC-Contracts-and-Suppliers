@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_631631_grc_contr.SearchAjax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>SearchAjax</name>
+        <script><![CDATA[var SearchAjax = Class.create();
+SearchAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    //This function is to add the users selected to the table I want
+    addUsers: function() {
+
+        //Gets the parameters from the function
+        var taskId = this.getParameter("sysparm_taskID");
+        var values = this.getParameter("sysparm_values");
+
+        //The slushbucket list comes in a comma seperated string. This turns that into an array
+        var valueArrary = values.split(",");
+
+        //Loops through the array and executes the code I want against each record
+        for (var i = 0; i < valueArrary.length; i++) {
+            var userID = valueArrary[i];
+
+            var affectedUserGR = new GlideRecord("u_affected_user");
+            affectedUserGR.u_affected_user = userID;
+            affectedUserGR.u_outage = taskId;
+            affectedUserGR.insert();
+        }
+
+        //You could return something of value here if you wanted.
+        return true;
+
+
+    },
+    //This is the function to return a list of users based on a query you could add more parameters and be able to put in a table name and such
+    getUserList: function() {
+
+        var query = this.getParameter("sysparm_query");
+
+        var userList = new GlideRecord("sys_user");
+        //This is the query we pass in from our user
+        userList.addEncodedQuery(query);
+        userList.query();
+
+        var userListArray = [];
+
+        //This loops through our results and pushes them to an array. You can add any values you want here to the Array of objects. Just follow Json format because this is an array of objects
+        while (userList.next()) {
+
+            userListArray.push({
+                "sys_id": userList.sys_id.toString(),
+                "name": userList.name.toString()
+            });
+        }
+
+        //this returns the list of users in JSON String format so you can parse it on the other end. If you dont to this it returns as a string that is the name of the object
+        return JSON.stringify(userListArray);
+
+
+    },	
+	
+	
+    type: 'SearchAjax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-18 18:29:54</sys_created_on>
+        <sys_id>8fb5dbc3975511108c6e7b771153afb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SearchAjax</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_script_include_8fb5dbc3975511108c6e7b771153afb9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-18 18:29:54</sys_updated_on>
+    </sys_script_include>
+</record_update>

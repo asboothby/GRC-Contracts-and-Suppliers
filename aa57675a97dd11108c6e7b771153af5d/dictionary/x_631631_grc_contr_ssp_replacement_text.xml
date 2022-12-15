@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="SSP Replacement Text" max_length="40" name="x_631631_grc_contr_ssp_replacement_text" sizeclass="18" type="collection">
+        <element label="Placeholder" max_length="100" name="placeholder" type="string"/>
+        <element label="Replacement Text" max_length="100" name="replacement_text" type="string"/>
+        <element label="Replacement Type" max_length="100" name="replacement_type" type="string"/>
+    </element>
+</database>

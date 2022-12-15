@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="ref_ac_columns_search=true,ref_ac_order_by=title,ref_ac_columns=prime_contract_number;contract_release_number;mod_number;status,ref_auto_completer=AJAXTableCompleter" label="contract" max_length="40" name="x_631631_grc_contr_contract" sizeclass="27" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Award Date" max_length="40" name="award_date" type="glide_date"/>
+        <element label="Baselined By" max_length="32" name="baselined_by" read_only="true" reference="sys_user" type="reference"/>
+        <element label="Baseline Date" max_length="40" name="baseline_date" read_only="true" type="glide_date"/>
+        <element default="javascript:var gdt=new GlideDateTime();gdt.addDaysLocalTime(30);gdt.getDate();" label="Baseline Due" max_length="40" name="baseline_due" read_only="true" type="glide_date_time"/>
+        <element default="javascript: new GlideDateTime().getDate()" label="Baseline Start" max_length="40" name="baseline_start" read_only="true" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Business" max_length="40" name="business" reference="core_company" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Clause Date" max_length="48" name="clause_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Clause Number" max_length="40" name="clause_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="CMMC Level" max_length="40" name="cmmc_level" type="string"/>
+        <element attributes="edge_encryption_enabled=true,ref_ac_columns=user_name;email" label="Contract Admin" max_length="40" name="contract_admin_email" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="CONTRACT_ADMIN_NAME" max_length="40" name="contract_admin_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Customer Name" max_length="40" name="contract_customer_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ECS Contract ID" max_length="40" name="contract_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Contract IWTA Indicator" max_length="40" name="contract_iwta_indicator" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Contract/IWTA Number" max_length="40" name="contract_iwta_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Contract/IWTA Status" max_length="40" name="contract_iwta_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true,ref_ac_columns=user_name;email" label="Contract Manager" max_length="40" name="contract_mgr_email" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="CONTRACT_MGR_NAME" max_length="40" name="contract_mgr_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Contract Release Number" max_length="40" name="contract_release_number" type="string"/>
+        <element label="CUI Suppliers" max_length="4000" name="cui_suppliers" reference="x_631631_grc_contr_supplier" type="glide_list"/>
+        <element label="CUI Suppliers Supporting this Contract" max_length="32" name="cui_suppliers_supporting_this_contract" reference="x_631631_grc_contr_supplier" type="reference"/>
+        <element attributes="max_unit=days" function_definition="glidefunction:datediff(baseline_date, baseline_start)" function_field="true" label="Days to Baseline" max_length="40" name="days_to_baseline" read_only="true" type="glide_duration"/>
+        <element attributes="edge_encryption_enabled=true" label="DELETE_FLAG" max_length="40" name="delete_flag" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ECS_SITE" max_length="40" name="ecs_site" type="string"/>
+        <element label="Has Red Suppliers" max_length="40" name="has_red_suppliers" read_only="true" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="IWTA Requesting Business Unit" max_length="40" name="iwta_requesting_business_unit" type="string"/>
+        <element label="Last Validated" max_length="40" name="last_validated" read_only="true" type="glide_date"/>
+        <element label="Last Validated By" max_length="32" name="last_validated_by" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="ECS Mod ID" max_length="40" name="mod_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Mod Number" max_length="40" name="mod_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Mod Type" max_length="40" name="mod_type" type="string"/>
+        <element label="Next Annual Revalidation" max_length="40" name="next_annual_revalidation" read_only="true" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="GRC System ID" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="POP End Date" max_length="40" name="pop_end_date" type="glide_date"/>
+        <element label="Pop Start Date" max_length="40" name="pop_start_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Prime Contract number" max_length="40" name="prime_contract_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Program" max_length="40" name="program" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Program Manager" max_length="40" name="program_mgr_email" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="PROGRAM_MGR_NAME" max_length="40" name="program_mgr_name" type="string"/>
+        <element label="Related Business Applications" max_length="4000" name="related_business_applications" reference="cmdb_ci_business_app" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="glide_list"/>
+        <element attributes="ref_sequence=order" choice="3" choice_table="x_631631_grc_contr_contract_supplier_choice" default="CUI" label="Sensitive Data Types" max_length="40" name="sensitive_data_types" reference="x_631631_grc_contr_contract_supplier_choice" reference_qual="category=Data Sensitivity^status=active^EQ" reference_qual_condition="category=Data Sensitivity^status=active^EQ" type="reference">
+            <choice/>
+        </element>
+        <element choice="3" default="incomplete" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element hint="Entity and Supplier relationships have not been completed" inactive_on_update="false" label="Incomplete" sequence="10" value="incomplete"/>
+                <element hint="Entity and Supplier relationships are complete and accurate" inactive_on_update="false" label="GRC Baselined" sequence="20" value="grc_baselined"/>
+            </choice>
+        </element>
+        <element label="Status" max_length="20" name="status" type="string"/>
+        <element label="Supplier Upload File" max_length="40" name="supplier_upload_file" type="file_attachment"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Title" max_length="40" name="title" type="string"/>
+        <element label="Watchlist" max_length="4000" name="watchlist" reference="sys_user" type="glide_list"/>
+        <element label="New Work Note" max_length="4000" name="work_notes" type="journal_input"/>
+        <index name="index">
+            <element name="baselined_by"/>
+        </index>
+        <index name="index2">
+            <element name="last_validated_by"/>
+        </index>
+    </element>
+</database>

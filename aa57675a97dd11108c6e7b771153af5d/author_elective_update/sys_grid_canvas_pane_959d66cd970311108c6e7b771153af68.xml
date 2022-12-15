@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="DELETE">
+        <grid_canvas display_value="PA Contract Search - New Tab">af7be6c9970311108c6e7b771153aff9</grid_canvas>
+        <height>10</height>
+        <portal_widget display_value="Created 2022-11-07 05:14:55">999d66cd970311108c6e7b771153af66</portal_widget>
+        <posx>0</posx>
+        <posy>0</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 10:14:55</sys_created_on>
+        <sys_id>959d66cd970311108c6e7b771153af68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>af7be6c9970311108c6e7b771153aff9</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_959d66cd970311108c6e7b771153af68</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 10:14:55</sys_updated_on>
+        <width>12</width>
+    </sys_grid_canvas_pane>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</application>
+        <file_path/>
+        <instance_id>e73c7985db2b8c949df22f17d496193f</instance_id>
+        <instance_name>dev103044</instance_name>
+        <name>sys_grid_canvas_pane_959d66cd970311108c6e7b771153af68</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane"><sys_grid_canvas_pane action="INSERT_OR_UPDATE"><grid_canvas display_value="PA Contract Search - New Tab">af7be6c9970311108c6e7b771153aff9</grid_canvas><height>10</height><portal_widget display_value="Created 2022-11-07 05:14:55">999d66cd970311108c6e7b771153af66</portal_widget><posx>0</posx><posy>0</posy><sys_class_name>sys_grid_canvas_pane</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-11-07 10:14:55</sys_created_on><sys_id>959d66cd970311108c6e7b771153af68</sys_id><sys_mod_count>0</sys_mod_count><sys_name>af7be6c9970311108c6e7b771153aff9</sys_name><sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package><sys_policy/><sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope><sys_update_name>sys_grid_canvas_pane_959d66cd970311108c6e7b771153af68</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-11-07 10:14:55</sys_updated_on><width>12</width></sys_grid_canvas_pane></record_update>]]></payload>
+        <payload_hash>1191230675</payload_hash>
+        <record_name>af7be6c9970311108c6e7b771153aff9</record_name>
+        <reverted_from/>
+        <source>6e57675a97dd11108c6e7b771153af5f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 10:14:55</sys_created_on>
+        <sys_id>d19d66cd970311108c6e7b771153af6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1845195fd750000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 10:14:55</sys_updated_on>
+        <type>Grid Canvas Pane</type>
+        <update_guid>1d9d66cd9803111035b6e9cddfb94a69</update_guid>
+        <update_guid_history>1d9d66cd9803111035b6e9cddfb94a69:1191230675</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 10:21:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_grid_canvas_pane">sys_grid_canvas_pane</sys_db_object>
+        <sys_id>3289971539c944668ac38c6c19e56959</sys_id>
+        <sys_metadata>959d66cd970311108c6e7b771153af68</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>af7be6c9970311108c6e7b771153aff9</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_scope_delete display_value="">d2e3570b4d07421aa50b19977f977ea4</sys_scope_delete>
+        <sys_update_name>sys_grid_canvas_pane_959d66cd970311108c6e7b771153af68</sys_update_name>
+        <sys_update_version display_value="sys_grid_canvas_pane_959d66cd970311108c6e7b771153af68">d19d66cd970311108c6e7b771153af6a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 10:21:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

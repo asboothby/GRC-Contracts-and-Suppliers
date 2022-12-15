@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Grc contr bus app compliance fields" language="en" table="x_631631_grc_contr_bus_app_compliance_fields">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Grc contr bus app compliance fields</label>
+            <language>en</language>
+            <name>x_631631_grc_contr_bus_app_compliance_fields</name>
+            <plural>Grc contr bus app compliance fields</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-21 17:27:21</sys_created_on>
+            <sys_id>10d65cbd975711108c6e7b771153afc6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Grc contr bus app compliance fields</sys_name>
+            <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+            <sys_update_name>sys_documentation_x_631631_grc_contr_bus_app_compliance_fields__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-21 17:27:21</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

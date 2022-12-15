@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="DELETE">
+        <group_id/>
+        <report_id display_value="">807a6337974211108c6e7b771153af26</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-27 10:41:18</sys_created_on>
+        <sys_id>087a6337974211108c6e7b771153af26</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>807a6337974211108c6e7b771153af26</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_report_users_groups_087a6337974211108c6e7b771153af26</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-27 10:41:18</sys_updated_on>
+        <user_id display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user_id>
+    </sys_report_users_groups>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</application>
+        <file_path/>
+        <instance_id>e73c7985db2b8c949df22f17d496193f</instance_id>
+        <instance_name>dev103044</instance_name>
+        <name>sys_report_users_groups_087a6337974211108c6e7b771153af26</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups"><sys_report_users_groups action="INSERT_OR_UPDATE"><group_id/><report_id display_value="">807a6337974211108c6e7b771153af26</report_id><sys_class_name>sys_report_users_groups</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-27 10:41:18</sys_created_on><sys_id>087a6337974211108c6e7b771153af26</sys_id><sys_mod_count>0</sys_mod_count><sys_name>807a6337974211108c6e7b771153af26</sys_name><sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package><sys_policy/><sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope><sys_update_name>sys_report_users_groups_087a6337974211108c6e7b771153af26</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-27 10:41:18</sys_updated_on><user_id display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user_id></sys_report_users_groups></record_update>]]></payload>
+        <payload_hash>144695209</payload_hash>
+        <record_name>807a6337974211108c6e7b771153af26</record_name>
+        <reverted_from/>
+        <source>6e57675a97dd11108c6e7b771153af5f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-27 10:41:18</sys_created_on>
+        <sys_id>047a6337974211108c6e7b771153af28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1837e896a350000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-27 10:41:18</sys_updated_on>
+        <type>Report Users and Groups</type>
+        <update_guid>4c7a63374f421110b0ef4f6787ece727</update_guid>
+        <update_guid_history>4c7a63374f421110b0ef4f6787ece727:144695209</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-27 10:47:04</sys_created_on>
+        <sys_db_object display_value="" name="sys_report_users_groups">sys_report_users_groups</sys_db_object>
+        <sys_id>57bfa4e0935f43aaab9a09b7d4a64364</sys_id>
+        <sys_metadata>087a6337974211108c6e7b771153af26</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>807a6337974211108c6e7b771153af26</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_scope_delete display_value="">d2e3570b4d07421aa50b19977f977ea4</sys_scope_delete>
+        <sys_update_name>sys_report_users_groups_087a6337974211108c6e7b771153af26</sys_update_name>
+        <sys_update_version display_value="sys_report_users_groups_087a6337974211108c6e7b771153af26">047a6337974211108c6e7b771153af28</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-27 10:47:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_hp_reference">
+    <sys_ui_hp_reference action="INSERT_OR_UPDATE">
+        <publisher_reference display_value="Filter by Business">32dd97b297da91108c6e7b771153afce</publisher_reference>
+        <reference_field>business</reference_field>
+        <reference_table>x_631631_grc_contr_contract</reference_table>
+        <sys_class_name>sys_ui_hp_reference</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-06 17:48:27</sys_created_on>
+        <sys_id>7762ebb697da91108c6e7b771153af5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>32dd97b297da91108c6e7b771153afce</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_ui_hp_reference_7762ebb697da91108c6e7b771153af5b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-06 17:48:27</sys_updated_on>
+    </sys_ui_hp_reference>
+</record_update>

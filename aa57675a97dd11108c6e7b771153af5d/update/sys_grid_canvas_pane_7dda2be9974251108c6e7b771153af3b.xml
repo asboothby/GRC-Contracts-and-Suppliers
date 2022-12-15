@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+        <grid_canvas display_value="PA GRC Contracts - New Tab">3126b4a1977111108c6e7b771153af65</grid_canvas>
+        <height>7</height>
+        <portal_widget display_value="Created 2022-09-20 06:56:42">35da2be9974251108c6e7b771153af33</portal_widget>
+        <posx>4</posx>
+        <posy>0</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-20 10:56:42</sys_created_on>
+        <sys_id>7dda2be9974251108c6e7b771153af3b</sys_id>
+        <sys_mod_count>64</sys_mod_count>
+        <sys_name>3126b4a1977111108c6e7b771153af65</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_7dda2be9974251108c6e7b771153af3b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-12 11:28:02</sys_updated_on>
+        <width>2</width>
+    </sys_grid_canvas_pane>
+</record_update>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_631631_grc_contr.ContractBusAppUtilBase</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>ContractBusAppUtilBase</name>
+        <script><![CDATA[var ContractBusAppUtilBase = Class.create();
+ContractBusAppUtilBase.prototype = {
+    initialize: function() {
+    },
+
+	setAssessmentStatus: function(entityId)
+	{
+		this._setAssessmentStatus(entityId);
+	},
+
+	setAssessmentState: function(entityId)
+	{
+		this._setAssessmentState(entityId);
+	},
+	
+	updateContractCounts: function(curBusAppList, prevBusAppList)
+	{
+		this._updateContractCounts(curBusAppList, prevBusAppList);
+	},
+	
+
+	
+	_setAssessmentStatus: function(entityId)
+	{
+// 		gs.info('entityId: ' + entityId);
+		var assessmentCount = new GlideAggregate('asmt_assessment_instance');
+		assessmentCount.addAggregate('COUNT');
+		assessmentCount.addQuery('sn_grc_profile', entityId);
+		assessmentCount.addQuery('state', 'ready');
+		assessmentCount.query();
+		
+		if (assessmentCount.next())
+		{
+			var readyCount = assessmentCount.getAggregate('COUNT');
+// 			gs.info('readyCount: ' + readyCount);
+			
+			var grEntity = new GlideRecord('sn_grc_profile');
+			grEntity.get(entityId);
+// 			if(grEntity.next())
+// 			{
+// 				gs.info('entity exists');
+				var busAppId = grEntity.applies_to;
+// 				gs.info('busAppId: ' + busAppId);
+				
+				var grBusAppStatus = new GlideRecord('x_631631_grc_contr_business_application_status');
+				grBusAppStatus.get('business_application', busAppId);
+
+			
+				if (readyCount==0)
+				{
+// 					gs.addInfoMessage('Assessment status = Assessment Complete');
+					grBusAppStatus.assessment_status='assessment_complete';
+					grBusAppStatus.update();
+				}
+				else
+				{
+// 					gs.addErrorMessage('Assessment status = Assessment Incomplete');
+					grBusAppStatus.assessment_status='assessment_incomplete';
+					grBusAppStatus.update();
+
+				}
+
+// 			}
+			
+			
+		}
+		
+	},
+	
+	_setAssessmentState: function(entityId)
+	{
+		var grEntity = new GlideRecord('sn_grc_profile');
+		grEntity.get(entityId);
+		gs.info('grEntity: ' + grEntity.sys_id);
+		if(grEntity)
+		{
+			var busAppId = grEntity.applies_to;
+		gs.info('applies_to: ' + busAppId);
+			var grBusAppStatus = new GlideRecord('x_631631_grc_contr_business_application_status');
+			grBusAppStatus.get('business_application', busAppId);
+			if(grBusAppStatus)
+			{
+				var busAppStatus = grBusAppStatus.assessment_status;
+				if(busAppStatus == 'assessment_complete')
+				{
+					var grControl = new GlideAggregate('sn_compliance_control');
+					grControl.addAggregate('COUNT');
+					grControl.addQuery('profile', entityId);
+					grControl.addQuery('state', 'review');
+					grControl.addQuery('status','non_compliant');
+					grControl.query();
+
+					if(grControl.next())
+					{
+						var ncCount=grControl.getAggregate('COUNT');
+						if(ncCount == 0)
+						{
+							grBusAppStatus.assessment_state='compliant';
+							grBusAppStatus.update();
+						}
+						else
+						{
+							grBusAppStatus.assessment_state='non_compliant';
+							grBusAppStatus.update();
+						}
+					}
+				}
+				
+			}
+		}
+	},
+	
+	_updateContractCounts: function(curBusAppList, prevBusAppList)
+	{
+		
+		var arrayUtil = new global.ArrayUtil();
+
+		var curAppArray = new Array();
+		if(curBusAppList != '') curAppArray = curBusAppList.split(',');
+		var prevAppArray = new Array();
+		if(prevBusAppList !='') prevAppArray = prevBusAppList.split(',');
+
+		var prevNotInCur = new Array();
+		prevNotInCur = arrayUtil.diff(prevAppArray, curAppArray);
+		var curNotInPrev = new Array();
+		curNotInPrev = arrayUtil.diff(curAppArray, prevAppArray);
+
+		this._processCountArray(prevNotInCur);
+		this._processCountArray(curNotInPrev);
+				
+
+		
+	},
+
+	_processCountArray: function(appArray)
+	{
+		var encQueryString;
+		var contractCount;
+		var encTemplateString = 'related_business_applicationsLIKESYSID';
+		
+		for(var i=0;i<appArray.length;i++)
+		{
+			encQueryString = encTemplateString.replace('SYSID', appArray[i]);
+			var gsRecCount = new GlideAggregate('x_631631_grc_contr_contract');
+			gsRecCount.addEncodedQuery(encQueryString);
+			gsRecCount.addAggregate('COUNT');
+			gsRecCount.query();
+			
+			if(gsRecCount.next())
+			{
+				var grBusAppStatus = new GlideRecord('x_631631_grc_contr_business_application_status');
+				grBusAppStatus.get('business_application', appArray[i]);
+				if(grBusAppStatus)
+				{
+					contractCount =  gsRecCount.getAggregate('COUNT');
+					grBusAppStatus.associated_countract_count=contractCount;
+					grBusAppStatus.update();
+				}
+
+			}
+		}
+
+	},
+
+    type: 'ContractBusAppUtilBase'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-12-05 12:22:45</sys_created_on>
+        <sys_id>5692d70a97af15108c6e7b771153af3f</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_name>ContractBusAppUtilBase</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_script_include_5692d70a97af15108c6e7b771153af3f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-12-07 19:09:49</sys_updated_on>
+    </sys_script_include>
+</record_update>

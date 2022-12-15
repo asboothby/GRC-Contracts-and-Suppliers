@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_631631_grc_contr.ContractSlfUtilBase</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>ContractSlfUtilBase</name>
+        <script><![CDATA[var ContractSlfUtilBase = Class.create();
+ContractSlfUtilBase.prototype = {
+    initialize: function() {
+    },
+
+	verifySuppliers: function(contractId)
+	{
+		gs.info('contractID:' + contractId);
+		var abortAction = this._verifySuppliers(contractId);
+		return abortAction;
+		
+	},
+	
+	checkBadSuppliers: function(contractId)
+	{
+		var badCount = this._checkBadSuppliers(contractId);
+		return badCount;
+	},
+	
+	_checkBadSuppliers: function(contractId)
+	{
+		var badCount=0;
+		var grContract = new GlideRecord('x_631631_grc_contr_contract');
+		grContract.get(contractId);
+		var supplierList = grContract.getValue('cui_suppliers');
+// 		gs.info('supplierList: ' + supplierList);
+		if(supplierList!='')
+		{
+			var grSLF = new GlideAggregate('x_631631_grc_contr_supplier');
+			grSLF.addAggregate('COUNT');
+			grSLF.addQuery('sys_id', 'IN', supplierList);
+			grSLF.addQuery('cyber_security_self_assessment_rating', '=', 'Red');
+			grSLF.query();
+
+			if(grSLF.next()) badCount = grSLF.getAggregate('COUNT');
+			if (badCount > 0) 
+			{
+// 				gs.addErrorMessage(grContract.title + ' has ' + badCount + ' Red Supplier(s)!');
+				grContract.has_red_suppliers = 'true';
+				grContract.update();
+				//current.setAbortAction(true);
+			}
+		}
+		return badCount;
+	},
+	
+	
+	_verifySuppliers: function(contractId)
+	{
+		// Verify suppliers are active
+		var abortAction=0;
+		var grContract = new GlideRecord('x_631631_grc_contr_contract');
+		grContract.get(contractId);
+		var supplierList = grContract.getValue('cui_suppliers');
+// 		gs.info('supplierList: ' + supplierList);
+		if(supplierList!='')
+		{
+			var grSLF = new GlideAggregate('x_631631_grc_contr_supplier');
+			grSLF.addAggregate('COUNT');
+			grSLF.addQuery('sys_id', 'IN', supplierList);
+			grSLF.addQuery('supplier_profile_status', '!=', 'Active');
+			grSLF.query();
+
+			if(grSLF.next()) var inactiveCount = grSLF.getAggregate('COUNT');
+
+			if (inactiveCount > 0) 
+			{
+				gs.addErrorMessage('There is/are ' + inactiveCount + ' inactive supplier(s)');
+				//current.setAbortAction(true);
+				abortAction = 1;
+			}
+
+		}
+		gs.info('SI abortAction: ' + abortAction);
+		return abortAction;
+
+	},
+	
+	
+    type: 'ContractSlfUtilBase'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-24 10:15:55</sys_created_on>
+        <sys_id>6b8ad405972111108c6e7b771153af20</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>ContractSlfUtilBase</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_script_include_6b8ad405972111108c6e7b771153af20</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-20 12:31:51</sys_updated_on>
+    </sys_script_include>
+</record_update>
