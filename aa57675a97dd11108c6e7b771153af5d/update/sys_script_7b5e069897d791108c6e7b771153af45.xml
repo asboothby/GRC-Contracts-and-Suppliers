@@ -30,12 +30,25 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-
+gs.addInfoMessage(current.assessment_type);
 	var errorString = '';
-	// Verify fields have data
-	if (!current.assessment_completed) 
+	// Verify assessments / attestations for selected type are completed
+	
+	switch (current.assessment_type)
 	{
-		errorString = 'The assessment(s) must be completed before completing the validation event';
+		case 'risk':
+			if (!current.assessment_completed) errorString = 'The Risk Assessment must be completed before completing the validation event';
+			break;
+		case 'compliance':
+			if (!current.attestations_completed)  errorString = 'All attestations must be completed before completing the validation event';
+			break;
+		case 'both':
+			if (!current.assessment_completed || !current.attestations_completed) errorString = 'The Risk Assessment and all attestations must be completed before completing the validation event';
+			break;
+	}
+		
+	if (errorString != '') 
+	{
 		gs.addErrorMessage(errorString);
 		current.setAbortAction(true);
 	}
@@ -47,7 +60,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7b5e069897d791108c6e7b771153af45</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Supplier Validation - Completed</sys_name>
         <sys_overrides/>
         <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
@@ -55,7 +68,7 @@
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_update_name>sys_script_7b5e069897d791108c6e7b771153af45</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-11-17 11:48:08</sys_updated_on>
+        <sys_updated_on>2023-03-09 13:33:40</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

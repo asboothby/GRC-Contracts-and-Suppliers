@@ -31,15 +31,32 @@
         <element label="NIST Self-Assessment Date" max_length="40" name="nist_self_assessment_date" type="glide_date"/>
         <element label="NIST Validation Percent Comp without POAM" max_length="40" name="nist_validation_percent_comp_without_poam" type="integer"/>
         <element label="Override SPRS Assessment Date" max_length="40" name="override_sprs_assessment_date" type="glide_date"/>
-        <element label="Override SPRS Confidence Level" max_length="50" name="override_sprs_confidence_level" type="string"/>
+        <element choice="1" label="Override SPRS Confidence Level" max_length="50" name="override_sprs_confidence_level" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Basic" sequence="10" value="basic"/>
+                <element inactive_on_update="false" label="Medium" sequence="20" value="medium"/>
+                <element inactive_on_update="false" label="High On-Site" sequence="30" value="high_on_site"/>
+                <element inactive_on_update="false" label="High Virtual" sequence="40" value="high_virtual"/>
+            </choice>
+        </element>
         <element label="POC Supplier Compliance Validator" max_length="32" name="poc_supplier_compliance_validator" reference="sys_user" type="reference"/>
         <element label="POC Supplier Compliance Validator Business Area" max_length="32" name="poc_supplier_compliance_validator_business_area" reference="core_company" type="reference"/>
         <element label="POC Supplier Risk Validator" max_length="32" name="poc_supplier_risk_validator" reference="sys_user" type="reference"/>
         <element label="POC Supplier Risk Validator Business Area" max_length="32" name="poc_supplier_risk_validator_business_area" reference="core_company" type="reference"/>
+        <element label="Risk Validated Capability Level" max_length="40" name="risk_validated_capability_level" type="integer"/>
+        <element label="Risk Validated Overall Score" max_length="20" name="risk_validated_overall_score" type="decimal"/>
+        <element choice="1" label="Risk Validated Rating" max_length="40" name="risk_validated_rating" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Green" sequence="1" value="green"/>
+                <element inactive_on_update="false" label="Yellow" sequence="2" value="yellow"/>
+                <element inactive_on_update="false" label="Red" sequence="3" value="red"/>
+            </choice>
+        </element>
         <element display="true" label="Supplier Name" max_length="200" name="supplier_name" type="string"/>
         <element label="Supplier Profile Status" max_length="50" name="supplier_profile_status" type="string"/>
         <element label="Supplier Status Code" max_length="20" name="supplier_status_code" type="string"/>
         <element attributes="format=none" label="System ID" max_length="40" name="system_id" type="integer"/>
+        <element label="Validation Parent Supplier" max_length="32" name="validation_parent_supplier" read_only="true" reference="x_631631_grc_contr_supplier" type="reference"/>
         <index name="index">
             <element name="local_company"/>
         </index>
@@ -50,6 +67,9 @@
             <element name="poc_supplier_risk_validator"/>
         </index>
         <index name="index4">
+            <element name="validation_parent_supplier"/>
+        </index>
+        <index name="index5">
             <element name="corporate_risk_override_set_by"/>
         </index>
     </element>

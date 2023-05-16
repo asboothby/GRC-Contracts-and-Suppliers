@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition/>
+        <condition>current.assessment_completed_by!=''</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -36,7 +36,6 @@ assmtQuestion.query();
 while(assmtQuestion.next())
 {
 	var assmtID = assmtQuestion.instance;
-	
 	var assmt_inst = new GlideRecord('asmt_assessment_instance');
 	assmt_inst.addQuery('sys_id', assmtID);
 	assmt_inst.addQuery('state', 'complete');
@@ -44,8 +43,7 @@ while(assmtQuestion.next())
 
 	while(assmt_inst.next())
 	{
-		gs.addInfoMessage('Instance: ' + assmt_inst.number);
-		assmt_inst.state='ready';
+		assmt_inst.state='wip';
 		assmt_inst.update();
 	}
 }
@@ -62,7 +60,7 @@ while(assmtQuestion.next())
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>598cbc8b976211108c6e7b771153afad</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>Re-Open Assessment</sys_name>
         <sys_overrides/>
         <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
@@ -70,7 +68,7 @@ while(assmtQuestion.next())
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_update_name>sys_ui_action_598cbc8b976211108c6e7b771153afad</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-10-19 12:06:36</sys_updated_on>
+        <sys_updated_on>2023-04-06 11:54:23</sys_updated_on>
         <table>x_631631_grc_contr_supplier_validation</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

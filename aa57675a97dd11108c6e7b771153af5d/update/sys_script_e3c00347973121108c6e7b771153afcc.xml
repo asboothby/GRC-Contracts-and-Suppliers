@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>asmt_assessment_instance</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="asmt_assessment_instance">stateCHANGESTOcomplete^metric_type=b559f318974221108c6e7b771153af85^EQ<item display_value="Complete" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="complete"/>
+            <item display_table="asmt_metric_type" display_value="Supplier Validation - Scoping" endquery="false" field="metric_type" goto="false" newquery="false" operator="=" or="false" value="b559f318974221108c6e7b771153af85"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Create Subsequent Supplier Assessment</name>
+        <order>150</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	var secondaryMetricType ='725160ec97c221108c6e7b771153af47';
+	var supplementalAsmtId;
+	var grEntity = new GlideRecord('sn_grc_profile');
+	grEntity.get(current.sn_grc_profile);
+	var grResponse = grEntity.sys_id;
+	var supplierId = grEntity.applies_to;
+	
+	var grCheckExisting = new GlideRecord('asmt_assessment_instance');
+	grCheckExisting.addQuery('metric_type', secondaryMetricType);
+	grCheckExisting.addQuery('sn_grc_profile', grResponse);
+	grCheckExisting.addQuery('state', 'IN', 'ready,wip');
+	grCheckExisting.setLimit(1);
+	grCheckExisting.query();
+gs.addInfoMessage('grCheckExisting.hasNext: ' + grCheckExisting.hasNext());
+	if(grCheckExisting.hasNext()) //Existing incomplete assessment exists so alert user
+	{
+		grCheckExisting.next();
+		supplementalAsmtId = grCheckExisting.sys_id;
+		gs.addInfoMessage('Incomplete risk assessment already exists for ' + grEntity.applies_to.supplier_name);
+	}
+	else  //Create assessment using global library function
+	{
+		new global.AssessmentUtils().checkRecord(current, secondaryMetricType);
+		//	gs.addInfoMessage('assessment_type: ' + current.assessment_type + ' sys_id: ' + current.sys_id + ' assigned_to: ' + current.assigned_to);
+		// 	var result = new global.AssessmentUtils().createAssessments('2d27804e971611108c6e7b771153afe1', '', gs.getUserID());
+		var result = new global.AssessmentUtils().createAssessments(secondaryMetricType,  grEntity.applies_to, grEntity.owned_by);
+
+		//If assessment creation was successful a comma separated list of 3 data items is retruned with the sys_id of the new assessment as the first item
+		var resultArray = result.split(',');
+
+		if (resultArray.length == 3) //Assessment creation was a success so get the record and set the entity to the one created / located above
+		{
+			// 			gs.addInfoMessage('assessmentInstance: ' + resultArray[0]);
+			supplementalAsmtId = resultArray[0];
+			var grAssessmentInstance = new GlideRecord('asmt_assessment_instance');
+			grAssessmentInstance.get(resultArray[0]);
+
+			if (grAssessmentInstance)
+			{
+				grAssessmentInstance.sn_grc_profile = grResponse;
+				grAssessmentInstance.update();
+				
+			}
+		}
+	}
+
+	//If this is a secondary supplier copy the answers
+	var isSecondary = new ContractSlfUtilBase().checkIfSecondarySupplier(supplierId, current.sys_id, secondaryMetricType);
+gs.addInfoMessage('isSecondary: ' + isSecondary);
+	//Set appropriate responses based on scoping responses
+	if (!isSecondary) var stResponses = new ContractSlfUtilBase().setSecondaryAssessmentResponses(current.sys_id, supplementalAsmtId);
+
+	var url='assessment_take2.do?sysparm_assessable_sysid=' + supplementalAsmtId.toString() + '&sysparm_assessable_type=' + secondaryMetricType;
+	gs.setRedirect(url);
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-30 09:52:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e3c00347973121108c6e7b771153afcc</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name>Create Subsequent Supplier Assessment</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_script_e3c00347973121108c6e7b771153afcc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-10 18:33:07</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=e3c00347973121108c6e7b771153afcc"/>
+</record_update>

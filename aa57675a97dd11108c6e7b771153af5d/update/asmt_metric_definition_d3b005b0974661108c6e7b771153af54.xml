@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric_definition">
+    <asmt_metric_definition action="INSERT_OR_UPDATE">
+        <display>None</display>
+        <metric display_value="7 - Risk">48d3e460970621108c6e7b771153afef</metric>
+        <normalization_input>0</normalization_input>
+        <order>10</order>
+        <selected_image/>
+        <sys_class_name>asmt_metric_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-04 10:49:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d3b005b0974661108c6e7b771153af54</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>None</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>asmt_metric_definition_d3b005b0974661108c6e7b771153af54</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-04 10:54:03</sys_updated_on>
+        <unselected_image/>
+        <value>0</value>
+    </asmt_metric_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=d3b005b0974661108c6e7b771153af54"/>
+</record_update>

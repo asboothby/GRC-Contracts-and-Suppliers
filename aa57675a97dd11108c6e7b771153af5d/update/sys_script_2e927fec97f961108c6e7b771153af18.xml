@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_631631_grc_contr_supplier_validation</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_631631_grc_contr_supplier_validation">secondary_suppliersVALCHANGES^EQ<item endquery="false" field="secondary_suppliers" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Remove Inappropriate Secondary Suppliers</name>
+        <order>110</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	var supplierList = [];
+	var supplierListPrev = [];
+	var arrayRemoved = [];
+	var arrayAdded = [];
+	var arrayUtil = new global.ArrayUtil();
+	var grSupplier;
+	var removeChild;
+	
+	if(!current.secondary_suppliers.nil()) supplierList = current.secondary_suppliers.split(',');
+	if(!previous.secondary_suppliers.nil()) supplierListPrev = previous.secondary_suppliers.split(',');
+	
+	if(supplierList.length > 0 && supplierListPrev.length > 0)
+	{
+		arrayRemoved = arrayUtil.diff(supplierListPrev, supplierList);
+	}
+	else
+	{
+		if(supplierListPrev.length > 0 && supplierList.length < 1)
+		{
+			arrayRemoved = supplierListPrev;
+		}
+	}
+	if(arrayRemoved.length > 0)
+	{
+		for(var i = 0;i<arrayRemoved.length;i++)
+		{
+			//Clear the parent field of the supplier
+			grSupplier = new GlideRecord('x_631631_grc_contr_supplier');
+			grSupplier.get(arrayRemoved[i]);
+			grSupplier.validation_parent_supplier = 'NULL';
+			grSupplier.update();
+			
+			//If this supplier has an assessment create a validation record and copy from former parent
+			removeChild = new ContractSlfUtilBase().removeChildFromValidation(current.sys_id, arrayRemoved[i]);
+// 			gs.info('Supplier Removed');
+		}
+	}
+	
+	//Verify none of the secondary suppliers are already secondary suppliers on a different validation record
+	grSupplier = new GlideRecord('x_631631_grc_contr_supplier');
+	grSupplier.addQuery('sys_id', 'IN', current.secondary_suppliers);
+	grSupplier.addNotNullQuery('validation_parent_supplier');
+	grSupplier.addQuery('validation_parent_supplier', '!=', current.supplier);
+	grSupplier.query();
+
+	while(grSupplier.next())
+	{
+		//If the supplier is already a secondary remove it from the list
+		if(!grSupplier.validation_parent_supplier.nil())
+		{
+gs.addInfoMessage('supplierlist before: ' + supplierList.toString());
+			gs.addInfoMessage(grSupplier.supplier_name + ' already has a Validation Parent: ' + grSupplier.getDisplayValue('validation_parent_supplier') + '.  It was removed from the list.');
+			supplierList.splice(supplierList.indexOf(grSupplier.sys_id.toString()), 1);
+gs.addInfoMessage('supplierlist after: ' + supplierList.toString());
+			current.secondary_suppliers = supplierList.toString();
+			current.update();
+		}
+	}
+	
+	//Verify that none of the secondary suppliers are a validation parent
+	grSupplier = new GlideRecord('x_631631_grc_contr_supplier');
+	grSupplier.addQuery('sys_id', 'IN', current.secondary_suppliers);
+	grSupplier.addNullQuery('validation_parent_supplier');
+	grSupplier.query();
+	while(grSupplier.next())
+	{
+		var gaParent = new GlideAggregate('x_631631_grc_contr_supplier');
+		gaParent.addQuery('validation_parent_supplier', grSupplier.sys_id);
+		gaParent.addAggregate('COUNT');
+		gaParent.query();
+		while (gaParent.next())
+		{
+			//If the supplier is a parent remove it from the list
+			if(gaParent.getAggregate('COUNT') > 0)
+			{
+				gs.addInfoMessage(grSupplier.supplier_name + ' is a Validation Parent.  It was removed from the list.');
+				supplierList.splice(supplierList.indexOf(grSupplier.sys_id.toString()), 1);
+				current.secondary_suppliers = supplierList.toString();
+				current.update();		
+			}
+		}
+
+	}
+
+	//Set the validation parent field for anything that was added that remains in the list as some added suppliers may have been removed by this script
+	//Reset the current list
+	if(!current.secondary_suppliers.nil())
+	{
+		supplierList = current.secondary_suppliers.split(',');
+// 		gs.addInfoMessage('Supplier list is empty string: ' + current.secondary_suppliers.nil());
+		if(supplierList.length > 0 && supplierListPrev.length>0)
+		{
+			arrayAdded = arrayUtil.diff(supplierList, supplierListPrev);
+		}
+		else
+		{
+			if(supplierList.length > 0 && supplierListPrev.length < 1)
+			{
+				arrayAdded = supplierList;
+			}
+		}
+		gs.addInfoMessage('arrayAdded: ' + arrayAdded.length);
+		if(arrayAdded.length > 0)
+		{
+			gs.addInfoMessage('Array Added: ' + arrayAdded[0]);
+			for(i = 0;i<arrayAdded.length;i++)
+			{
+				//Set the validation parent to the primary supplier of the current validation record
+				grSupplier = new GlideRecord('x_631631_grc_contr_supplier');
+				grSupplier.get(arrayAdded[i]);
+				grSupplier.validation_parent_supplier = current.supplier;
+				grSupplier.update();				
+			}
+			
+			//If the assessment has been completed for the parent then add entity and assessments to new suppliers
+			//Get the entity
+			var grEntity = new GlideRecord('sn_grc_profile');
+			grEntity.addQuery('applies_to', current.supplier);
+			grEntity.query();
+			while(grEntity.next())
+			{
+gs.addInfoMessage('Entity Exists');
+				//Now look for a completed risk assessment
+				var grRiskAsmt = new GlideRecord('asmt_assessment_instance');
+				grRiskAsmt.addQuery('metric_type', '725160ec97c221108c6e7b771153af47');
+				grRiskAsmt.addQuery('sn_grc_profile', grEntity.sys_id);
+				grRiskAsmt.query();
+				while(grRiskAsmt.next())
+				{
+gs.addInfoMessage('Assessment Exists');
+					if(grRiskAsmt.state == 'complete')
+					{
+gs.addInfoMessage('Assessment Completed');
+						var addChild = new ContractSlfUtilBase().addChildToValidation(current.supplier, arrayAdded, current.assigned_to, current.sys_id);					
+					}
+				}
+			}
+		}
+	}
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-22 19:16:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2e927fec97f961108c6e7b771153af18</sys_id>
+        <sys_mod_count>51</sys_mod_count>
+        <sys_name>Remove Inappropriate Secondary Suppliers</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_script_2e927fec97f961108c6e7b771153af18</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-11 11:29:40</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=2e927fec97f961108c6e7b771153af18"/>
+</record_update>

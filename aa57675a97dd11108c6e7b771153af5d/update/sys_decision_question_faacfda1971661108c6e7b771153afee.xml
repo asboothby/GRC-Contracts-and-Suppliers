@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_question">
+    <sys_decision_question action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>e6acfda1971661108c6e7b771153afd2</answer>
+        <condition table="var__m_sys_decision_input_e5a88355975a21108c6e7b771153afc5">u_critical_app=false^u_risk_level&lt;3^u_control_objective=3d5f68ab97f251108c6e7b771153af2f^EQ<item endquery="false" field="u_critical_app" goto="false" newquery="false" operator="=" or="false" value="false"/>
+            <item endquery="false" field="u_risk_level" goto="false" newquery="false" operator="&lt;" or="false" value="3"/>
+            <item display_table="sn_compliance_policy_statement" display_value="User Action Tracability" endquery="false" field="u_control_objective" goto="false" newquery="false" operator="=" or="false" value="3d5f68ab97f251108c6e7b771153af2f"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <decision_table display_value="Approval Level">e5a88355975a21108c6e7b771153afc5</decision_table>
+        <default_answer>false</default_answer>
+        <input_table>var__m_sys_decision_input_e5a88355975a21108c6e7b771153afc5</input_table>
+        <label>Approval Level_500</label>
+        <order>500</order>
+        <sys_class_name>sys_decision_question</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-19 09:22:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>faacfda1971661108c6e7b771153afee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approval Level_500</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_decision_question_faacfda1971661108c6e7b771153afee</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 09:22:13</sys_updated_on>
+    </sys_decision_question>
+</record_update>

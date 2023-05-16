@@ -30,59 +30,246 @@
         <name>Create Assessments</name>
         <onclick/>
         <order>160</order>
-        <script><![CDATA[// var rec = new GlideRecord('sysauto_script');
-// rec.get('name', 'Supplier Assessment Assessment Creation');
-// gs.executeNow(rec);
+        <script><![CDATA[//Set referenced supplier's generate assessment flag to true
 
-// current.generate_assessment = 'true';
-// current.update();
+// var supplierList;
+// var goodSupplier = true;
 
+// var fullList = [];
+
+// fullList.push(current.supplier.toString());
+
+// if(!current.secondary_suppliers.nil())
+// {
+// 	supplierList = current.secondary_suppliers.split(',');	
+// }
+
+var metricType = 'b559f318974221108c6e7b771153af85';
 var grSupplier = new GlideRecord('x_631631_grc_contr_supplier');
 grSupplier.get(current.supplier);
-// gs.addInfoMessage('supplier: ' + grSupplier.generate_assessment);
-if (grSupplier)
-{
-// 	gs.addInfoMessage('here');
-	grSupplier.generate_assessment = true;
-	grSupplier.update();
-}
+grSupplier.generate_assessment = true;
+grSupplier.update();
 
-gs.info(gs.getUserID());
-current.supplier.generate_assessment = true;
-// gs.addInfoMessage('assessmentType: ' + current.assessment_type);
-if (current.assessment_type == 'Risk' || current.assessment_type == 'both')
+// //Verify secondary suppliers don't already have a parent supplier
+// grSupplier = new GlideRecord('x_631631_grc_contr_supplier');
+// grSupplier.addQuery('sys_id', 'IN', current.secondary_suppliers);
+// grSupplier.query();
+
+// while(grSupplier.next())
+// {
+// 	if(!grSupplier.validation_parent_supplier.nil())
+// 	{
+// 		gs.addInfoMessage(grSupplier.supplier_name + ' already has a Validation Parent: ' + grSupplier.getDisplayValue('validation_parent_supplier') + '.  It was removed from the list.');
+// 		supplierList.splice(supplierList.indexOf(grSupplier.sys_id.toString()), 1);
+// 		current.secondary_suppliers = supplierList.toString();
+// 		current.update();
+// 	}
+// 	//Check to see if the supplier is a parent
+// 	var gaParent = new GlideAggregate('x_631631_grc_contr_supplier');
+// 	gaParent.addQuery('validation_parent_supplier', grSupplier.sys_id);
+// 	gaParent.addAggregate('COUNT');
+// 	gaParent.query();
+// 	while (gaParent.next())
+// 	{
+// 		if(gaParent.getAggregate('COUNT') > 0)
+// 		{
+// 			gs.addInfoMessage(grSupplier.supplier_name + ' is a Validation Parent.  It was removed from the list.');
+// 			supplierList.splice(supplierList.indexOf(grSupplier.sys_id.toString()), 1);
+// 			current.secondary_suppliers = supplierList.toString();
+// 			current.update();		
+// 		}
+// 	}
+// }
+
+//Create an entity for the supplier if one does not already exist
+//Query for an entity that references the supplier table and the referenced supplier
+var grResponse;
+var grEntity = new GlideRecord('sn_grc_profile');
+grEntity.addQuery('table', 'x_631631_grc_contr_supplier');
+grEntity.addQuery('applies_to', current.supplier);
+grEntity.query();
+
+//If the entity exists get the sys_id
+gs.addInfoMessage('Entity hasnext: ' + grEntity.hasNext());
+if(grEntity.hasNext())
 {
-	new global.AssessmentUtils().checkRecord(current, '2d27804e971611108c6e7b771153afe1');
-	gs.addInfoMessage('assessment_type: ' + current.assessment_type + ' sys_id: ' + current.sys_id + ' assigned_to: ' + current.assigned_to);
-// 	var result = new global.AssessmentUtils().createAssessments('2d27804e971611108c6e7b771153afe1', '', gs.getUserID());
-	var result = new global.AssessmentUtils().createAssessments('2d27804e971611108c6e7b771153afe1', current.supplier, current.assigned_to);
-	gs.addInfoMessage(result);
+	grEntity.next();
+	grResponse = grEntity.sys_id;
 }
-if (current.assessment_type == 'compliance' || current.assessment_type == 'both')
+//If the entity does not exist create one
+else
 {
-	grEntity = new GlideRecord('sn_grc_profile');
 	grEntity.initialize();
 	grEntity.applies_to = current.supplier;
 	grEntity.owned_by = current.assigned_to;
-	grEntity.name = current.supplier.supplier_name;
+	grEntity.name = grSupplier.supplier_name;
 	grEntity.profile_class = '7ef6987d13a4220061b256e12244b032';
 	grEntity.table = 'x_631631_grc_contr_supplier';
-	var grResponse = grEntity.insert();
-	
-	if(!global.JSUtil.nil(grResponse))
-	{
-		//create m2m record which links entity to entity type - sn_grc_m2m_profile_profile_type.profile_type
-		var grEntityToType = new GlideRecord('sn_grc_m2m_profile_profile_type');
-		grEntityToType.initialize();
-		grEntityToType.profile = grResponse;
-		grEntityToType.profile_type = '956cae9e971f91108c6e7b771153af22';
-		grEntityToType.created_one_off=true;
-		grEtoEType = grEntityToType.insert();
-		gs.addInfoMessage('grEtoEtype: ' + grEtoEType);
-	}
-	
+	grResponse = grEntity.insert();
 }
 
+//check for existing incomplete scoping assessment
+var grCheckExisting = new GlideRecord('asmt_assessment_instance');
+grCheckExisting.addQuery('metric_type', metricType);
+grCheckExisting.addQuery('sn_grc_profile', grResponse);
+grCheckExisting.addQuery('state', 'IN', 'ready,wip');
+grCheckExisting.setLimit(1);
+grCheckExisting.query();
+if(grCheckExisting.hasNext()) //Existing incomplete assessment exists so alert user
+{
+	gs.addInfoMessage('Incomplete scoping assessment already exists for ' + grEntity.applies_to.supplier_name);
+}
+else  //Create assessment using global library function
+{
+	new global.AssessmentUtils().checkRecord(current, metricType);
+		gs.addInfoMessage('assessment_type: ' + current.assessment_type + ' sys_id: ' + current.sys_id + ' assigned_to: ' + current.assigned_to);
+	// 	var result = new global.AssessmentUtils().createAssessments('2d27804e971611108c6e7b771153afe1', '', gs.getUserID());
+	var result = new global.AssessmentUtils().createAssessments(metricType, current.supplier, current.assigned_to);
+
+	//If assessment creation was successful a comma separated list of 3 data items is retruned with the sys_id of the new assessment as the first item
+	var resultArray = result.split(',');
+
+	if (resultArray.length == 3) //Assessment creation was a success so get the record and set the entity to the one created / located above
+	{
+		// 			gs.addInfoMessage('assessmentInstance: ' + resultArray[0]);
+		var grAssessmentInstance = new GlideRecord('asmt_assessment_instance');
+		grAssessmentInstance.get(resultArray[0]);
+
+		if (grAssessmentInstance)
+		{
+			grAssessmentInstance.sn_grc_profile = grResponse;
+			grAssessmentInstance.update();
+		}
+	}
+	gs.addInfoMessage('resultArray: ' + resultArray[0]);
+}
+
+
+
+/*--------------------------------
+
+
+for(var j=0;j<fullList.length;j++)
+{
+	grSupplier.get(fullList[j]);
+
+	if (grSupplier)
+	{
+		gs.addInfoMessage('Supplier: ' + grSupplier.supplier_name);
+		grSupplier.generate_assessment = true;
+		grSupplier.update();
+		if(grSupplier.sys_id != current.supplier)
+		{
+			if (grSupplier.validation_parent_supplier.nil())
+			{
+				grSupplier.validation_parent_supplier = current.supplier;
+				grSupplier.update();
+				goodSupplier = true;
+			}
+			else
+			{
+				goodSupplier=false;
+				gs.addInfoMessage(grSupplier.supplier_name + ' already has a Validation Parent.  It was be removed from the list.');
+				supplierList.splice(grSupplier.sys_id);
+				current.secondary_suppliers = supplierList.toString();
+				current.update();
+			}
+		}
+
+
+	}
+
+	if (goodSupplier)
+	{
+		//Create an entity for the supplier if one does not already exist
+		//Query for an entity that references the supplier table and the referenced supplier
+		var grResponse;
+		var grEntity = new GlideRecord('sn_grc_profile');
+		grEntity.addQuery('table', 'x_631631_grc_contr_supplier');
+		grEntity.addQuery('applies_to', grSupplier.sys_id);
+		grEntity.query();
+
+		//If the entity exists get the sys_id
+		if(grEntity.hasNext())
+		{
+			grEntity.next();
+			grResponse = grEntity.sys_id;
+		}
+		//If the entity does not exist create one
+		else
+		{
+			grEntity.initialize();
+			grEntity.applies_to = grSupplier.sys_id;
+			grEntity.owned_by = current.assigned_to;
+			grEntity.name = grSupplier.supplier_name;
+			grEntity.profile_class = '7ef6987d13a4220061b256e12244b032';
+			grEntity.table = 'x_631631_grc_contr_supplier';
+			grResponse = grEntity.insert();
+		}
+
+		//If the risk assessment needs to be created
+		if (current.assessment_type == 'risk' || current.assessment_type == 'both')
+		{
+
+			//check for existing incomplete risk assessment
+			var grCheckExisting = new GlideRecord('asmt_assessment_instance');
+			grCheckExisting.addQuery('metric_type', '2d27804e971611108c6e7b771153afe1');
+			grCheckExisting.addQuery('sn_grc_profile', grResponse);
+			grCheckExisting.addQuery('state', 'IN', 'ready,wip');
+			grCheckExisting.setLimit(1);
+			grCheckExisting.query();
+			if(grCheckExisting.hasNext()) //Existing incomplete assessment exists so alert user
+			{
+				gs.addInfoMessage('Incomplete assessment already exists for ' + grEntity.applies_to.supplier_name);
+			}
+			else  //Create assessment using global library function
+			{
+				new global.AssessmentUtils().checkRecord(current, '2d27804e971611108c6e7b771153afe1');
+			//	gs.addInfoMessage('assessment_type: ' + current.assessment_type + ' sys_id: ' + current.sys_id + ' assigned_to: ' + current.assigned_to);
+			// 	var result = new global.AssessmentUtils().createAssessments('2d27804e971611108c6e7b771153afe1', '', gs.getUserID());
+				var result = new global.AssessmentUtils().createAssessments('2d27804e971611108c6e7b771153afe1', grSupplier.sys_id, current.assigned_to);
+
+				//If assessment creation was successful a comma separated list of 3 data items is retruned with the sys_id of the new assessment as the first item
+				var resultArray = result.split(',');
+
+				if (resultArray.length == 3) //Assessment creation was a success so get the record and set the entity to the one created / located above
+				{
+		// 			gs.addInfoMessage('assessmentInstance: ' + resultArray[0]);
+					var grAssessmentInstance = new GlideRecord('asmt_assessment_instance');
+					grAssessmentInstance.get(resultArray[0]);
+
+					if (grAssessmentInstance)
+					{
+						grAssessmentInstance.sn_grc_profile = grResponse;
+						grAssessmentInstance.update();
+					}
+				}
+			}
+
+
+		}
+
+
+		//If the compliance assessment is required associate the supplier entity to the supplier entity type which will associated the controls
+		if (current.assessment_type == 'compliance' || current.assessment_type == 'both')
+		{
+			if(!global.JSUtil.nil(grResponse))
+			{
+				//create m2m record which links entity to entity type - sn_grc_m2m_profile_profile_type.profile_type
+				var grEntityToType = new GlideRecord('sn_grc_m2m_profile_profile_type');
+				grEntityToType.initialize();
+				grEntityToType.profile = grResponse;
+				grEntityToType.profile_type = '956cae9e971f91108c6e7b771153af22';
+				grEntityToType.created_one_off=true;
+				grEtoEType = grEntityToType.insert();
+			}
+
+		}
+		
+	}
+
+}
+*/
 ]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -94,7 +281,7 @@ if (current.assessment_type == 'compliance' || current.assessment_type == 'both'
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4aa0220c972211108c6e7b771153af91</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>133</sys_mod_count>
         <sys_name>Create Assessments</sys_name>
         <sys_overrides/>
         <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
@@ -102,7 +289,7 @@ if (current.assessment_type == 'compliance' || current.assessment_type == 'both'
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_update_name>sys_ui_action_4aa0220c972211108c6e7b771153af91</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-11-23 19:16:34</sys_updated_on>
+        <sys_updated_on>2023-04-10 19:15:37</sys_updated_on>
         <table>x_631631_grc_contr_supplier_validation</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

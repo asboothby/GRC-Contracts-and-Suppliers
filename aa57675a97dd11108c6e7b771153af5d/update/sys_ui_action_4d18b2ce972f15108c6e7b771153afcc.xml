@@ -2,17 +2,17 @@
     <sys_ui_action action="INSERT_OR_UPDATE">
         <action_name>noAction</action_name>
         <active>true</active>
-        <client>false</client>
+        <client>true</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.getDisplayValue('sensitive_data_types')!='No CUI'</condition>
+        <condition/>
         <form_action>true</form_action>
-        <form_button>true</form_button>
+        <form_button>false</form_button>
         <form_button_v2>false</form_button_v2>
         <form_context_menu>false</form_context_menu>
-        <form_link>false</form_link>
+        <form_link>true</form_link>
         <form_menu_button_v2>false</form_menu_button_v2>
         <form_style/>
         <format_for_configurable_workspace>false</format_for_configurable_workspace>
@@ -27,10 +27,13 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>Placement Test</name>
-        <onclick/>
+        <name>Link to Guidance</name>
+        <onclick>openGuidance()</onclick>
         <order>100</order>
-        <script><![CDATA[gs.addInfoMessage(current.getDisplayValue('sensitive_data_types'));]]></script>
+        <script><![CDATA[function openGuidance()
+{
+		g_navigation.open('https://www.microsoft.com' , '_blank');
+}]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -41,15 +44,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4d18b2ce972f15108c6e7b771153afcc</sys_id>
-        <sys_mod_count>13</sys_mod_count>
-        <sys_name>Placement Test</sys_name>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>Link to Guidance</sys_name>
         <sys_overrides/>
         <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
         <sys_policy/>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_update_name>sys_ui_action_4d18b2ce972f15108c6e7b771153afcc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-12-05 10:58:37</sys_updated_on>
+        <sys_updated_on>2023-02-20 14:21:01</sys_updated_on>
         <table>x_631631_grc_contr_contract</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

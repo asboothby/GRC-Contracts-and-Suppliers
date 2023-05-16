@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[function invokePromptCallBack(type) {
+	var gdw = GlideDialogWindow.get();
+	if (type == 'ok')
+	{
+		var overrideDate = document.getElementById("override_date").value;
+		var selectedIds = document.getElementById("testList").value;
+		var overrideType = document.getElementById("ovr_type").value;
+		var confidenceLevel = document.getElementById("conf_lvl").value;
+		var proceed = true;
+
+		if(proceed)
+		{
+			var contractAjax = new GlideAjax('ContractAjaxUtilBase');
+			contractAjax.addParam('sysparm_name', 'setOverride');
+			contractAjax.addParam('source', selectedIds);
+			contractAjax.addParam('overrideDate', overrideDate);
+			contractAjax.addParam('overrideType', overrideType);
+			contractAjax.addParam('confidenceLevel', confidenceLevel);
+			contractAjax.getXMLAnswer();
+// 			alert(overrideDate);
+// 			alert(selectedIds);
+// 			alert(g_form.getUniqueValue());
+			gdw.destroy();
+			return false;
+		}
+		else
+		{
+			alert('Please select a source contract and at least one checkbox');
+		}
+	}
+	else
+	{
+		gdw.destroy();
+		return false;		
+	}
+}]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_631631_grc_contr_set_slf_override.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+	<p></p>
+	<table width="100%">
+		<g:evaluate var='jvar_id_list' jelly='true' expression='RP.getWindowProperties().idList' />
+		<tr>
+			<td style="text-align: right; padding-right: 40px;">Override Type</td>
+			<td><select name='ovr_type' id='ovr_type'><option value='compliance'>Compliance</option><option value='risk'>Risk</option><option value='both'>Both</option></select></td>
+		</tr>
+		<tr>
+			<td width='50%' style="text-align: right; padding-right: 40px;">Overide SPRS Assessment Date:</td><td style="text-align: left;"><g:ui_date name="override_date" id="override_date"/></td>
+		</tr>
+		<tr>
+			<td style="text-align: right; padding-right: 40px;">Override SPRS Confience Level</td>
+			<td><select name='conf_lvl' id='conf_lvl'><option value='basic'>Basic</option><option value='medium'>Medium</option><option value='high_on_site'>High On-Site</option><option value='high_virtual'>High Virtual</option></select></td>
+		</tr>
+		<tr>
+			<td nowrap="true">	<g:ui_input_field type='hidden' label='' name='testList' id='testList' value='${jvar_id_list}'/></td>
+		</tr>
+
+		<tr>
+			<td colspan='2' style="text-align: center;">
+				<g:dialog_buttons_ok_cancel
+				ok_text="${gs.getMessage('Ok')}"
+				ok="invokePromptCallBack('ok');"
+				ok_type="button"
+				cancel_text="${gs.getMessage('Cancel')}"
+				cancel="invokePromptCallBack('cancel')"
+				cancel_type="button" />
+			</td>
+		</tr>
+	</table>
+	
+</j:jelly>]]></html>
+        <name>set_slf_override</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-09 17:32:07</sys_created_on>
+        <sys_id>e4af90e497a521108c6e7b771153afda</sys_id>
+        <sys_mod_count>81</sys_mod_count>
+        <sys_name>set_slf_override</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_ui_page_e4af90e497a521108c6e7b771153afda</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-14 10:59:25</sys_updated_on>
+    </sys_ui_page>
+</record_update>

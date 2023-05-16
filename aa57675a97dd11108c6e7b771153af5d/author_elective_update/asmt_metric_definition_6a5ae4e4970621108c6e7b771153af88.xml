@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric_definition">
+    <asmt_metric_definition action="DELETE">
+        <display>High Virtual</display>
+        <metric display_value="11 - Risk">69f9a0e4970621108c6e7b771153af62</metric>
+        <normalization_input>10</normalization_input>
+        <order>10</order>
+        <selected_image/>
+        <sys_class_name>asmt_metric_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-03 14:32:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6a5ae4e4970621108c6e7b771153af88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>High Virtual</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>asmt_metric_definition_6a5ae4e4970621108c6e7b771153af88</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 14:32:57</sys_updated_on>
+        <unselected_image/>
+        <value>10</value>
+    </asmt_metric_definition>
+    <sys_translated_text action="DELETE" query="documentkey=6a5ae4e4970621108c6e7b771153af88"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</application>
+        <file_path/>
+        <instance_id>e73c7985db2b8c949df22f17d496193f</instance_id>
+        <instance_name>dev103044</instance_name>
+        <name>asmt_metric_definition_6a5ae4e4970621108c6e7b771153af88</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric_definition"><asmt_metric_definition action="INSERT_OR_UPDATE"><display>High Virtual</display><metric display_value="11 - Risk">69f9a0e4970621108c6e7b771153af62</metric><normalization_input>10</normalization_input><order>10</order><selected_image/><sys_class_name>asmt_metric_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-03 14:32:57</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>6a5ae4e4970621108c6e7b771153af88</sys_id><sys_mod_count>0</sys_mod_count><sys_name>High Virtual</sys_name><sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package><sys_policy/><sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope><sys_update_name>asmt_metric_definition_6a5ae4e4970621108c6e7b771153af88</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-03 14:32:57</sys_updated_on><unselected_image/><value>10</value></asmt_metric_definition><sys_translated_text action="delete_multiple" query="documentkey=6a5ae4e4970621108c6e7b771153af88"/></record_update>]]></payload>
+        <payload_hash>2055724051</payload_hash>
+        <record_name>High Virtual</record_name>
+        <reverted_from/>
+        <source>11bbaa1d973311108c6e7b771153af0b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-03 14:32:58</sys_created_on>
+        <sys_id>ea5ae4e4970621108c6e7b771153af90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187478911b40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 14:32:58</sys_updated_on>
+        <type>Assessment Metric Definition</type>
+        <update_guid>265ae4e4d206211015363980b8594d90</update_guid>
+        <update_guid_history>265ae4e4d206211015363980b8594d90:2055724051</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="High Virtual">0cb4c1b4974661108c6e7b771153af64</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-04 11:06:30</sys_created_on>
+        <sys_db_object display_value="" name="asmt_metric_definition">asmt_metric_definition</sys_db_object>
+        <sys_id>0c9c2c3a6b2240ee88e8954e09bdce44</sys_id>
+        <sys_metadata>6a5ae4e4970621108c6e7b771153af88</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>High Virtual</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_scope_delete display_value="">d2e3570b4d07421aa50b19977f977ea4</sys_scope_delete>
+        <sys_update_name>asmt_metric_definition_6a5ae4e4970621108c6e7b771153af88</sys_update_name>
+        <sys_update_version display_value="asmt_metric_definition_6a5ae4e4970621108c6e7b771153af88">ea5ae4e4970621108c6e7b771153af90</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-04 11:06:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

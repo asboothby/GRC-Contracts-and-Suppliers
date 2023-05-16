@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" label="Supplier Validation" max_length="40" name="x_631631_grc_contr_supplier_validation" sizeclass="12" type="collection">
-        <element label="Assessment Completed" max_length="40" name="assessment_completed" type="glide_date_time"/>
-        <element label="Assessment Completed by" max_length="32" name="assessment_completed_by" reference="sys_user" type="reference"/>
+    <element audit="true" label="Supplier Validation" max_length="40" name="x_631631_grc_contr_supplier_validation" sizeclass="139" type="collection">
+        <element label="Risk Assessment Completed" max_length="40" name="assessment_completed" type="glide_date_time"/>
+        <element label="Risk Assessment Completed by" max_length="32" name="assessment_completed_by" reference="sys_user" type="reference"/>
         <element choice="1" label="Assessment Type" max_length="32" name="assessment_type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Compliance" sequence="100" value="compliance"/>
@@ -10,6 +10,7 @@
             </choice>
         </element>
         <element label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element label="Attestations Completed" max_length="40" name="attestations_completed" type="glide_date_time"/>
         <element label="External POC" max_length="100" name="external_poc" type="string"/>
         <element label="External POC Email" max_length="100" name="external_poc_email" type="string"/>
         <element label="Generate Assessment" max_length="40" name="generate_assessment" type="boolean"/>
@@ -17,6 +18,7 @@
         <element label="New Work Note" max_length="4000" name="new_work_note" type="journal_input"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Scheduled Date" max_length="40" name="scheduled_date" type="glide_date_time"/>
+        <element label="Secondary Suppliers" max_length="4000" name="secondary_suppliers" reference="x_631631_grc_contr_supplier" type="glide_list"/>
         <element choice="3" default="incomplete" label="State" max_length="40" name="state" type="choice">
             <choice>
                 <element inactive_on_update="false" label="New" sequence="100" value="new"/>
@@ -25,7 +27,7 @@
                 <element inactive_on_update="false" label="Validation Completed" sequence="130" value="completed"/>
             </choice>
         </element>
-        <element label="Supplier" max_length="32" name="supplier" reference="x_631631_grc_contr_supplier" reference_qual="supplier_status_code=L^EQ" reference_qual_condition="supplier_status_code=L^EQ" type="reference"/>
+        <element label="Primary Supplier" max_length="32" name="supplier" reference="x_631631_grc_contr_supplier" reference_qual="supplier_status_code=L^EQ" reference_qual_condition="supplier_status_code=L^EQ" type="reference"/>
         <element label="Watch List" max_length="32" name="watch_list" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <index name="index">
             <element name="assessment_completed_by"/>

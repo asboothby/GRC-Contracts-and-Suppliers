@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric_definition">
+    <asmt_metric_definition action="DELETE">
+        <display>DEFSTAN 05-138 (Level V Low to High)</display>
+        <metric display_value="8 - Risk">b475ec20970621108c6e7b771153af0a</metric>
+        <normalization_input>180</normalization_input>
+        <order>180</order>
+        <selected_image/>
+        <sys_class_name>asmt_metric_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-03 17:44:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6836996097c621108c6e7b771153af05</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DEFSTAN 05-138 (Level V Low to High)</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>asmt_metric_definition_6836996097c621108c6e7b771153af05</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 17:44:31</sys_updated_on>
+        <unselected_image/>
+        <value>180</value>
+    </asmt_metric_definition>
+    <sys_translated_text action="DELETE" query="documentkey=6836996097c621108c6e7b771153af05"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</application>
+        <file_path/>
+        <instance_id>e73c7985db2b8c949df22f17d496193f</instance_id>
+        <instance_name>dev103044</instance_name>
+        <name>asmt_metric_definition_6836996097c621108c6e7b771153af05</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric_definition"><asmt_metric_definition action="INSERT_OR_UPDATE"><display>DEFSTAN 05-138 (Level V Low to High)</display><metric display_value="8 - Risk">b475ec20970621108c6e7b771153af0a</metric><normalization_input>180</normalization_input><order>180</order><selected_image/><sys_class_name>asmt_metric_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-03 17:44:31</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>6836996097c621108c6e7b771153af05</sys_id><sys_mod_count>0</sys_mod_count><sys_name>DEFSTAN 05-138 (Level V Low to High)</sys_name><sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package><sys_policy/><sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope><sys_update_name>asmt_metric_definition_6836996097c621108c6e7b771153af05</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-03 17:44:31</sys_updated_on><unselected_image/><value>180</value></asmt_metric_definition><sys_translated_text action="delete_multiple" query="documentkey=6836996097c621108c6e7b771153af05"/></record_update>]]></payload>
+        <payload_hash>-220305330</payload_hash>
+        <record_name>DEFSTAN 05-138 (Level V Low to High)</record_name>
+        <reverted_from/>
+        <source>11bbaa1d973311108c6e7b771153af0b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-03 17:44:31</sys_created_on>
+        <sys_id>a436996097c621108c6e7b771153af0a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187483870ec0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 17:44:31</sys_updated_on>
+        <type>Assessment Metric Definition</type>
+        <update_guid>ec36996051c62110d78a02dcfd393b09</update_guid>
+        <update_guid_history>ec36996051c62110d78a02dcfd393b09:-220305330</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="DEFSTAN 05-138 (Level V Low to High)">76f9a164970a21108c6e7b771153af6b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-03 19:10:57</sys_created_on>
+        <sys_db_object display_value="" name="asmt_metric_definition">asmt_metric_definition</sys_db_object>
+        <sys_id>0f004a73c17448c484f89e1f6ac1f004</sys_id>
+        <sys_metadata>6836996097c621108c6e7b771153af05</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DEFSTAN 05-138 (Level V Low to High)</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_scope_delete display_value="">d2e3570b4d07421aa50b19977f977ea4</sys_scope_delete>
+        <sys_update_name>asmt_metric_definition_6836996097c621108c6e7b771153af05</sys_update_name>
+        <sys_update_version display_value="asmt_metric_definition_6836996097c621108c6e7b771153af05">a436996097c621108c6e7b771153af0a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 19:10:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

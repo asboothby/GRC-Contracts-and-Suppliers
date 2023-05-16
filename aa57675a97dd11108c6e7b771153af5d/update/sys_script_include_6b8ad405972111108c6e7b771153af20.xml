@@ -26,6 +26,54 @@ ContractSlfUtilBase.prototype = {
 		return badCount;
 	},
 	
+	createSupplierEntity: function(assignedTo, supplierId)
+	{
+		var entityId = this._createSupplierEntity(assignedTo, supplierId);
+		return entityId;
+	},
+	
+	createSupplierScopingAssessment: function(entityId)
+	{
+		var assessmentId = this._createSupplierScopingAssessment(entityId);
+		return assessmentId;
+	},
+	
+	copyAssessmentResponses: function(sourceId, childAssessmentIDs, assessmentTypeId)
+	{
+		this._copyAssessmentResponses(sourceId, childAssessmentIDs, assessmentTypeId);
+// 		return copyStatus;
+	},
+	
+	removeChildFromValidation: function(validationId, supplierId)
+	{
+		var newValidationId = this._removeChildFromValidation(validationId, supplierId);
+		return newValidationId;
+	},
+	
+	addChildToValidation: function(parentSupplierId, destSupplierIds, assignedTo)
+	{
+		var newAssessmentId = this._addChildToValidation(parentSupplierId, destSupplierIds, assignedTo);
+		return newAssessmentId;
+	},
+	
+	setSecondaryAssessmentResponses: function(primaryAssessmentId, secondaryAssessmentId)
+	{
+		var setResponsesReturn = this._setSecondaryAssessmentResponses(primaryAssessmentId, secondaryAssessmentId);
+		return setResponsesReturn;
+	},
+	
+	validateNaStatus: function(assessmentId)
+	{
+		var naStatusReturn = this._validateNaStatus(assessmentId);
+		return naStatusReturn;
+	},
+	
+	checkIfSecondarySupplier: function(supplierId, assessmentId, metricType)
+	{
+		var isSecondary = this._checkIfSecondarySupplier(supplierId, assessmentId, metricType);
+		return isSecondary;
+	},
+	
 	_checkBadSuppliers: function(contractId)
 	{
 		var badCount=0;
@@ -85,6 +133,452 @@ ContractSlfUtilBase.prototype = {
 
 	},
 	
+	_createSupplierEntity: function(assignedTo, supplierId)
+	{
+		//Create an entity for the supplier if one does not already exist
+		//Query for an entity that references the supplier table and the referenced supplier
+
+		var grResponse;
+		var grSupplier = new GlideRecord('x_631631_grc_contr_supplier');
+		grSupplier.get(supplierId);
+		
+		var grEntity = new GlideRecord('sn_grc_profile');
+		grEntity.addQuery('table', 'x_631631_grc_contr_supplier');
+		grEntity.addQuery('applies_to', supplierId);
+		grEntity.query();
+
+		//If the entity exists get the sys_id
+// 		gs.addInfoMessage('Entity exists: ' + grEntity.hasNext());
+		if(grEntity.hasNext())
+		{
+			grEntity.next();
+			grResponse = grEntity.sys_id;
+		}
+		//If the entity does not exist create one
+		else
+		{
+			grEntity.initialize();
+			grEntity.applies_to = supplierId;
+			grEntity.owned_by = assignedTo;
+			grEntity.name = grSupplier.supplier_name;
+			grEntity.profile_class = '7ef6987d13a4220061b256e12244b032';
+			grEntity.table = 'x_631631_grc_contr_supplier';
+			grResponse = grEntity.insert();
+		}
+
+		return grResponse;
+	},
+	
+	_createSupplierScopingAssessment: function(entityId)
+	{
+		var grEntity = new GlideRecord('sn_grc_profile');
+		grEntity.get(entityId);
+// 		gs.addInfoMessage('Supplier: ' + grEntity.applies_to);
+		
+		//check for existing incomplete risk assessment
+		var result=0;
+		var grCheckExisting = new GlideRecord('asmt_assessment_instance');
+		grCheckExisting.addQuery('metric_type', 'b559f318974221108c6e7b771153af85');
+		grCheckExisting.addQuery('sn_grc_profile', entityId);
+		grCheckExisting.orderByDesc('sys_created_on');
+// 		grCheckExisting.addQuery('state', 'IN', 'ready,wip');
+		grCheckExisting.setLimit(1);
+		grCheckExisting.query();
+		if(grCheckExisting.hasNext()) //Existing assessment exists
+		{
+			gs.addInfoMessage('Scoping assessment already exists for ' + grEntity.applies_to.supplier_name);
+			grCheckExisting.next();
+			result = grCheckExisting.sys_id;
+			grCheckExisting.state = 'wip';
+			grCheckExisting.update();
+		}
+		else  //Create assessment using global library function
+		{
+			//First set the generate assessment flag on the supplier
+			var grSupplier = new GlideRecord('x_631631_grc_contr_supplier');
+			grSupplier.get(grEntity.applies_to);
+			grSupplier.generate_assessment=true;
+			grSupplier.update();
+			
+			new global.AssessmentUtils().checkRecord(current, 'b559f318974221108c6e7b771153af85');
+			//	gs.addInfoMessage('assessment_type: ' + current.assessment_type + ' sys_id: ' + current.sys_id + ' assigned_to: ' + current.assigned_to);
+			// 	var result = new global.AssessmentUtils().createAssessments('2d27804e971611108c6e7b771153afe1', '', gs.getUserID());
+			result = new global.AssessmentUtils().createAssessments('b559f318974221108c6e7b771153af85', grEntity.applies_to, grEntity.owned_by);
+
+			//If assessment creation was successful a comma separated list of 3 data items is retruned with the sys_id of the new assessment as the first item
+			var resultArray = result.split(',');
+
+			if (resultArray.length == 3) //Assessment creation was a success so get the record and set the entity to the one created / located above
+			{
+				// 			gs.addInfoMessage('assessmentInstance: ' + resultArray[0]);
+				result=resultArray[0];
+				var grAssessmentInstance = new GlideRecord('asmt_assessment_instance');
+				grAssessmentInstance.get(resultArray[0]);
+
+				if (grAssessmentInstance)
+				{
+					grAssessmentInstance.sn_grc_profile = entityId;
+					grAssessmentInstance.update();
+				}
+			}
+		}
+		return result;
+	},
+	
+	_copyAssessmentResponses: function(sourceId, childAssessmentIDs, assessmentTypeId)
+	{
+// gs.addInfoMessage('copyResponses: ' + sourceId + ' - ' + childAssessmentIDs.toString() + '- Type: ' + assessmentTypeId)		;
+		if(childAssessmentIDs.length > 0)
+		{
+// gs.addInfoMessage('childAssessmentIDs: '  + childAssessmentIDs.length);
+			var grSecondaryAssessmentQs;
+
+			var childAssessments= new GlideRecord('asmt_assessment_instance');
+			childAssessments.addQuery('sys_id','IN', childAssessmentIDs);
+			childAssessments.addQuery('metric_type', assessmentTypeId);
+			childAssessments.query();
+			while(childAssessments.next())
+			{
+// gs.addInfoMessage('Child Asmt: ' + childAssessments.sys_id);
+				if (childAssessments.state=='complete') childAssessments.state='wip';
+				childAssessments.update();
+			}
+			
+			//Get assessment instance questions, which conain the responses, for the primary supplier's assessment
+			grPrimaryAssessmentQs = new GlideRecord('asmt_assessment_instance_question');
+			grPrimaryAssessmentQs.addQuery('instance', sourceId);
+			grPrimaryAssessmentQs.query();
+// gs.addInfoMessage('PrimaryQs: ' + grPrimaryAssessmentQs.getRowCount());
+			while(grPrimaryAssessmentQs.next())
+			{
+// gs.addInfoMessage('Prime: ' + grPrimaryAssessmentQs.metric + ' - ' + grPrimaryAssessmentQs.value);
+				grSecondaryAssessmentQs = new GlideRecord('asmt_assessment_instance_question');
+				grSecondaryAssessmentQs.addQuery('metric', grPrimaryAssessmentQs.metric);
+				grSecondaryAssessmentQs.addQuery('instance', 'IN', childAssessmentIDs);
+				grSecondaryAssessmentQs.query();
+				while(grSecondaryAssessmentQs.next())
+				{
+					gs.addInfoMessage('Secondary Assessment - ' + grSecondaryAssessmentQs.metric.name + ': ' + grSecondaryAssessmentQs.value);
+					grSecondaryAssessmentQs.value = grPrimaryAssessmentQs.value;
+					grSecondaryAssessmentQs.string_value = grPrimaryAssessmentQs.string_value;
+					grSecondaryAssessmentQs.update();
+				}
+			}
+			childAssessments= new GlideRecord('asmt_assessment_instance');
+			childAssessments.addQuery('sys_id','IN', childAssessmentIDs);
+			childAssessments.query();
+			while(childAssessments.next())
+			{
+				childAssessments.state='complete';
+				childAssessments.update();
+			}
+			return 1;
+		}
+
+	},
+	
+	_removeChildFromValidation: function(validationId, supplierId)
+	{
+// 		gs.addInfoMessage('removeChild: ' + validationId + ' - ' + supplierId);
+		
+		//Determine if the supplier has a completed assessment
+		var grEntity = new GlideRecord('sn_grc_profile');
+		grEntity.addQuery('table', 'x_631631_grc_contr_supplier');
+		grEntity.addQuery('applies_to', supplierId);
+		grEntity.query();
+		
+		//If the entity exists get the sys_id
+		if(grEntity.hasNext())
+		{
+			grEntity.next();
+			var entityId = grEntity.sys_id;
+			
+			//Now get the assessment
+			var grAssessment = new GlideRecord('asmt_assessment_instance');
+			grAssessment.addQuery('sn_grc_profile', entityId);
+			grAssessment.addQuery('metric_type', '725160ec97c221108c6e7b771153af47');
+			grAssessment.query();
+			if(grAssessment.hasNext())
+			{
+				//Because we have a completed assessment we need to copy the validation record
+				var grSourceValid = new GlideRecord('x_631631_grc_contr_supplier_validation');
+				grSourceValid.get(validationId);
+
+				var grDestValid = new GlideRecord('x_631631_grc_contr_supplier_validation');
+				grDestValid.initialize();
+				grDestValid.assessment_type = grSourceValid.assessment_type;
+				grDestValid.assigned_to = grSourceValid.assigned_to;
+				grDestValid.attestations_completed = grSourceValid.attestations_completed;
+				grDestValid.external_poc = grSourceValid.external_poc;
+				grDestValid.external_poc_email = grSourceValid.external_poc_email;
+				grDestValid.internal_participants = grSourceValid.internal_participants;
+				grDestValid.assessment_completed = grSourceValid.assessment_completed;
+				grDestValid.assessment_completed_by = grSourceValid.assessment_completed_by;
+				grDestValid.scheduled_date = grSourceValid.scheduled_date;
+				grDestValid.watch_list = grSourceValid.watch_list;
+				grDestValid.supplier = supplierId;
+				grDestValid.state = grSourceValid.state;
+				grDestValid.insert();
+			}
+		}
+		return grDestValid;
+	},
+	
+	_addChildToValidation: function(sourceSupplierId, destSupplierIds, assignedTo)
+	{
+gs.addInfoMessage(sourceSupplierId + ' - ' + destSupplierIds + ' - ' + assignedTo);
+		var grAssessment;
+		var entityId;
+		var assessmentId;
+		var arrayAsmtIds = [];
+		var sourceAsmtId;
+		
+		//Get the assessment for the sourceSupplier
+		var sourceAsmt = new GlideRecord('asmt_assessment_instance');
+		sourceAsmt.addQuery('sn_grc_profile.applies_to', sourceSupplierId);
+		sourceAsmt.query();
+		if(sourceAsmt.hasNext())
+		{
+			sourceAsmt.next();
+			sourceAsmtId = sourceAsmt.sys_id;
+			gs.addInfoMessage('sourceAsmtId ' + sourceAsmtId);
+		}
+		
+		//Iterate through the added suppliers and create entities if needed and then create the assessment
+gs.addInfoMessage('destSupplierIds: ' + destSupplierIds.length);
+		for(var i=0;i<destSupplierIds.length;i++)
+		{
+			entityId = this._createSupplierEntity(assignedTo, destSupplierIds[i]);
+			
+			//Create the assessment for the entity
+			assessmentId = this._createSupplierScopingAssessment(entityId);
+			arrayAsmtIds.push(assessmentId.toString());
+		}
+gs.addInfoMessage('Assessment IDs: ' + arrayAsmtIds.toString());
+				
+		//Copy the assessment responses
+		var copyRtn = this._copyAssessmentResponses(sourceAsmtId, arrayAsmtIds);
+		
+// gs.addInfoMessage('Copy Return: ' + copyRtn);
+	},
+	
+	_setSecondaryAssessmentResponses: function(primaryAssessmentId, secondaryAssessmentId)
+	{
+		var q1Id = '9fca7f58974221108c6e7b771153af01';
+		var q2Id = '809bb398974221108c6e7b771153affe';
+		var q5Id = 'd6dd946897c221108c6e7b771153af1f';
+		var q6Id = '4a7e10a897c221108c6e7b771153affc';
+		var grTargetAssessmentQ;
+		
+		var grSourceAsmtQ;
+		grSourceAsmtQ = new GlideRecord('asmt_assessment_instance_question');
+		grSourceAsmtQ.addQuery('instance', primaryAssessmentId);
+		grSourceAsmtQ.addQuery('metric', q1Id);
+		grSourceAsmtQ.query();
+		while(grSourceAsmtQ.next())
+		{
+			var q1Value = grSourceAsmtQ.value;
+		}
+
+		grSourceAsmtQ = new GlideRecord('asmt_assessment_instance_question');
+		grSourceAsmtQ.addQuery('instance', primaryAssessmentId);
+		grSourceAsmtQ.addQuery('metric', q2Id);
+		grSourceAsmtQ.query();
+		while(grSourceAsmtQ.next())
+		{
+			var q2Value = grSourceAsmtQ.value;
+		}
+		
+		grSourceAsmtQ = new GlideRecord('asmt_assessment_instance_question');
+		grSourceAsmtQ.addQuery('instance', primaryAssessmentId);
+		grSourceAsmtQ.addQuery('metric', q5Id);
+		grSourceAsmtQ.query();
+		while(grSourceAsmtQ.next())
+		{
+			var q5Value = grSourceAsmtQ.value;
+		}
+	
+		grSourceAsmtQ = new GlideRecord('asmt_assessment_instance_question');
+		grSourceAsmtQ.addQuery('instance', primaryAssessmentId);
+		grSourceAsmtQ.addQuery('metric', q6Id);
+		grSourceAsmtQ.query();
+		while(grSourceAsmtQ.next())
+		{
+			var q6Value = grSourceAsmtQ.value;
+		}
+gs.addInfoMessage('question sum: ' + (q2Value + q5Value + q6Value));
+		if((q2Value + q5Value + q6Value) == 0)
+		{
+			if(q1Value==1)
+			{
+				grTargetAssessmentQ = new GlideRecord('asmt_assessment_instance_question');
+				grTargetAssessmentQ.addEncodedQuery('metric.name!=3.1.1^metric.name!=3.10.1^metric.name!=3.13.1^metric.name!=3.14.1^metric.name!=3.14.2^metric.name!=3.14.5');
+				grTargetAssessmentQ.addQuery('instance', secondaryAssessmentId);
+				grTargetAssessmentQ.query();
+				while(grTargetAssessmentQ.next())
+				{
+					if(grTargetAssessmentQ.metric.name.indexOf('7 - Risk') < 0 && grTargetAssessmentQ.metric.name.indexOf('8 - Risk') < 0 )
+					{
+						grTargetAssessmentQ.value = -1;
+						grTargetAssessmentQ.update();
+					}
+					else
+					{
+						grTargetAssessmentQ.value = 1;
+						grTargetAssessmentQ.update();
+					}
+				}			
+			}
+		}
+		else
+		{
+				grTargetAssessmentQ = new GlideRecord('asmt_assessment_instance_question');
+				grTargetAssessmentQ.addQuery('instance', secondaryAssessmentId);
+				grTargetAssessmentQ.query();
+				while(grTargetAssessmentQ.next())
+				{
+					if(grTargetAssessmentQ.metric.name.indexOf('7 - Risk') < 0 && grTargetAssessmentQ.metric.name.indexOf('8 - Risk') < 0 )
+					{
+						if(grTargetAssessmentQ.value == -1)
+						{
+							grTargetAssessmentQ.value = "NULL";
+							grTargetAssessmentQ.update();
+						}
+					}
+					else
+					{
+						if(grTargetAssessmentQ.value == 1)
+						{
+							grTargetAssessmentQ.value = "NULL";
+							grTargetAssessmentQ.update();
+						}
+					}
+
+				}
+			
+		}
+	},
+	
+	
+	
+	_validateNaStatus: function(assessmentId)
+	{
+		//Verify this is the correct assessment type
+		var grMetricType = new GlideRecord('asmt_metric_type');
+		grMetricType.get('name', 'Supplier Validation - Risk and Controls');
+		if(grMetricType)
+		{
+			var rcMetricType = grMetricType.sys_id;
+		}
+		
+		grMetricType = new GlideRecord('asmt_metric_type');
+		grMetricType.get('name', 'Supplier Validation - Scoping');
+		if(grMetricType)
+		{
+			var scopeMetricType = grMetricType.sys_id;
+		}
+		// if this is the risk assessment get the scoping assessment questions so we can check the answers
+		var grAssessment = new GlideRecord('asmt_assessment_instance');
+		grAssessment.get(assessmentId);
+
+		if(grAssessment.metric_type == rcMetricType)
+		{
+			//Get the scoping assessment
+			var grScopeAssessment = new GlideRecord('asmt_assessment_instance');
+			grScopeAssessment.addQuery('metric_type', scopeMetricType);
+			grScopeAssessment.addQuery('sn_grc_profile', grAssessment.sn_grc_profile);
+			grScopeAssessment.query();
+			
+			while(grScopeAssessment.next())
+			{
+				var scopeAssessmentId = grScopeAssessment.sys_id;
+				//Get questions
+				var gaScopeQ = new GlideAggregate('asmt_assessment_instance_question');
+				gaScopeQ.groupBy('instance');
+				gaScopeQ.addQuery('instance', scopeAssessmentId);
+				gaScopeQ.addEncodedQuery('metric.name=2 - CUI^ORmetric.name=5 - SI^ORmetric.name=6 - ICT');
+				gaScopeQ.addAggregate('SUM', 'value');
+				gaScopeQ.query();
+				
+				while(gaScopeQ.next())
+				{
+					var scopeSum = gaScopeQ.getAggregate('SUM', 'value');
+					
+					if(scopeSum > 0)
+					{
+						var naStatusReturn = false;
+						var grMetricGA = new GlideAggregate('asmt_assessment_instance_question');
+						grMetricGA.addQuery('instance', assessmentId);
+						grMetricGA.addQuery('metric.name', 'CONTAINS', '3.');
+						grMetricGA.addQuery('value', '-1');
+						grMetricGA.addQuery('instance.metric_type', rcMetricType);
+						grMetricGA.addAggregate('COUNT');
+						grMetricGA.query();
+
+						while(grMetricGA.next())
+						{
+							var naCount = grMetricGA.getAggregate('COUNT');
+
+							if(naCount> 0)
+							{
+								gs.addErrorMessage('You have ' + naCount + ' question(s) with a response of Not Applicable. Not Applicable is not allowed because question 2, 5, or 6 on the Scoping Assessmwnt has a Yes response.');
+								naStatusReturn = true;
+							}
+						}						
+					}
+				}
+
+				
+			}
+		}
+		return naStatusReturn;
+	},
+	
+	_checkIfSecondarySupplier: function(supplierId, assessmentId, metricType)
+	{
+gs.addInfoMessage('Supplier: ' + supplierId + ' - Assessment: ' + assessmentId + ' - metricType: ' + metricType);
+		var isSecondary = false;
+		var secondaryAssessmentId = []; //Copy questions expects an array
+		var grValidation = new GlideRecord('x_631631_grc_contr_supplier_validation');
+		grValidation.addQuery('secondary_suppliers', 'CONTAINS', supplierId);
+		grValidation.query();
+		if(grValidation.hasNext())
+		{
+gs.addInfoMessage('has validation');
+			isSecondary = true;
+			grValidation.next();
+			var grAssessment = new GlideRecord('asmt_assessment_instance');
+			grAssessment.addQuery('sn_grc_profile.applies_to', grValidation.supplier);
+			grAssessment.addQuery('metric_type', metricType);
+			grAssessment.query();
+			while(grAssessment.next())
+			{
+				var primaryAssessmentId = grAssessment.sys_id;
+gs.addErrorMessage('primaryAssessmentId: ' + primaryAssessmentId);
+			}
+			
+			grAssessment = new GlideRecord('asmt_assessment_instance');
+			grAssessment.addQuery('sn_grc_profile.applies_to', supplierId);
+			grAssessment.addQuery('metric_type', metricType);
+			grAssessment.query();
+			while(grAssessment.next())
+			{
+				secondaryAssessmentId.push(grAssessment.sys_id.toString());
+			}
+
+			
+			gs.addInfoMessage('primary: ' + primaryAssessmentId + ' - assessement: ' + secondaryAssessmentId + ' - MetricType: ' + metricType);
+			var copyReturn = this._copyAssessmentResponses(primaryAssessmentId, secondaryAssessmentId, metricType);
+
+		}
+		
+		return isSecondary;
+	},
+	
+	
+	
+
+	
 	
     type: 'ContractSlfUtilBase'
 };]]></script>
@@ -92,13 +586,13 @@ ContractSlfUtilBase.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-08-24 10:15:55</sys_created_on>
         <sys_id>6b8ad405972111108c6e7b771153af20</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>133</sys_mod_count>
         <sys_name>ContractSlfUtilBase</sys_name>
         <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_update_name>sys_script_include_6b8ad405972111108c6e7b771153af20</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-20 12:31:51</sys_updated_on>
+        <sys_updated_on>2023-04-11 13:46:28</sys_updated_on>
     </sys_script_include>
 </record_update>

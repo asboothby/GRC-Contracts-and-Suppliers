@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Test Indicator Source" max_length="40" name="x_631631_grc_contr_indicator_source" sizeclass="5" type="collection">
+        <element label="Collection Date" max_length="40" name="collection_date" type="glide_date_time"/>
+        <element label="Entity" max_length="32" name="entity" reference="cmdb_ci_business_app" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Percent Compliant" max_length="40" name="percent_compliant" type="integer"/>
+        <index name="index">
+            <element name="entity"/>
+        </index>
+    </element>
+</database>

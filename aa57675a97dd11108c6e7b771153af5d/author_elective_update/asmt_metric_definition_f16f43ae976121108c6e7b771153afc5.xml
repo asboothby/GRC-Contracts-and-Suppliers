@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric_definition">
+    <asmt_metric_definition action="DELETE">
+        <display>Created 2023-03-16 07:06:24</display>
+        <metric display_value="CS4">f11f0f6e976121108c6e7b771153afc4</metric>
+        <normalization_input>10</normalization_input>
+        <order>10</order>
+        <selected_image/>
+        <sys_class_name>asmt_metric_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-16 11:10:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f16f43ae976121108c6e7b771153afc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2023-03-16 07:06:24</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>asmt_metric_definition_f16f43ae976121108c6e7b771153afc5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-16 11:10:32</sys_updated_on>
+        <unselected_image/>
+        <value>10</value>
+    </asmt_metric_definition>
+    <sys_translated_text action="DELETE" query="documentkey=f16f43ae976121108c6e7b771153afc5"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</application>
+        <file_path/>
+        <instance_id>e73c7985db2b8c949df22f17d496193f</instance_id>
+        <instance_name>dev103044</instance_name>
+        <name>asmt_metric_definition_f16f43ae976121108c6e7b771153afc5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric_definition"><asmt_metric_definition action="INSERT_OR_UPDATE"><display>Created 2023-03-16 07:06:24</display><metric display_value="CS4">f11f0f6e976121108c6e7b771153afc4</metric><normalization_input>10</normalization_input><order>10</order><selected_image/><sys_class_name>asmt_metric_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-16 11:10:32</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f16f43ae976121108c6e7b771153afc5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Created 2023-03-16 07:06:24</sys_name><sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package><sys_policy/><sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope><sys_update_name>asmt_metric_definition_f16f43ae976121108c6e7b771153afc5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-16 11:10:32</sys_updated_on><unselected_image/><value>10</value></asmt_metric_definition><sys_translated_text action="delete_multiple" query="documentkey=f16f43ae976121108c6e7b771153afc5"/></record_update>]]></payload>
+        <payload_hash>1922985930</payload_hash>
+        <record_name>Created 2023-03-16 07:06:24</record_name>
+        <reverted_from/>
+        <source>11bbaa1d973311108c6e7b771153af0b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-16 11:10:32</sys_created_on>
+        <sys_id>b16f43ae976121108c6e7b771153afc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186ea1d44890000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-16 11:10:32</sys_updated_on>
+        <type>Assessment Metric Definition</type>
+        <update_guid>f96f43aeea612110603a624e12fbb9c7</update_guid>
+        <update_guid_history>f96f43aeea612110603a624e12fbb9c7:1922985930</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Created 2023-03-16 07:06:24">b8231f6297a121108c6e7b771153af82</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-16 11:26:50</sys_created_on>
+        <sys_db_object display_value="" name="asmt_metric_definition">asmt_metric_definition</sys_db_object>
+        <sys_id>3ddf9e9a5f404cc7b3ceee8440331d09</sys_id>
+        <sys_metadata>f16f43ae976121108c6e7b771153afc5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2023-03-16 07:06:24</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_scope_delete display_value="">d2e3570b4d07421aa50b19977f977ea4</sys_scope_delete>
+        <sys_update_name>asmt_metric_definition_f16f43ae976121108c6e7b771153afc5</sys_update_name>
+        <sys_update_version display_value="asmt_metric_definition_f16f43ae976121108c6e7b771153afc5">b16f43ae976121108c6e7b771153afc8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-16 11:26:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

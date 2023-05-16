@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric_definition">
+    <asmt_metric_definition action="DELETE">
+        <display>HR: Employee Experience</display>
+        <metric display_value="CS4">f11f0f6e976121108c6e7b771153afc4</metric>
+        <normalization_input>280</normalization_input>
+        <order>280</order>
+        <selected_image/>
+        <sys_class_name>asmt_metric_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-16 11:28:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>147393a297a121108c6e7b771153af44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>HR: Employee Experience</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>asmt_metric_definition_147393a297a121108c6e7b771153af44</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-16 11:28:10</sys_updated_on>
+        <unselected_image/>
+        <value>280</value>
+    </asmt_metric_definition>
+    <sys_translated_text action="DELETE" query="documentkey=147393a297a121108c6e7b771153af44"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</application>
+        <file_path/>
+        <instance_id>e73c7985db2b8c949df22f17d496193f</instance_id>
+        <instance_name>dev103044</instance_name>
+        <name>asmt_metric_definition_147393a297a121108c6e7b771153af44</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric_definition"><asmt_metric_definition action="INSERT_OR_UPDATE"><display>HR: Employee Experience</display><metric display_value="CS4">f11f0f6e976121108c6e7b771153afc4</metric><normalization_input>280</normalization_input><order>280</order><selected_image/><sys_class_name>asmt_metric_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-16 11:28:10</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>147393a297a121108c6e7b771153af44</sys_id><sys_mod_count>0</sys_mod_count><sys_name>HR: Employee Experience</sys_name><sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package><sys_policy/><sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope><sys_update_name>asmt_metric_definition_147393a297a121108c6e7b771153af44</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-16 11:28:10</sys_updated_on><unselected_image/><value>280</value></asmt_metric_definition><sys_translated_text action="delete_multiple" query="documentkey=147393a297a121108c6e7b771153af44"/></record_update>]]></payload>
+        <payload_hash>-370322735</payload_hash>
+        <record_name>HR: Employee Experience</record_name>
+        <reverted_from/>
+        <source>11bbaa1d973311108c6e7b771153af0b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-16 11:28:10</sys_created_on>
+        <sys_id>507393a297a121108c6e7b771153af49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186ea2d6c600000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-16 11:28:10</sys_updated_on>
+        <type>Assessment Metric Definition</type>
+        <update_guid>987393a261a12110ef13f7be7aa1f248</update_guid>
+        <update_guid_history>987393a261a12110ef13f7be7aa1f248:-370322735</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="HR: Employee Experience">b0c397e297a121108c6e7b771153af4a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-16 11:29:35</sys_created_on>
+        <sys_db_object display_value="" name="asmt_metric_definition">asmt_metric_definition</sys_db_object>
+        <sys_id>3217a4b59f7243a883cb93b3eb9e0ac4</sys_id>
+        <sys_metadata>147393a297a121108c6e7b771153af44</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>HR: Employee Experience</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_scope_delete display_value="">d2e3570b4d07421aa50b19977f977ea4</sys_scope_delete>
+        <sys_update_name>asmt_metric_definition_147393a297a121108c6e7b771153af44</sys_update_name>
+        <sys_update_version display_value="asmt_metric_definition_147393a297a121108c6e7b771153af44">507393a297a121108c6e7b771153af49</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-16 11:29:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

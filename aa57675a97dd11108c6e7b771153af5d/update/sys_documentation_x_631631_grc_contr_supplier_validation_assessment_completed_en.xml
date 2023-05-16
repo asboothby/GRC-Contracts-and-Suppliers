@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="assessment_completed" label="Assessment Completed" language="en" table="x_631631_grc_contr_supplier_validation">
+    <sys_documentation element="assessment_completed" label="Risk Assessment Completed" language="en" table="x_631631_grc_contr_supplier_validation">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>assessment_completed</element>
             <help/>
             <hint/>
-            <label>Assessment Completed</label>
+            <label>Risk Assessment Completed</label>
             <language>en</language>
             <name>x_631631_grc_contr_supplier_validation</name>
-            <plural>Assessment Completed</plural>
+            <plural>Risk Assessment Completed</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2022-11-16 18:58:34</sys_created_on>
             <sys_id>84cbba4497db51108c6e7b771153af41</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_name>Assessment Completed</sys_name>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Risk Assessment Completed</sys_name>
             <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
             <sys_policy/>
             <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
             <sys_update_name>sys_documentation_x_631631_grc_contr_supplier_validation_assessment_completed_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-16 18:58:34</sys_updated_on>
+            <sys_updated_on>2023-03-09 11:31:22</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

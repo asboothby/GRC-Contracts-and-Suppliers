@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>asmt_assessment_instance</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="asmt_assessment_instance">metric_type=725160ec97c221108c6e7b771153af47^stateCHANGESTOcomplete^EQ<item display_table="asmt_metric_type" display_value="Supplier Validation - Risk and Controls" endquery="false" field="metric_type" goto="false" newquery="false" operator="=" or="false" value="725160ec97c221108c6e7b771153af47"/>
+            <item display_value="Complete" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="complete"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Risk Assessment Completed</name>
+        <order>150</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// traverse through reference records to get to the supplier validation record
+	//start with assessment instance and get the entity associated with it
+
+
+	var grAssessmentInstance = new GlideRecord('asmt_assessment_instance');
+	grAssessmentInstance.get(current.sys_id);
+
+// 	gs.addInfoMessage('SupplierSID: ' + grAssessmentInstance.sn_grc_profile.applies_to);
+	var supplierSID = grAssessmentInstance.sn_grc_profile.applies_to;
+
+	var grSlfValidation = new GlideRecord('x_631631_grc_contr_supplier_validation');
+	grSlfValidation.addQuery('supplier', supplierSID);
+	grSlfValidation.orderByDesc('sys_created_on');
+	grSlfValidation.setLimit(1);
+	grSlfValidation.query();
+
+	while (grSlfValidation.next())
+	{
+		grSlfValidation.assessment_completed = new GlideDateTime();
+		grSlfValidation.assessment_completed_by = gs.getUserID();
+		grSlfValidation.update();
+
+	}
+	
+	//Calculate the scores
+	var grMetricGA = new GlideAggregate('asmt_metric_result');
+	grMetricGA.addQuery('instance', current.sys_id);
+	grMetricGA.addQuery('metric.name', 'CONTAINS', '3.');
+	grMetricGA.groupBy('metric.weight');
+	grMetricGA.addAggregate('COUNT', 'actual_value');
+	grMetricGA.addAggregate('SUM', 'actual_value');
+	grMetricGA.query();
+	
+	var levelScore = 0.0;
+	var overallScore = 0.0;
+	var capabilityScore = 0;
+	var riskValidatedRating;
+	var stopCapScore = 0;
+	while (grMetricGA.next())
+	{
+// 		gs.addInfoMessage('Weight: ' + grMetricGA.getValue('metric.weight') + ' - Count: ' + grMetricGA.getAggregate('COUNT', 'actual_value') + ' - Sum:' + grMetricGA.getAggregate('SUM', 'actual_value'));
+		levelScore = (grMetricGA.getAggregate('SUM', 'actual_value') / grMetricGA.getAggregate('COUNT', 'actual_value'));
+		overallScore = overallScore + levelScore;
+		if (levelScore == 1.0 && stopCapScore == 0) capabilityScore = grMetricGA.getValue('metric.weight');
+		if (levelScore < 1) stopCapScore = 1;
+	}
+// 	gs.addInfoMessage('Overall Score: ' + overallScore + ' - Capability Score: ' + capabilityScore);
+	
+	//Update the supplier record
+	var grSupplier = new GlideRecord('x_631631_grc_contr_supplier');
+	grSupplier.get(supplierSID);
+	if(grSupplier)
+	{
+		if (overallScore >= 3 && capabilityScore >= 3) riskValidatedRating = 'green';
+		if (overallScore >= 3 && capabilityScore < 3 ) riskValidatedRating = 'yellow';
+		if (overallScore >= 2 && overallScore < 3) riskValidatedRating = 'yellow';
+		if (overallScore >= 0 && overallScore <= 1.99) riskValidatedRating = 'red';
+		
+				
+		grSupplier.risk_validated_capability_level = capabilityScore;
+		grSupplier.risk_validated_overall_score = overallScore;
+		grSupplier.risk_validated_rating = riskValidatedRating;
+		grSupplier.update();
+	}
+	
+	
+	
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-06 19:22:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6e4591ef979521108c6e7b771153af7b</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Risk Assessment Completed</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_script_6e4591ef979521108c6e7b771153af7b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-05 19:07:59</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=6e4591ef979521108c6e7b771153af7b"/>
+</record_update>

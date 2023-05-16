@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric_definition">
+    <asmt_metric_definition action="DELETE">
+        <display>Medium</display>
+        <metric display_value="7 - Risk">48d3e460970621108c6e7b771153afef</metric>
+        <normalization_input>140</normalization_input>
+        <order>140</order>
+        <selected_image/>
+        <sys_class_name>asmt_metric_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-03 17:31:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0f3359ac978621108c6e7b771153afdf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Medium</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>asmt_metric_definition_0f3359ac978621108c6e7b771153afdf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 17:31:34</sys_updated_on>
+        <unselected_image/>
+        <value>140</value>
+    </asmt_metric_definition>
+    <sys_translated_text action="DELETE" query="documentkey=0f3359ac978621108c6e7b771153afdf"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</application>
+        <file_path/>
+        <instance_id>e73c7985db2b8c949df22f17d496193f</instance_id>
+        <instance_name>dev103044</instance_name>
+        <name>asmt_metric_definition_0f3359ac978621108c6e7b771153afdf</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric_definition"><asmt_metric_definition action="INSERT_OR_UPDATE"><display>Medium</display><metric display_value="7 - Risk">48d3e460970621108c6e7b771153afef</metric><normalization_input>140</normalization_input><order>140</order><selected_image/><sys_class_name>asmt_metric_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-03 17:31:34</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0f3359ac978621108c6e7b771153afdf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Medium</sys_name><sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package><sys_policy/><sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope><sys_update_name>asmt_metric_definition_0f3359ac978621108c6e7b771153afdf</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-03 17:31:34</sys_updated_on><unselected_image/><value>140</value></asmt_metric_definition><sys_translated_text action="delete_multiple" query="documentkey=0f3359ac978621108c6e7b771153afdf"/></record_update>]]></payload>
+        <payload_hash>1696330673</payload_hash>
+        <record_name>Medium</record_name>
+        <reverted_from/>
+        <source>11bbaa1d973311108c6e7b771153af0b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-03 17:31:34</sys_created_on>
+        <sys_id>4b3359ac978621108c6e7b771153afe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187482c98230000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 17:31:34</sys_updated_on>
+        <type>Assessment Metric Definition</type>
+        <update_guid>833359ac2a862110c343642bc9cb2ce4</update_guid>
+        <update_guid_history>833359ac2a862110c343642bc9cb2ce4:1696330673</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Medium">60c141b0974661108c6e7b771153af54</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-04 10:53:42</sys_created_on>
+        <sys_db_object display_value="" name="asmt_metric_definition">asmt_metric_definition</sys_db_object>
+        <sys_id>01ff33fff2df4f89a84c1c947e619341</sys_id>
+        <sys_metadata>0f3359ac978621108c6e7b771153afdf</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Medium</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_scope_delete display_value="">d2e3570b4d07421aa50b19977f977ea4</sys_scope_delete>
+        <sys_update_name>asmt_metric_definition_0f3359ac978621108c6e7b771153afdf</sys_update_name>
+        <sys_update_version display_value="asmt_metric_definition_0f3359ac978621108c6e7b771153afdf">4b3359ac978621108c6e7b771153afe4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-04 10:53:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

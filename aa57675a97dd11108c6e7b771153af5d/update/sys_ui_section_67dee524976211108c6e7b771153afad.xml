@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="67dee524976211108c6e7b771153afad" sys_domain="global" table="x_631631_grc_contr_supplier_validation" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>supplier</element>
+            <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 17:08:57</sys_created_on>
-            <sys_id>7b3c2f90975f91108c6e7b771153af3a</sys_id>
+            <sys_created_on>2023-03-09 14:36:46</sys_created_on>
+            <sys_id>267bfb54972521108c6e7b771153af61</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 17:08:57</sys_updated_on>
+            <sys_updated_on>2023-03-09 14:36:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>number</element>
+            <element>supplier</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 17:08:57</sys_created_on>
-            <sys_id>ff3c2f90975f91108c6e7b771153af3a</sys_id>
+            <sys_created_on>2023-03-09 14:36:46</sys_created_on>
+            <sys_id>aa7bfb54972521108c6e7b771153af61</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 17:08:57</sys_updated_on>
+            <sys_updated_on>2023-03-09 14:36:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>.split</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 17:08:57</sys_created_on>
-            <sys_id>733c2f90975f91108c6e7b771153af3b</sys_id>
+            <sys_created_on>2023-03-09 14:36:46</sys_created_on>
+            <sys_id>2e7bfb54972521108c6e7b771153af61</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 17:08:57</sys_updated_on>
+            <sys_updated_on>2023-03-09 14:36:46</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -46,293 +46,293 @@
             <element>watch_list</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 17:08:57</sys_created_on>
-            <sys_id>f33c2f90975f91108c6e7b771153af3b</sys_id>
+            <sys_created_on>2023-03-09 14:36:46</sys_created_on>
+            <sys_id>ae7bfb54972521108c6e7b771153af61</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 17:08:57</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 17:08:57</sys_created_on>
-            <sys_id>773c2f90975f91108c6e7b771153af3b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 17:08:57</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
-            <position>5</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 17:08:57</sys_created_on>
-            <sys_id>f73c2f90975f91108c6e7b771153af3b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 17:08:57</sys_updated_on>
-            <sys_user/>
-            <type>.begin_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>assessment_type</element>
-            <position>6</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 17:08:57</sys_created_on>
-            <sys_id>7b3c2f90975f91108c6e7b771153af3b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 17:08:57</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>scheduled_date</element>
-            <position>7</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 17:08:57</sys_created_on>
-            <sys_id>fb3c2f90975f91108c6e7b771153af3b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 17:08:57</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>8</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 17:08:57</sys_created_on>
-            <sys_id>7f3c2f90975f91108c6e7b771153af3b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 17:08:57</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>9</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 17:08:57</sys_created_on>
-            <sys_id>ff3c2f90975f91108c6e7b771153af3b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 17:08:57</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
-            <position>10</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 17:08:57</sys_created_on>
-            <sys_id>733c2f90975f91108c6e7b771153af3c</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 17:08:57</sys_updated_on>
-            <sys_user/>
-            <type>.begin_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>internal_participants</element>
-            <position>11</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 17:08:57</sys_created_on>
-            <sys_id>f33c2f90975f91108c6e7b771153af3c</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 17:08:57</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>external_poc</element>
-            <position>12</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 17:08:57</sys_created_on>
-            <sys_id>773c2f90975f91108c6e7b771153af3c</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 17:08:57</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>13</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 17:08:57</sys_created_on>
-            <sys_id>f73c2f90975f91108c6e7b771153af3c</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 17:08:57</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>assigned_to</element>
-            <position>14</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 17:08:57</sys_created_on>
-            <sys_id>7b3c2f90975f91108c6e7b771153af3c</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 17:08:57</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>external_poc_email</element>
-            <position>15</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 17:08:57</sys_created_on>
-            <sys_id>fb3c2f90975f91108c6e7b771153af3c</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 17:08:57</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>16</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 17:08:57</sys_created_on>
-            <sys_id>7f3c2f90975f91108c6e7b771153af3c</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 17:08:57</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
-            <position>17</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 17:08:57</sys_created_on>
-            <sys_id>ff3c2f90975f91108c6e7b771153af3c</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 17:08:57</sys_updated_on>
-            <sys_user/>
-            <type>.begin_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>assessment_completed</element>
-            <position>18</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 17:08:57</sys_created_on>
-            <sys_id>733c2f90975f91108c6e7b771153af3d</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 17:08:57</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>19</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 17:08:57</sys_created_on>
-            <sys_id>f33c2f90975f91108c6e7b771153af3d</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 17:08:57</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>assessment_completed_by</element>
-            <position>20</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 17:08:57</sys_created_on>
-            <sys_id>773c2f90975f91108c6e7b771153af3d</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 17:08:57</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>new_work_note</element>
-            <position>21</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 17:08:57</sys_created_on>
-            <sys_id>f73c2f90975f91108c6e7b771153af3d</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 17:08:57</sys_updated_on>
+            <sys_updated_on>2023-03-09 14:36:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>state</element>
-            <position>22</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 17:08:57</sys_created_on>
-            <sys_id>7b3c2f90975f91108c6e7b771153af3d</sys_id>
+            <sys_created_on>2023-03-09 14:36:46</sys_created_on>
+            <sys_id>227bfb54972521108c6e7b771153af62</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 17:08:57</sys_updated_on>
+            <sys_updated_on>2023-03-09 14:36:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>generate_assessment</element>
-            <position>23</position>
+            <element>.end_split</element>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 17:08:57</sys_created_on>
-            <sys_id>fb3c2f90975f91108c6e7b771153af3d</sys_id>
+            <sys_created_on>2023-03-09 14:36:46</sys_created_on>
+            <sys_id>a27bfb54972521108c6e7b771153af62</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 17:08:57</sys_updated_on>
+            <sys_updated_on>2023-03-09 14:36:46</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-09 14:36:46</sys_created_on>
+            <sys_id>267bfb54972521108c6e7b771153af62</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-09 14:36:46</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assessment_type</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-09 14:36:46</sys_created_on>
+            <sys_id>a67bfb54972521108c6e7b771153af62</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-09 14:36:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>scheduled_date</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-09 14:36:46</sys_created_on>
+            <sys_id>2a7bfb54972521108c6e7b771153af62</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-09 14:36:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-09 14:36:46</sys_created_on>
+            <sys_id>aa7bfb54972521108c6e7b771153af62</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-09 14:36:46</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-09 14:36:46</sys_created_on>
+            <sys_id>2e7bfb54972521108c6e7b771153af62</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-09 14:36:46</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-09 14:36:46</sys_created_on>
+            <sys_id>ae7bfb54972521108c6e7b771153af62</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-09 14:36:46</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>internal_participants</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-09 14:36:46</sys_created_on>
+            <sys_id>227bfb54972521108c6e7b771153af63</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-09 14:36:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>external_poc</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-09 14:36:46</sys_created_on>
+            <sys_id>a27bfb54972521108c6e7b771153af63</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-09 14:36:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>14</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-09 14:36:46</sys_created_on>
+            <sys_id>267bfb54972521108c6e7b771153af63</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-09 14:36:46</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>15</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-09 14:36:46</sys_created_on>
+            <sys_id>a67bfb54972521108c6e7b771153af63</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-09 14:36:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>external_poc_email</element>
+            <position>16</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-09 14:36:46</sys_created_on>
+            <sys_id>2a7bfb54972521108c6e7b771153af63</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-09 14:36:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>17</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-09 14:36:46</sys_created_on>
+            <sys_id>aa7bfb54972521108c6e7b771153af63</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-09 14:36:46</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>18</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-09 14:36:46</sys_created_on>
+            <sys_id>2e7bfb54972521108c6e7b771153af63</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-09 14:36:46</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assessment_completed</element>
+            <position>19</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-09 14:36:46</sys_created_on>
+            <sys_id>ae7bfb54972521108c6e7b771153af63</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-09 14:36:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assessment_completed_by</element>
+            <position>20</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-09 14:36:46</sys_created_on>
+            <sys_id>227bfb54972521108c6e7b771153af64</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-09 14:36:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>21</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-09 14:36:46</sys_created_on>
+            <sys_id>a27bfb54972521108c6e7b771153af64</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-09 14:36:46</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>attestations_completed</element>
+            <position>22</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-09 14:36:46</sys_created_on>
+            <sys_id>267bfb54972521108c6e7b771153af64</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-09 14:36:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>secondary_suppliers</element>
+            <position>23</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-14 19:21:10</sys_created_on>
+            <sys_id>6d8c6e4e97e961108c6e7b771153af9f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_631631_grc_contr_supplier_validation" sys_domain="global" view="Default view">67dee524976211108c6e7b771153afad</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-14 19:21:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
