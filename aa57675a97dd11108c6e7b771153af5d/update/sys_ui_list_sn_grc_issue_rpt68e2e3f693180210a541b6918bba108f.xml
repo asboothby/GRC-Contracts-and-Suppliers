@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="sn_grc_issue" version="2" view="RPT68e2e3f693180210a541b6918bba108f">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="sn_grc_issue" element="NULL" name="sn_grc_issue" parent="NULL" relationship="NULL" sys_domain="global" view="38e2e33a93180210a541b6918bba10ca">27a4ebba93180210a541b6918bba1023</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-15 20:25:47</sys_created_on>
+            <sys_id>23a4ebba93180210a541b6918bba1024</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-15 20:25:47</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>priority</element>
+            <list_id display_value="sn_grc_issue" element="NULL" name="sn_grc_issue" parent="NULL" relationship="NULL" sys_domain="global" view="38e2e33a93180210a541b6918bba10ca">27a4ebba93180210a541b6918bba1023</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-15 20:25:47</sys_created_on>
+            <sys_id>a3a4ebba93180210a541b6918bba1024</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-15 20:25:47</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>state</element>
+            <list_id display_value="sn_grc_issue" element="NULL" name="sn_grc_issue" parent="NULL" relationship="NULL" sys_domain="global" view="38e2e33a93180210a541b6918bba10ca">27a4ebba93180210a541b6918bba1023</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-15 20:25:47</sys_created_on>
+            <sys_id>27a4ebba93180210a541b6918bba1024</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-15 20:25:47</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assigned_to</element>
+            <list_id display_value="sn_grc_issue" element="NULL" name="sn_grc_issue" parent="NULL" relationship="NULL" sys_domain="global" view="38e2e33a93180210a541b6918bba10ca">27a4ebba93180210a541b6918bba1023</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-15 20:25:47</sys_created_on>
+            <sys_id>a7a4ebba93180210a541b6918bba1024</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-15 20:25:47</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>short_description</element>
+            <list_id display_value="sn_grc_issue" element="NULL" name="sn_grc_issue" parent="NULL" relationship="NULL" sys_domain="global" view="38e2e33a93180210a541b6918bba10ca">27a4ebba93180210a541b6918bba1023</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-15 20:25:47</sys_created_on>
+            <sys_id>2ba4ebba93180210a541b6918bba1024</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-15 20:25:47</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>due_date</element>
+            <list_id display_value="sn_grc_issue" element="NULL" name="sn_grc_issue" parent="NULL" relationship="NULL" sys_domain="global" view="38e2e33a93180210a541b6918bba10ca">27a4ebba93180210a541b6918bba1023</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-15 20:25:47</sys_created_on>
+            <sys_id>aba4ebba93180210a541b6918bba1024</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-15 20:25:47</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sn_grc_issue</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-15 20:25:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>27a4ebba93180210a541b6918bba1023</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sn_grc_issue</sys_name>
+            <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+            <sys_update_name>sys_ui_list_sn_grc_issue_RPT68e2e3f693180210a541b6918bba108f</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-15 20:25:47</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpt68e2e3f693180210a541b6918bba108f" name="RPT68e2e3f693180210a541b6918bba108f">38e2e33a93180210a541b6918bba10ca</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

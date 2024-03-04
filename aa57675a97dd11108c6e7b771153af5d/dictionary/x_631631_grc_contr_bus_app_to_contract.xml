@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ba47271993a00210a541b6918bba1038" label="Bus App to Contract" max_length="40" name="x_631631_grc_contr_bus_app_to_contract" type="collection">
+        <element label="Business Application" max_length="32" name="business_application" reference="cmdb_ci_business_app" type="reference"/>
+        <element label="Contract" max_length="32" name="contract" reference="x_631631_grc_contr_contract" type="reference"/>
+        <index name="index">
+            <element name="business_application"/>
+        </index>
+        <index name="index2">
+            <element name="contract"/>
+        </index>
+    </element>
+</database>

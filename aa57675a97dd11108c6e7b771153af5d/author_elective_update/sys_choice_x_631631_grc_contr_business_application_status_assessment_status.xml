@@ -6,7 +6,6 @@
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2022-12-05 11:46:32</sys_created_on>
-            <sys_id>5c1fc78697af15108c6e7b771153afbf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>assessment_status</sys_name>
             <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
@@ -21,60 +20,114 @@
             <element>assessment_status</element>
             <hint/>
             <inactive>false</inactive>
-            <label>No Assessment</label>
+            <label>Assessment in Progress</label>
             <language>en</language>
             <name>x_631631_grc_contr_business_application_status</name>
-            <sequence>100</sequence>
-            <synonyms/>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-12-05 11:46:31</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>d41fc78697af15108c6e7b771153afbf</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-12-05 11:47:25</sys_updated_on>
-            <value>no_assessment</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>assessment_status</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Assessment Incomplete</label>
-            <language>en</language>
-            <name>x_631631_grc_contr_business_application_status</name>
-            <sequence>110</sequence>
-            <synonyms/>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-12-05 11:48:07</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>e74fc38697af15108c6e7b771153afc7</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-12-05 11:48:07</sys_updated_on>
-            <value>assessment_incomplete</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>assessment_status</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Assessment Complete</label>
-            <language>en</language>
-            <name>x_631631_grc_contr_business_application_status</name>
-            <sequence>120</sequence>
+            <sequence>0</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2022-12-05 11:48:48</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>c37f8f8697af15108c6e7b771153afb1</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-12-05 11:48:48</sys_updated_on>
-            <value>assessment_complete</value>
+            <sys_updated_on>2024-03-01 12:17:35</sys_updated_on>
+            <value>assessment_in_progress</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>assessment_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Compliant</label>
+            <language>en</language>
+            <name>x_631631_grc_contr_business_application_status</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 11:48:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-03-01 12:17:35</sys_updated_on>
+            <value>compliant</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>assessment_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Compliant with POAM</label>
+            <language>en</language>
+            <name>x_631631_grc_contr_business_application_status</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-03-01 12:14:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-03-01 12:17:35</sys_updated_on>
+            <value>compliant_with_poam</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>assessment_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No Assessment Found</label>
+            <language>en</language>
+            <name>x_631631_grc_contr_business_application_status</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-05 11:46:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-03-01 12:17:35</sys_updated_on>
+            <value>no_assessment_found</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>assessment_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Non-compliant</label>
+            <language>en</language>
+            <name>x_631631_grc_contr_business_application_status</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-03-01 12:15:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-03-01 12:17:35</sys_updated_on>
+            <value>non_compliant</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>assessment_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Retired/Inactive</label>
+            <language>en</language>
+            <name>x_631631_grc_contr_business_application_status</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-03-01 12:15:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-03-01 12:17:35</sys_updated_on>
+            <value>retired_inactive</value>
         </sys_choice>
     </sys_choice>
 </record_update>

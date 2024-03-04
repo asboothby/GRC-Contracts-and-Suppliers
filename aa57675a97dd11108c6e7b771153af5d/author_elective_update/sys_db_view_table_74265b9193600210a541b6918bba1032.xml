@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="DELETE">
+        <active>true</active>
+        <left_join>false</left_join>
+        <order>200</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-23 13:48:53</sys_created_on>
+        <sys_id>74265b9193600210a541b6918bba1032</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>x_631631_sc_grc_co_m2m_x_631631_gr_cmdb_ci_busi</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_db_view_table_74265b9193600210a541b6918bba1032</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-23 14:17:55</sys_updated_on>
+        <table>x_631631_sc_grc_co_m2m_x_631631_gr_cmdb_ci_busi</table>
+        <variable_prefix>M2M</variable_prefix>
+        <view display_value="x_631631_grc_contr_bus_apps_to_contracts">8d74971193600210a541b6918bba107b</view>
+        <where_clause>BA_sys_id=M2M_cmdb_ci_business_app</where_clause>
+    </sys_db_view_table>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</application>
+        <file_path/>
+        <instance_id>4f334576dba2fd5005ef1729139619a6</instance_id>
+        <instance_name>dev218295</instance_name>
+        <name>sys_db_view_table_74265b9193600210a541b6918bba1032</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>false</left_join><order>200</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-23 13:48:53</sys_created_on><sys_id>74265b9193600210a541b6918bba1032</sys_id><sys_mod_count>4</sys_mod_count><sys_name>x_631631_sc_grc_co_m2m_x_631631_gr_cmdb_ci_busi</sys_name><sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package><sys_policy/><sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope><sys_update_name>sys_db_view_table_74265b9193600210a541b6918bba1032</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-23 14:17:55</sys_updated_on><table>x_631631_sc_grc_co_m2m_x_631631_gr_cmdb_ci_busi</table><variable_prefix>M2M</variable_prefix><view display_value="x_631631_grc_contr_bus_apps_to_contracts">8d74971193600210a541b6918bba107b</view><where_clause>BA_sys_id=M2M_cmdb_ci_business_app</where_clause></sys_db_view_table></record_update>]]></payload>
+        <payload_hash>906642036</payload_hash>
+        <record_name>x_631631_sc_grc_co_m2m_x_631631_gr_cmdb_ci_busi</record_name>
+        <reverted_from/>
+        <source>40bfb97293500210a541b6918bba1009</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-23 14:17:55</sys_created_on>
+        <sys_id>703d979993600210a541b6918bba10ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18dd65474af0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-23 14:17:55</sys_updated_on>
+        <type>View Table</type>
+        <update_guid>383d9799cb60021084da505eb12057e9</update_guid>
+        <update_guid_history>383d9799cb60021084da505eb12057e9:906642036,06f91bd588600210a43c66bf196d79b9:-569121158,33699f956b600210e2f4e91e3fb00168:1515677339,f129539585600210ebd91014764edac9:-1837738388,2f86d3d1cc600210de4516c61eee8ab7:-1726682755</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-23 14:18:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_view_table">sys_db_view_table</sys_db_object>
+        <sys_id>04bb623e6518413a83071a9cbe974184</sys_id>
+        <sys_metadata>74265b9193600210a541b6918bba1032</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_631631_sc_grc_co_m2m_x_631631_gr_cmdb_ci_busi</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_parent display_value="">8d74971193600210a541b6918bba107b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_scope_delete display_value="">d2e3570b4d07421aa50b19977f977ea4</sys_scope_delete>
+        <sys_update_name>sys_db_view_table_74265b9193600210a541b6918bba1032</sys_update_name>
+        <sys_update_version display_value="sys_db_view_table_74265b9193600210a541b6918bba1032">703d979993600210a541b6918bba10ea</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-23 14:18:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -16,16 +16,16 @@
         <source_table>u_imp_tmpl_sn_compliance_citation</source_table>
         <sys_class_name>sys_transform_map</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-11-15 16:04:48</sys_created_on>
-        <sys_id>a06a41f7974711108c6e7b771153af35</sys_id>
+        <sys_created_on>2024-02-15 19:30:08</sys_created_on>
+        <sys_id>9cf79b7a93d40210a541b6918bba103c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>u_imp_tmpl_sn_compliance_citation</sys_name>
         <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
         <sys_policy/>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
-        <sys_update_name>sys_transform_map_a06a41f7974711108c6e7b771153af35</sys_update_name>
+        <sys_update_name>sys_transform_map_9cf79b7a93d40210a541b6918bba103c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-11-15 16:04:48</sys_updated_on>
+        <sys_updated_on>2024-02-15 19:30:08</sys_updated_on>
         <target_table>sn_compliance_citation</target_table>
     </sys_transform_map>
 </record_update>

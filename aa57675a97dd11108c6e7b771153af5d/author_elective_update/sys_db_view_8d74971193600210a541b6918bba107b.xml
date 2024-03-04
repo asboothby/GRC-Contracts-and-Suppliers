@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view">
+    <sys_db_view action="DELETE">
+        <description/>
+        <label/>
+        <name>x_631631_grc_contr_bus_apps_to_contracts</name>
+        <plural/>
+        <sys_class_name>sys_db_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-23 13:40:25</sys_created_on>
+        <sys_id>8d74971193600210a541b6918bba107b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_631631_grc_contr_bus_apps_to_contracts</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_db_view_8d74971193600210a541b6918bba107b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-23 13:40:25</sys_updated_on>
+    </sys_db_view>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</application>
+        <file_path/>
+        <instance_id>4f334576dba2fd5005ef1729139619a6</instance_id>
+        <instance_name>dev218295</instance_name>
+        <name>sys_db_view_8d74971193600210a541b6918bba107b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view"><sys_db_view action="INSERT_OR_UPDATE"><description/><label/><name>x_631631_grc_contr_bus_apps_to_contracts</name><plural/><sys_class_name>sys_db_view</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-23 13:40:25</sys_created_on><sys_id>8d74971193600210a541b6918bba107b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_631631_grc_contr_bus_apps_to_contracts</sys_name><sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package><sys_policy/><sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope><sys_update_name>sys_db_view_8d74971193600210a541b6918bba107b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-23 13:40:25</sys_updated_on></sys_db_view></record_update>]]></payload>
+        <payload_hash>-2053872595</payload_hash>
+        <record_name>x_631631_grc_contr_bus_apps_to_contracts</record_name>
+        <reverted_from/>
+        <source>40bfb97293500210a541b6918bba1009</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-23 13:40:25</sys_created_on>
+        <sys_id>67945b1193600210a541b6918bba10be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18dd63220240000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-23 13:40:25</sys_updated_on>
+        <type>Database View</type>
+        <update_guid>ab945b11a9600210d0795dd77dcacebd</update_guid>
+        <update_guid_history>ab945b11a9600210d0795dd77dcacebd:-2053872595</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-23 14:29:46</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_view">sys_db_view</sys_db_object>
+        <sys_id>063d984e159a40ec8317e84db6495504</sys_id>
+        <sys_metadata>8d74971193600210a541b6918bba107b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_631631_grc_contr_bus_apps_to_contracts</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_scope_delete display_value="">d2e3570b4d07421aa50b19977f977ea4</sys_scope_delete>
+        <sys_update_name>sys_db_view_8d74971193600210a541b6918bba107b</sys_update_name>
+        <sys_update_version display_value="sys_db_view_8d74971193600210a541b6918bba107b">67945b1193600210a541b6918bba10be</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-23 14:29:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

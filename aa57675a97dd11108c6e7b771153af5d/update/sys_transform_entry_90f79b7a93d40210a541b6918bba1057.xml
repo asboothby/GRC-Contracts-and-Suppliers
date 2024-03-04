@@ -5,9 +5,9 @@
         <coalesce_case_sensitive>false</coalesce_case_sensitive>
         <coalesce_empty_fields>false</coalesce_empty_fields>
         <date_format>yyyy-MM-dd HH:mm:ss</date_format>
-        <map display_value="u_imp_tmpl_sn_compliance_citation">a06a41f7974711108c6e7b771153af35</map>
+        <map display_value="u_imp_tmpl_sn_compliance_citation">9cf79b7a93d40210a541b6918bba103c</map>
         <reference_value_field/>
-        <source_field>u_reference</source_field>
+        <source_field>u_description</source_field>
         <source_script><![CDATA[answer = (function transformEntry(source) {
 
 	// Add your code here
@@ -17,17 +17,17 @@
         <source_table>u_imp_tmpl_sn_compliance_citation</source_table>
         <sys_class_name>sys_transform_entry</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-11-15 16:04:48</sys_created_on>
-        <sys_id>246a41f7974711108c6e7b771153af38</sys_id>
+        <sys_created_on>2024-02-15 19:30:09</sys_created_on>
+        <sys_id>90f79b7a93d40210a541b6918bba1057</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>u_reference</sys_name>
+        <sys_name>u_description</sys_name>
         <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
         <sys_policy/>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
-        <sys_update_name>sys_transform_entry_246a41f7974711108c6e7b771153af38</sys_update_name>
+        <sys_update_name>sys_transform_entry_90f79b7a93d40210a541b6918bba1057</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-11-15 16:04:48</sys_updated_on>
-        <target_field>reference</target_field>
+        <sys_updated_on>2024-02-15 19:30:09</sys_updated_on>
+        <target_field>description</target_field>
         <target_table>sn_compliance_citation</target_table>
         <use_source_script>false</use_source_script>
     </sys_transform_entry>

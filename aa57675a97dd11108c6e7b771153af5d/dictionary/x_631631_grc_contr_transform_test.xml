@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="6b6144ae93e40210a541b6918bba10f0" label="Transform Test" max_length="40" name="x_631631_grc_contr_transform_test" type="collection">
+        <element label="Field one" max_length="40" name="field_one" type="string"/>
+        <element label="Field Three" max_length="40" name="field_three" type="string"/>
+        <element label="Field Two" max_length="40" name="field_two" type="string"/>
+    </element>
+</database>

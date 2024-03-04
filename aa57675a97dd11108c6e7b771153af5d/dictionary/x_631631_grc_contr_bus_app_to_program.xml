@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="90cb7b5d93e00210a541b6918bba1090" label="Bus App to Program" max_length="40" name="x_631631_grc_contr_bus_app_to_program" type="collection">
+        <element label="Business Application" max_length="32" name="business_application" reference="cmdb_ci_business_app" type="reference"/>
+        <element label="Program" max_length="32" name="program" reference="x_631631_grc_contr_contract_supplier_choice" reference_qual="category=Program Name^EQ" reference_qual_condition="category=Program Name^EQ" type="reference"/>
+        <index name="index">
+            <element name="business_application"/>
+        </index>
+        <index name="index2">
+            <element name="program"/>
+        </index>
+    </element>
+</database>

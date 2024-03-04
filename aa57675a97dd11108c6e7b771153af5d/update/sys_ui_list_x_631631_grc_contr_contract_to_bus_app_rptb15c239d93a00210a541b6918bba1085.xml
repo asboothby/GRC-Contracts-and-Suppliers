@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_631631_grc_contr_contract_to_bus_app" version="2" view="RPTb15c239d93a00210a541b6918bba1085">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>mtm_business_application</element>
+            <list_id display_value="x_631631_grc_contr_contract_to_bus_app" element="NULL" name="x_631631_grc_contr_contract_to_bus_app" parent="NULL" relationship="NULL" sys_domain="global" view="755c6f9d93a00210a541b6918bba10ee">7c7c731e93e40210a541b6918bba10ef</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-26 19:08:22</sys_created_on>
+            <sys_id>307c731e93e40210a541b6918bba10f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-26 19:08:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>mtm_contract</element>
+            <list_id display_value="x_631631_grc_contr_contract_to_bus_app" element="NULL" name="x_631631_grc_contr_contract_to_bus_app" parent="NULL" relationship="NULL" sys_domain="global" view="755c6f9d93a00210a541b6918bba10ee">7c7c731e93e40210a541b6918bba10ef</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-26 19:08:22</sys_created_on>
+            <sys_id>b47c731e93e40210a541b6918bba10f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-26 19:08:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>cntr_prime_contract_number</element>
+            <list_id display_value="x_631631_grc_contr_contract_to_bus_app" element="NULL" name="x_631631_grc_contr_contract_to_bus_app" parent="NULL" relationship="NULL" sys_domain="global" view="755c6f9d93a00210a541b6918bba10ee">7c7c731e93e40210a541b6918bba10ef</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-26 19:08:22</sys_created_on>
+            <sys_id>387c731e93e40210a541b6918bba10f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-26 19:08:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>cntr_number</element>
+            <list_id display_value="x_631631_grc_contr_contract_to_bus_app" element="NULL" name="x_631631_grc_contr_contract_to_bus_app" parent="NULL" relationship="NULL" sys_domain="global" view="755c6f9d93a00210a541b6918bba10ee">7c7c731e93e40210a541b6918bba10ef</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-26 19:08:22</sys_created_on>
+            <sys_id>b87c731e93e40210a541b6918bba10f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-26 19:08:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>cntr_contract_admin_email</element>
+            <list_id display_value="x_631631_grc_contr_contract_to_bus_app" element="NULL" name="x_631631_grc_contr_contract_to_bus_app" parent="NULL" relationship="NULL" sys_domain="global" view="755c6f9d93a00210a541b6918bba10ee">7c7c731e93e40210a541b6918bba10ef</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-26 19:08:22</sys_created_on>
+            <sys_id>3c7c731e93e40210a541b6918bba10f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-26 19:08:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>cntr_contract_mgr_email</element>
+            <list_id display_value="x_631631_grc_contr_contract_to_bus_app" element="NULL" name="x_631631_grc_contr_contract_to_bus_app" parent="NULL" relationship="NULL" sys_domain="global" view="755c6f9d93a00210a541b6918bba10ee">7c7c731e93e40210a541b6918bba10ef</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-26 19:08:22</sys_created_on>
+            <sys_id>bc7c731e93e40210a541b6918bba10f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-26 19:08:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>cntr_program_mgr_name</element>
+            <list_id display_value="x_631631_grc_contr_contract_to_bus_app" element="NULL" name="x_631631_grc_contr_contract_to_bus_app" parent="NULL" relationship="NULL" sys_domain="global" view="755c6f9d93a00210a541b6918bba10ee">7c7c731e93e40210a541b6918bba10ef</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-26 19:08:22</sys_created_on>
+            <sys_id>307c731e93e40210a541b6918bba10f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-26 19:08:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>cntr_program</element>
+            <list_id display_value="x_631631_grc_contr_contract_to_bus_app" element="NULL" name="x_631631_grc_contr_contract_to_bus_app" parent="NULL" relationship="NULL" sys_domain="global" view="755c6f9d93a00210a541b6918bba10ee">7c7c731e93e40210a541b6918bba10ef</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-26 19:08:22</sys_created_on>
+            <sys_id>b07c731e93e40210a541b6918bba10f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-26 19:08:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_631631_grc_contr_contract_to_bus_app</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-26 19:08:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7c7c731e93e40210a541b6918bba10ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_631631_grc_contr_contract_to_bus_app</sys_name>
+            <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+            <sys_update_name>sys_ui_list_x_631631_grc_contr_contract_to_bus_app_RPTb15c239d93a00210a541b6918bba1085</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-26 19:08:22</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rptb15c239d93a00210a541b6918bba1085" name="RPTb15c239d93a00210a541b6918bba1085">755c6f9d93a00210a541b6918bba10ee</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>
