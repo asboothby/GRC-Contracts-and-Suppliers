@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set">
+    <item_option_new_set action="INSERT_OR_UPDATE">
+        <create_roles/>
+        <description/>
+        <display_title>false</display_title>
+        <internal_name>test_catalog_variable_set</internal_name>
+        <layout>normal</layout>
+        <name/>
+        <order>100</order>
+        <read_roles/>
+        <set_attributes/>
+        <sys_class_name>item_option_new_set</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-19 14:04:46</sys_created_on>
+        <sys_id>00cbd830c3ab461057d59242b401313b</sys_id>
+        <sys_mod_count>65</sys_mod_count>
+        <sys_name>Test Catalog Variable Set</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>item_option_new_set_00cbd830c3ab461057d59242b401313b</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-08-07 09:57:56</sys_updated_on>
+        <title>Test Catalog Variable Set</title>
+        <type>one_to_one</type>
+        <version>65</version>
+        <write_roles/>
+    </item_option_new_set>
+</record_update>

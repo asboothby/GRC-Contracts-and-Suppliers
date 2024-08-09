@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Test Calalog Item">5899dc7cc36b461057d59242b4013156</sc_cat_item>
+        <sc_category display_value="Governance, Risk, and Compliance">847f8d38874033003058d1a936cb0bc8</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 11:00:14</sys_created_on>
+        <sys_id>1508dc8ac36b421057d59242b4013177</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Governance, Risk, and Compliance.Test Calalog Item</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sc_cat_item_category_1508dc8ac36b421057d59242b4013177</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 11:00:14</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="INSERT_OR_UPDATE">
+        <order>200</order>
+        <sc_cat_item display_value="Test Calalog Item">5899dc7cc36b461057d59242b4013156</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-19 14:04:46</sys_created_on>
+        <sys_id>e1ebd8fcc36b461057d59242b4013164</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Test Catalog Variable Set.Test Calalog Item</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>io_set_item_e1ebd8fcc36b461057d59242b4013164</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-24 18:51:46</sys_updated_on>
+        <variable_set display_value="Test Catalog Variable Set">00cbd830c3ab461057d59242b401313b</variable_set>
+    </io_set_item>
+</record_update>

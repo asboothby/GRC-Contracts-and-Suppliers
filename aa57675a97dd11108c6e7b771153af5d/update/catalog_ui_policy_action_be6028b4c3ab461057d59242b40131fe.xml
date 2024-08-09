@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item/>
+        <catalog_variable>IO:d7be1cb0c3ab461057d59242b4013183</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-19 14:24:59</sys_created_on>
+        <sys_id>be6028b4c3ab461057d59242b40131fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>do_you_like_it</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_be6028b4c3ab461057d59242b40131fe</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-19 14:24:59</sys_updated_on>
+        <table/>
+        <ui_policy display_value="on selection Yes do you have a name">3fdf9c74c3ab461057d59242b40131b7</ui_policy>
+        <variable>do_you_like_it</variable>
+        <variable_set display_value="Test Catalog Variable Set">00cbd830c3ab461057d59242b401313b</variable_set>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

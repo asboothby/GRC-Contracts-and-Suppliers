@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_631631_grc_contr.CSAUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>CSAUtils</name>
+        <script><![CDATA[var CSAUtils = Class.create();
+CSAUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+getBA: function()
+{
+	var commonID = this.getParameter('commonID');
+	var ba = 'nothing';
+  var grBusApp = new GlideRecord('cmdb_ci_business_app');
+   grBusApp.addQuery('x_631631_grc_contr_common_id',commonID);
+   grBusApp.query();
+
+   if(grBusApp.next())
+   {
+		var grCompany = new GlideRecord('core_company');
+		grCompany.get(grBusApp.company);
+		ba = grCompany.getDisplayValue();
+   }
+   else
+   {
+	ba = 'not found';
+   }
+
+   return ba;
+} ,
+
+    type: 'CSAUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-25 11:15:03</sys_created_on>
+        <sys_id>de7beea6c3ab061057d59242b4013113</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>CSAUtils</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_script_include_de7beea6c3ab061057d59242b4013113</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-25 11:50:10</sys_updated_on>
+    </sys_script_include>
+</record_update>

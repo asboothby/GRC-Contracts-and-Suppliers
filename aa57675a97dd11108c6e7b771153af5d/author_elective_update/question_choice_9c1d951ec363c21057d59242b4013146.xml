@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <misc>0</misc>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Do you like it?">d7be1cb0c3ab461057d59242b4013183</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-24 10:41:02</sys_created_on>
+        <sys_id>9c1d951ec363c21057d59242b4013146</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Not Displayed</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>question_choice_9c1d951ec363c21057d59242b4013146</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-24 12:08:09</sys_updated_on>
+        <text>Not Displayed</text>
+        <value>Not Displayed</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=9c1d951ec363c21057d59242b4013146"/>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>9c1d951ec363c21057d59242b4013146</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-24 10:41:02</sys_created_on>
+        <sys_id>7d3dd15ac363c21057d59242b4013163</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-24 10:41:02</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>9c1d951ec363c21057d59242b4013146</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-24 10:41:02</sys_created_on>
+        <sys_id>7d3dd15ac363c21057d59242b4013162</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-24 10:41:02</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</application>
+        <file_path/>
+        <instance_id>802db43b1b25f9109377eb9b2d4bcb8a</instance_id>
+        <instance_name>dev181184</instance_name>
+        <name>question_choice_9c1d951ec363c21057d59242b4013146</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><misc>0</misc><order>100</order><published_ref/><question display_value="Do you like it?">d7be1cb0c3ab461057d59242b4013183</question><rec_misc>0</rec_misc><sys_class_name>question_choice</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-07-24 10:41:02</sys_created_on><sys_id>9c1d951ec363c21057d59242b4013146</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Not Displayed</sys_name><sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package><sys_policy/><sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope><sys_update_name>question_choice_9c1d951ec363c21057d59242b4013146</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-07-24 12:08:09</sys_updated_on><text>Not Displayed</text><value>Not Displayed</value></question_choice><fx_price action="delete_multiple" query="id=9c1d951ec363c21057d59242b4013146"/><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>misc</field><id>9c1d951ec363c21057d59242b4013146</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2024-07-24 10:41:02</sys_created_on><sys_id>7d3dd15ac363c21057d59242b4013163</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-07-24 10:41:02</sys_updated_on><table>question_choice</table><type>calculated</type></fx_price><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>rec_misc</field><id>9c1d951ec363c21057d59242b4013146</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2024-07-24 10:41:02</sys_created_on><sys_id>7d3dd15ac363c21057d59242b4013162</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-07-24 10:41:02</sys_updated_on><table>question_choice</table><type>calculated</type></fx_price></record_update>]]></payload>
+        <payload_hash>-1460713782</payload_hash>
+        <record_name>Not Displayed</record_name>
+        <reverted_from/>
+        <source>cbdfd47bc39f021057d59242b401315a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-24 12:08:09</sys_created_on>
+        <sys_id>b9213156c3e3c21057d59242b4013171</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190e4a444c10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-24 12:08:09</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>7121315661e3c2107cfd024ce27eeb71</update_guid>
+        <update_guid_history>7121315661e3c2107cfd024ce27eeb71:-1460713782,8a66611a81a3c2105fb410984e6432a6:-1772780373,b53dd15abd63c21006bc041408862865:-960867448</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Not Displayed">54377666c3eb061057d59242b40131c7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-25 11:52:37</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>5e1f34fa49b942dc9070b52229023d04</sys_id>
+        <sys_metadata>9c1d951ec363c21057d59242b4013146</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Not Displayed</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_parent display_value="Do you like it?">d7be1cb0c3ab461057d59242b4013183</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_scope_delete display_value="">d2e3570b4d07421aa50b19977f977ea4</sys_scope_delete>
+        <sys_update_name>question_choice_9c1d951ec363c21057d59242b4013146</sys_update_name>
+        <sys_update_version display_value="question_choice_9c1d951ec363c21057d59242b4013146">b9213156c3e3c21057d59242b4013171</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-25 11:52:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
