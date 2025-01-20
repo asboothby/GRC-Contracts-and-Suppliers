@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-16 12:17:32</sys_created_on>
+        <sys_id>afea88c7c30312107527961d0501311e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_631631_grc_contr_ssp_attachments.x_631631_grc_contr.SSP Admin</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_security_acl display_value="x_631631_grc_contr_ssp_attachments">0aa55356c3cb52107527961d05013113</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_afea88c7c30312107527961d0501311e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-16 12:17:32</sys_updated_on>
+        <sys_user_role display_value="x_631631_grc_contr.SSP Admin" name="x_631631_grc_contr.SSP Admin">879a44c7c30312107527961d050131e5</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

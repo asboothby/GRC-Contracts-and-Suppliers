@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="da155fd2c3cb52107527961d05013126" label="SSP Attachments" max_length="40" name="x_631631_grc_contr_ssp_attachments" type="collection">
+        <element label="Bus App" max_length="100" name="bus_app" type="string"/>
+        <element display="true" label="File Name" max_length="100" name="file_name" type="string"/>
+    </element>
+</database>
