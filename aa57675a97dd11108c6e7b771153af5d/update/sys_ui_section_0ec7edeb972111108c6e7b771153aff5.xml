@@ -4,13 +4,13 @@
             <element>state</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-02-23 17:12:53</sys_created_on>
-            <sys_id>0045cc2d93240210a541b6918bba10f1</sys_id>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>b8758ef0c34b12107527961d0501315b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-02-23 17:12:53</sys_updated_on>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>.begin_split</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-02-23 17:12:53</sys_created_on>
-            <sys_id>8045cc2d93240210a541b6918bba10f1</sys_id>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>b4758ef0c34b12107527961d0501315c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-02-23 17:12:53</sys_updated_on>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>contract_iwta_number</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-02-23 17:12:53</sys_created_on>
-            <sys_id>0445cc2d93240210a541b6918bba10f1</sys_id>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>3c758ef0c34b12107527961d0501315c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-02-23 17:12:53</sys_updated_on>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>prime_contract_number</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-02-23 17:12:53</sys_created_on>
-            <sys_id>8445cc2d93240210a541b6918bba10f1</sys_id>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>b0758ef0c34b12107527961d0501315d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-02-23 17:12:53</sys_updated_on>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>title</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-02-23 17:12:53</sys_created_on>
-            <sys_id>0845cc2d93240210a541b6918bba10f1</sys_id>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>38758ef0c34b12107527961d0501315d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-02-23 17:12:53</sys_updated_on>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>mod_type</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-02-23 17:12:53</sys_created_on>
-            <sys_id>8845cc2d93240210a541b6918bba10f1</sys_id>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>bc758ef0c34b12107527961d0501315d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-02-23 17:12:53</sys_updated_on>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>clause_date</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-02-23 17:12:53</sys_created_on>
-            <sys_id>8c45846d93240210a541b6918bba1010</sys_id>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>34758ef0c34b12107527961d0501315e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-02-23 17:12:53</sys_updated_on>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,13 +102,13 @@
             <element>contract_iwta_indicator</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-02-23 17:12:53</sys_created_on>
-            <sys_id>0045846d93240210a541b6918bba1011</sys_id>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>b8758ef0c34b12107527961d0501315e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-02-23 17:12:53</sys_updated_on>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -116,13 +116,13 @@
             <element>contract_customer_name</element>
             <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-02-23 17:12:53</sys_created_on>
-            <sys_id>8045846d93240210a541b6918bba1011</sys_id>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>30758ef0c34b12107527961d0501315f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-02-23 17:12:53</sys_updated_on>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -130,13 +130,13 @@
             <element>iwta_requesting_business_unit</element>
             <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-02-23 17:12:53</sys_created_on>
-            <sys_id>0445846d93240210a541b6918bba1011</sys_id>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>b4758ef0c34b12107527961d0501315f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-02-23 17:12:53</sys_updated_on>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -144,195 +144,209 @@
             <element>delete_flag</element>
             <position>10</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-02-23 17:12:53</sys_created_on>
-            <sys_id>8445846d93240210a541b6918bba1011</sys_id>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>3c758ef0c34b12107527961d0501315f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-02-23 17:12:53</sys_updated_on>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_631631_sc_grc_co_ssp</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>b0758ef0c34b12107527961d05013160</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>11</position>
+            <position>12</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-02-23 17:12:53</sys_created_on>
-            <sys_id>0845846d93240210a541b6918bba1011</sys_id>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>38758ef0c34b12107527961d05013160</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-02-23 17:12:53</sys_updated_on>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>number</element>
-            <position>12</position>
+            <position>13</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-02-23 17:12:53</sys_created_on>
-            <sys_id>8845846d93240210a541b6918bba1011</sys_id>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>bc758ef0c34b12107527961d05013160</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-02-23 17:12:53</sys_updated_on>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>contract_release_number</element>
-            <position>13</position>
+            <position>14</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-02-23 17:12:53</sys_created_on>
-            <sys_id>0c45846d93240210a541b6918bba1011</sys_id>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>34758ef0c34b12107527961d05013161</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-02-23 17:12:53</sys_updated_on>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>mod_number</element>
-            <position>14</position>
+            <position>15</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-02-23 17:12:53</sys_created_on>
-            <sys_id>8c45846d93240210a541b6918bba1011</sys_id>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>b8758ef0c34b12107527961d05013161</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-02-23 17:12:53</sys_updated_on>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_631631_sc_grc_co_grc_contract</element>
-            <position>15</position>
+            <position>16</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-02-23 17:12:53</sys_created_on>
-            <sys_id>0045846d93240210a541b6918bba1012</sys_id>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>30758ef0c34b12107527961d05013162</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-02-23 17:12:53</sys_updated_on>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>program</element>
-            <position>16</position>
+            <position>17</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-02-23 17:12:53</sys_created_on>
-            <sys_id>8045846d93240210a541b6918bba1012</sys_id>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>85758ef0c34b12107527961d05013162</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-02-23 17:12:53</sys_updated_on>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>contract_iwta_status</element>
-            <position>17</position>
+            <position>18</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-02-23 17:12:53</sys_created_on>
-            <sys_id>0445846d93240210a541b6918bba1012</sys_id>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>0d758ef0c34b12107527961d05013162</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-02-23 17:12:53</sys_updated_on>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>clause_number</element>
-            <position>18</position>
+            <position>19</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-02-23 17:12:53</sys_created_on>
-            <sys_id>8445846d93240210a541b6918bba1012</sys_id>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>81758ef0c34b12107527961d05013163</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-02-23 17:12:53</sys_updated_on>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>business</element>
-            <position>19</position>
+            <position>20</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-02-23 17:12:53</sys_created_on>
-            <sys_id>0845846d93240210a541b6918bba1012</sys_id>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>09758ef0c34b12107527961d05013163</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-02-23 17:12:53</sys_updated_on>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>sensitive_data_types</element>
-            <position>20</position>
+            <position>21</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-02-23 17:12:53</sys_created_on>
-            <sys_id>8845846d93240210a541b6918bba1012</sys_id>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>8d758ef0c34b12107527961d05013163</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-02-23 17:12:53</sys_updated_on>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>status</element>
-            <position>21</position>
+            <position>22</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-02-23 17:12:53</sys_created_on>
-            <sys_id>0c45846d93240210a541b6918bba1012</sys_id>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>05758ef0c34b12107527961d05013164</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-02-23 17:12:53</sys_updated_on>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>has_red_suppliers</element>
-            <position>22</position>
+            <position>23</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-02-23 17:12:53</sys_created_on>
-            <sys_id>8c45846d93240210a541b6918bba1012</sys_id>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>89758ef0c34b12107527961d05013164</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-02-23 17:12:53</sys_updated_on>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>watchlist</element>
-            <position>23</position>
+            <position>24</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-02-23 17:12:53</sys_created_on>
-            <sys_id>0045846d93240210a541b6918bba1013</sys_id>
+            <sys_created_on>2025-01-09 21:25:42</sys_created_on>
+            <sys_id>01758ef0c34b12107527961d05013165</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contract" display_value="Contract" name="x_631631_grc_contr_contract" sys_domain="global" view="Default view">0ec7edeb972111108c6e7b771153aff5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-02-23 17:12:53</sys_updated_on>
+            <sys_updated_on>2025-01-09 21:25:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
