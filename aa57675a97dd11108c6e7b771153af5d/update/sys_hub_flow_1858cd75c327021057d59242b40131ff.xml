@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=15989657000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=16059586000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -15,8 +15,9 @@
         <flow_priority/>
         <generation_source/>
         <internal_name>test_catalog_item_flow</internal_name>
-        <label_cache>[{"name":"{{static.1ae3d4c1c31312107527961d05013111}}","label":"GRC Approvers","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"c7ab5f59-c625-41bb-a817-605bcdbb3bf2":["approval_conditions"]}},{"name":"{{static.3ce290c1c31312107527961d050131a5}}","label":"Identity","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"84d7a137-aa83-4043-9b9c-70f29a6395c8":["approval_conditions"]}},{"name":"84d7a137-aa83-4043-9b9c-70f29a6395c8.__action_status__.message","label":"2 - Ask For Approval➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"Service Catalog_1.request_item.request","label":"Trigger - Service Catalog➛Requested Item Record➛Request","reference":"sc_request","reference_display":"Request","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"request","usedInstances":{"a46abd86-4b1f-42ba-b2c7-4dd71ac26553":["record"]}},{"name":"84d7a137-aa83-4043-9b9c-70f29a6395c8.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"8d3e763c-fb92-4791-a87c-6b150fb0e9dc":["condition"],"9f43baf8-4c87-4130-9cfe-0ec260ca5e4d":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.c9884ac30a0a0bdb3879454e8f02774e}}","label":"Annie Approver","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference"},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"c7ab5f59-c625-41bb-a817-605bcdbb3bf2":["record"],"20af9c10-3335-4ce3-baf3-145923e4beba":["record"],"7958bfed-8d99-4490-a98d-dc88157d6533":["record"],"45820056-1c71-4fc0-86f9-ce4112775a46":["ah_requested_item","request_item"]},"attributes":{"default_search_field":"number"}},{"name":"3daa21a7-b952-4e71-ad60-047e91f3e3f0.id","label":"21 - Post API Test➛ID","reference_display":"ID","type":"integer","base_type":"integer","usedInstances":{"609eb5c7-faf7-4de8-bcdd-a0a19f7e09e5":["log_message"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"dc7af9fa-a466-41a9-8ad4-f5b09355e055"}},{"name":"3daa21a7-b952-4e71-ad60-047e91f3e3f0.__action_status__.code","label":"21 - Post API Test➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"609eb5c7-faf7-4de8-bcdd-a0a19f7e09e5":["log_message"],"1d50dfed-051a-4239-827c-0165ddd13917":["condition"]},"attributes":{}},{"name":"3daa21a7-b952-4e71-ad60-047e91f3e3f0.__action_status__.message","label":"21 - Post API Test➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"609eb5c7-faf7-4de8-bcdd-a0a19f7e09e5":["log_message"]},"attributes":{}}]</label_cache>
+        <label_cache>[{"name":"45820056-1c71-4fc0-86f9-ce4112775a46.Catalog Task.state","label":"24 - Create Catalog Task➛Catalog Task➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"sc_task","column_name":"state","choices":[{"label":"Pending","used":false,"reference":false,"image":"","missing":false,"rawLabel":"Pending","selected":false,"value":"-5","parameters":{"name":"task"}},{"label":"Open","used":false,"reference":false,"image":"","missing":false,"rawLabel":"Open","selected":false,"value":"1","parameters":{"name":"task"}},{"label":"Work in Progress","used":false,"reference":false,"image":"","missing":false,"rawLabel":"Work in Progress","selected":false,"value":"2","parameters":{"name":"task"}},{"label":"Closed Complete","used":false,"reference":false,"image":"","missing":false,"rawLabel":"Closed Complete","selected":false,"value":"3","parameters":{"name":"task"}},{"label":"Closed Incomplete","used":false,"reference":false,"image":"","missing":false,"rawLabel":"Closed Incomplete","selected":false,"value":"4","parameters":{"name":"task"}},{"label":"Closed Skipped","used":false,"reference":false,"image":"","missing":false,"rawLabel":"Closed Skipped","selected":false,"value":"7","parameters":{"name":"task"}}],"usedInstances":{"aae5f14c-1bde-4581-9c7c-724b533517a9":["condition"]}},{"name":"{{static.1ae3d4c1c31312107527961d05013111}}","label":"GRC Approvers","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"c7ab5f59-c625-41bb-a817-605bcdbb3bf2":["approval_conditions"]}},{"name":"{{static.3ce290c1c31312107527961d050131a5}}","label":"Identity","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"84d7a137-aa83-4043-9b9c-70f29a6395c8":["approval_conditions"]}},{"name":"84d7a137-aa83-4043-9b9c-70f29a6395c8.__action_status__.message","label":"2 - Ask For Approval➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"Service Catalog_1.request_item.request","label":"Trigger - Service Catalog➛Requested Item Record➛Request","reference":"sc_request","reference_display":"Request","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"request","usedInstances":{"a46abd86-4b1f-42ba-b2c7-4dd71ac26553":["record"],"91c61c35-9e64-4f38-acb3-2e3574275352":["record"]}},{"name":"84d7a137-aa83-4043-9b9c-70f29a6395c8.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"8d3e763c-fb92-4791-a87c-6b150fb0e9dc":["condition"],"9f43baf8-4c87-4130-9cfe-0ec260ca5e4d":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.c9884ac30a0a0bdb3879454e8f02774e}}","label":"Annie Approver","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference"},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"c7ab5f59-c625-41bb-a817-605bcdbb3bf2":["record"],"20af9c10-3335-4ce3-baf3-145923e4beba":["record"],"7958bfed-8d99-4490-a98d-dc88157d6533":["record"],"45820056-1c71-4fc0-86f9-ce4112775a46":["ah_requested_item","request_item"],"11590020-a0f2-45a2-9084-9b4a5e23fa7f":["record"],"5e667593-d0fc-4171-8a95-9ee461757acf":["record"]},"attributes":{"default_search_field":"number"}},{"name":"3daa21a7-b952-4e71-ad60-047e91f3e3f0.id","label":"21 - Post API Test➛ID","reference_display":"ID","type":"integer","base_type":"integer","usedInstances":{"609eb5c7-faf7-4de8-bcdd-a0a19f7e09e5":["log_message"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"dc7af9fa-a466-41a9-8ad4-f5b09355e055"}},{"name":"3daa21a7-b952-4e71-ad60-047e91f3e3f0.__action_status__.code","label":"21 - Post API Test➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"609eb5c7-faf7-4de8-bcdd-a0a19f7e09e5":["log_message"],"1d50dfed-051a-4239-827c-0165ddd13917":["condition"]},"attributes":{}},{"name":"3daa21a7-b952-4e71-ad60-047e91f3e3f0.__action_status__.message","label":"21 - Post API Test➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"609eb5c7-faf7-4de8-bcdd-a0a19f7e09e5":["log_message"]},"attributes":{}}]</label_cache>
         <master_snapshot>2f390179c3ab021057d59242b40131c6</master_snapshot>
+        <master_snapshot_digest/>
         <name>Test Catalog Item Flow</name>
         <natlang/>
         <outputs/>
@@ -35,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1858cd75c327021057d59242b40131ff</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>64</sys_mod_count>
         <sys_name>Test Catalog Item Flow</sys_name>
         <sys_overrides/>
         <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
@@ -43,8 +44,9 @@
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_update_name>sys_hub_flow_1858cd75c327021057d59242b40131ff</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:12</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:42</sys_updated_on>
         <type>flow</type>
+        <version>1</version>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=1858cd75c327021057d59242b40131ff"/>
     <sys_variable_value action="delete_multiple" query="document_key=1858cd75c327021057d59242b40131ff"/>
@@ -66,47 +68,27 @@
         <sys_updated_on>2024-07-23 10:23:27</sys_updated_on>
     </sys_flow_catalog_trigger>
     <sys_trigger_runner_mapping action="delete_multiple" query="identifier=1858cd75c327021057d59242b40131ff"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=1858cd75c327021057d59242b40131ff^sys_idNOT IN63390179c3ab021057d59242b401319f"/>
-    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
-        <comment/>
-        <display_text/>
-        <flow display_value="Test Catalog Item Flow">1858cd75c327021057d59242b40131ff</flow>
-        <name>Service Catalog</name>
-        <remote_sys_id/>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-22 19:56:48</sys_created_on>
-        <sys_id>63390179c3ab021057d59242b401319f</sys_id>
-        <sys_mod_count>82</sys_mod_count>
-        <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:11</sys_updated_on>
-        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
-        <trigger_inputs/>
-        <trigger_outputs/>
-        <trigger_type>service_catalog</trigger_type>
-    </sys_hub_trigger_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=63390179c3ab021057d59242b401319f"/>
-    <sys_hub_flow_stage action="delete_multiple" query="flow=1858cd75c327021057d59242b40131ff^sys_idNOT IN3146284dc35312107527961d05013195,3546284dc35312107527961d05013195,3946284dc35312107527961d05013195,52578549c31712107527961d050131c4,7946284dc35312107527961d05013194,b146284dc35312107527961d05013195,b546284dc35312107527961d05013195"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=1858cd75c327021057d59242b40131ff^sys_idNOT IN3146284dc35312107527961d05013195,3546284dc35312107527961d05013195,3946284dc35312107527961d05013195,52578549c31712107527961d050131c4,7946284dc35312107527961d05013194,9206b125c31312107527961d05013121,b146284dc35312107527961d05013195,b546284dc35312107527961d05013195"/>
     <sys_hub_flow_stage action="INSERT_OR_UPDATE">
         <always_show>true</always_show>
         <ancestor_array_position>0</ancestor_array_position>
         <ancestor_component_id/>
         <ancestor_stage_id/>
         <ancestral_if_else_logic/>
-        <component_indexes/>
+        <component_indexes>25</component_indexes>
         <duration>1970-01-01 00:00:00</duration>
         <flow display_value="Test Catalog Item Flow">1858cd75c327021057d59242b40131ff</flow>
         <label>Completed</label>
-        <order>3</order>
+        <order>4</order>
         <stage_id>f02cf824-6f33-416f-a096-d596215cf523</stage_id>
         <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 19:24:04</sys_created_on>
         <sys_id>3146284dc35312107527961d05013195</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-22 22:10:15</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:32</sys_updated_on>
         <type>standard</type>
         <value>complete</value>
     </sys_hub_flow_stage>
@@ -116,22 +98,22 @@
         <ancestor_component_id/>
         <ancestor_stage_id/>
         <ancestral_if_else_logic/>
-        <component_indexes>5</component_indexes>
+        <component_indexes>7</component_indexes>
         <duration>1970-01-01 00:00:00</duration>
         <flow display_value="Test Catalog Item Flow">1858cd75c327021057d59242b40131ff</flow>
-        <label>Request Cancelled</label>
+        <label>Request Rejected by Identity</label>
         <order>1</order>
         <stage_id>8697c110-8634-4f78-ab8a-32c9aeb8f512</stage_id>
         <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 19:24:04</sys_created_on>
         <sys_id>3546284dc35312107527961d05013195</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-22 22:31:01</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:32</sys_updated_on>
         <type>standard</type>
-        <value>Request Cancelled</value>
+        <value>request_rej_ident</value>
     </sys_hub_flow_stage>
     <sys_hub_flow_stage action="INSERT_OR_UPDATE">
         <always_show>true</always_show>
@@ -139,7 +121,7 @@
         <ancestor_component_id/>
         <ancestor_stage_id/>
         <ancestral_if_else_logic/>
-        <component_indexes>13</component_indexes>
+        <component_indexes>12</component_indexes>
         <duration>1970-01-02 00:00:00</duration>
         <flow display_value="Test Catalog Item Flow">1858cd75c327021057d59242b40131ff</flow>
         <label>Waiting for Approval</label>
@@ -149,10 +131,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 19:24:04</sys_created_on>
         <sys_id>3946284dc35312107527961d05013195</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 15:00:01</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:32</sys_updated_on>
         <type>standard</type>
         <value>waiting_for_approval</value>
     </sys_hub_flow_stage>
@@ -189,18 +171,41 @@
         <duration>1970-01-04 00:00:00</duration>
         <flow display_value="Test Catalog Item Flow">1858cd75c327021057d59242b40131ff</flow>
         <label>Fulfillment</label>
-        <order>5</order>
+        <order>3</order>
         <stage_id>0dd4321d-a4f6-4de6-b263-b2e287737570</stage_id>
         <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 19:24:04</sys_created_on>
         <sys_id>7946284dc35312107527961d05013194</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-22 22:14:37</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:32</sys_updated_on>
         <type>standard</type>
         <value>fulfillment</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>false</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>17</component_indexes>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="Test Catalog Item Flow">1858cd75c327021057d59242b40131ff</flow>
+        <label>Request Rejected by Approver</label>
+        <order>7</order>
+        <stage_id>d9ce46ea-0181-4e63-a69c-1509721013a1</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:29:29</sys_created_on>
+        <sys_id>9206b125c31312107527961d05013121</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 15:52:32</sys_updated_on>
+        <type>standard</type>
+        <value>request_rej_app</value>
     </sys_hub_flow_stage>
     <sys_hub_flow_stage action="INSERT_OR_UPDATE">
         <always_show>true</always_show>
@@ -235,16 +240,16 @@
         <duration>1970-01-01 00:00:00</duration>
         <flow display_value="Test Catalog Item Flow">1858cd75c327021057d59242b40131ff</flow>
         <label>Request Approved</label>
-        <order>4</order>
+        <order>5</order>
         <stage_id>822cdfe4-4c73-4d18-b7a1-8ddc35b26a4c</stage_id>
         <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 19:24:04</sys_created_on>
         <sys_id>b546284dc35312107527961d05013195</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-22 22:10:15</sys_updated_on>
+        <sys_updated_on>2025-01-23 22:09:40</sys_updated_on>
         <type>standard</type>
         <value>request_approved</value>
     </sys_hub_flow_stage>
@@ -325,14 +330,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-22 19:56:48</sys_created_on>
         <sys_id>5f394dfdc36b021057d59242b40131e3</sys_id>
-        <sys_mod_count>61</sys_mod_count>
+        <sys_mod_count>83</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:11</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:41</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -409,14 +414,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-22 19:56:48</sys_created_on>
         <sys_id>ef390179c3ab021057d59242b4013197</sys_id>
-        <sys_mod_count>163</sys_mod_count>
+        <sys_mod_count>209</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:11</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:42</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -432,7 +437,27 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ef390179c3ab021057d59242b4013197"/>
     <sys_hub_flow_output action="delete_multiple" query="model=1858cd75c327021057d59242b40131ff"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=1858cd75c327021057d59242b40131ff"/>
-    <sys_hub_action_instance action="delete_multiple" query="flow=1858cd75c327021057d59242b40131ff^sys_idNOT IN183ed841c35312107527961d050131f8,2ac7c546c36f421057d59242b40131e8,2e3a4d0ac36f421057d59242b40131e7,3d25a90ac3ef421057d59242b40131c7,418fc4cec32b421057d59242b4013151,48a5240ec3ab421057d59242b4013134,543ed841c35312107527961d050131f2,56b35959c3db12107527961d050131cb,67390179c3ab021057d59242b40131a4,87c6f402c32f421057d59242b4013192,8d8fc4cec32b421057d59242b4013136,903ed841c35312107527961d050131e5,9f4d319dc39f12107527961d050131a0,cc5dc541c35712107527961d0501317b,d2b35959c3db12107527961d050131d2,d7c6f402c32f421057d59242b40131a3,ec3e1c41c35312107527961d05013110"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=1858cd75c327021057d59242b40131ff^sys_idNOT IN63390179c3ab021057d59242b401319f"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Test Catalog Item Flow">1858cd75c327021057d59242b40131ff</flow>
+        <name>Service Catalog</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-22 19:56:48</sys_created_on>
+        <sys_id>63390179c3ab021057d59242b401319f</sys_id>
+        <sys_mod_count>105</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 15:52:42</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=63390179c3ab021057d59242b401319f"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=1858cd75c327021057d59242b40131ff^sys_idNOT IN183ed841c35312107527961d050131f8,2e3a4d0ac36f421057d59242b40131e7,3d25a90ac3ef421057d59242b40131c7,418fc4cec32b421057d59242b4013151,543ed841c35312107527961d050131f2,56b35959c3db12107527961d050131cb,633c3d2dc31312107527961d05013119,67390179c3ab021057d59242b40131a4,7ac49e1dc31352107527961d050131bb,87c6f402c32f421057d59242b4013192,8d8fc4cec32b421057d59242b4013136,903ed841c35312107527961d050131e5,9292c6a5c35312107527961d05013111,9f4d319dc39f12107527961d050131a0,cc5dc541c35712107527961d0501317b,d2b35959c3db12107527961d050131d2,d7c6f402c32f421057d59242b40131a3,ec3e1c41c35312107527961d05013110"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -443,16 +468,16 @@
         <display_text/>
         <flow display_value="Test Catalog Item Flow">1858cd75c327021057d59242b40131ff</flow>
         <generation_source/>
-        <order>17</order>
+        <order>16</order>
         <parent_ui_id>8d3e763c-fb92-4791-a87c-6b150fb0e9dc</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 18:48:44</sys_created_on>
         <sys_id>183ed841c35312107527961d050131f8</sys_id>
-        <sys_mod_count>108</sys_mod_count>
+        <sys_mod_count>177</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:28:16</sys_updated_on>
+        <sys_updated_on>2025-01-25 18:07:09</sys_updated_on>
         <ui_id>20af9c10-3335-4ce3-baf3-145923e4beba</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=183ed841c35312107527961d050131f8"/>
@@ -464,10 +489,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 18:48:44</sys_created_on>
         <sys_id>183e1c41c35312107527961d05013106</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 14:51:53</sys_updated_on>
-        <value>state=4</value>
+        <sys_updated_on>2025-01-24 15:10:58</sys_updated_on>
+        <value>state=4^approval=rejected</value>
         <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -525,96 +550,6 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=183ed841c35312107527961d050131f8"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
-        <attributes/>
-        <comment/>
-        <display_text/>
-        <flow display_value="Test Catalog Item Flow">1858cd75c327021057d59242b40131ff</flow>
-        <generation_source/>
-        <order>7</order>
-        <parent_ui_id>c332a3e9-49fc-45a3-902d-ddc20aa2cc9c</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-23 14:28:56</sys_created_on>
-        <sys_id>2ac7c546c36f421057d59242b40131e8</sys_id>
-        <sys_mod_count>178</sys_mod_count>
-        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:28:16</sys_updated_on>
-        <ui_id>b00553f9-77be-42ff-8050-8f954c066785</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=2ac7c546c36f421057d59242b40131e8"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>2ac7c546c36f421057d59242b40131e8</document_key>
-        <order>50</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-23 14:28:56</sys_created_on>
-        <sys_id>a6c7c546c36f421057d59242b40131eb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-23 14:28:56</sys_updated_on>
-        <value>sc_req_item</value>
-        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>2ac7c546c36f421057d59242b40131e8</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-23 14:28:56</sys_created_on>
-        <sys_id>aec7c546c36f421057d59242b40131ea</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 14:51:53</sys_updated_on>
-        <value>state=4^approval=rejected</value>
-        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=2ac7c546c36f421057d59242b40131e8"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>record</field>
-        <id>2ac7c546c36f421057d59242b40131e8</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-23 14:28:56</sys_created_on>
-        <sys_id>2ec7c546c36f421057d59242b40131ea</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-23 14:28:56</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>{{Service Catalog_1.request_item}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table_name</field>
-        <id>2ac7c546c36f421057d59242b40131e8</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-23 14:28:56</sys_created_on>
-        <sys_id>a2c7c546c36f421057d59242b40131ea</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-23 14:28:56</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>values</field>
-        <id>2ac7c546c36f421057d59242b40131e8</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-23 14:28:56</sys_created_on>
-        <sys_id>6ac7c546c36f421057d59242b40131ea</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-23 14:28:56</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=2ac7c546c36f421057d59242b40131e8"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2ac7c546c36f421057d59242b40131e8"/>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
         <attributes/>
@@ -628,10 +563,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-23 14:39:35</sys_created_on>
         <sys_id>2e3a4d0ac36f421057d59242b40131e7</sys_id>
-        <sys_mod_count>170</sys_mod_count>
+        <sys_mod_count>239</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:28:16</sys_updated_on>
+        <sys_updated_on>2025-01-25 18:07:09</sys_updated_on>
         <ui_id>f9f2455f-31b2-4459-abed-5bcd8268a7e0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2e3a4d0ac36f421057d59242b40131e7"/>
@@ -668,10 +603,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-23 16:37:14</sys_created_on>
         <sys_id>3d25a90ac3ef421057d59242b40131c7</sys_id>
-        <sys_mod_count>162</sys_mod_count>
+        <sys_mod_count>231</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:28:16</sys_updated_on>
+        <sys_updated_on>2025-01-25 18:07:09</sys_updated_on>
         <ui_id>dc16ac0c-10bb-470d-a1dc-3d1ed30bfae1</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3d25a90ac3ef421057d59242b40131c7"/>
@@ -715,16 +650,16 @@
         <display_text/>
         <flow display_value="Test Catalog Item Flow">1858cd75c327021057d59242b40131ff</flow>
         <generation_source/>
-        <order>11</order>
+        <order>10</order>
         <parent_ui_id>0e3b0ba3-5ffc-4a10-bde4-c8b6f5de5811</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-23 10:23:05</sys_created_on>
         <sys_id>418fc4cec32b421057d59242b4013151</sys_id>
-        <sys_mod_count>218</sys_mod_count>
+        <sys_mod_count>287</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:28:16</sys_updated_on>
+        <sys_updated_on>2025-01-25 18:07:09</sys_updated_on>
         <ui_id>9d2b16eb-0710-4723-ab06-b8b2583c61f3</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=418fc4cec32b421057d59242b4013151"/>
@@ -797,96 +732,6 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=418fc4cec32b421057d59242b4013151"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
-        <attributes/>
-        <comment/>
-        <display_text/>
-        <flow display_value="Test Catalog Item Flow">1858cd75c327021057d59242b40131ff</flow>
-        <generation_source/>
-        <order>6</order>
-        <parent_ui_id>c332a3e9-49fc-45a3-902d-ddc20aa2cc9c</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-23 11:59:40</sys_created_on>
-        <sys_id>48a5240ec3ab421057d59242b4013134</sys_id>
-        <sys_mod_count>202</sys_mod_count>
-        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:28:16</sys_updated_on>
-        <ui_id>e7524185-8e66-4ead-bc80-645c53a614aa</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=48a5240ec3ab421057d59242b4013134"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>48a5240ec3ab421057d59242b4013134</document_key>
-        <order>50</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-23 11:59:40</sys_created_on>
-        <sys_id>c4a5240ec3ab421057d59242b4013137</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-23 11:59:40</sys_updated_on>
-        <value>sc_request</value>
-        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>48a5240ec3ab421057d59242b4013134</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-23 11:59:40</sys_created_on>
-        <sys_id>cca5240ec3ab421057d59242b4013136</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-23 17:18:51</sys_updated_on>
-        <value>approval=rejected^request_state=closed_cancelled^state=4</value>
-        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=48a5240ec3ab421057d59242b4013134"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>record</field>
-        <id>48a5240ec3ab421057d59242b4013134</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-23 11:59:40</sys_created_on>
-        <sys_id>4ca5240ec3ab421057d59242b4013136</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-23 11:59:40</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>{{Service Catalog_1.request_item.request}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table_name</field>
-        <id>48a5240ec3ab421057d59242b4013134</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-23 11:59:40</sys_created_on>
-        <sys_id>c0a5240ec3ab421057d59242b4013136</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-23 11:59:40</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>values</field>
-        <id>48a5240ec3ab421057d59242b4013134</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-23 11:59:40</sys_created_on>
-        <sys_id>88a5240ec3ab421057d59242b4013136</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-23 11:59:40</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=48a5240ec3ab421057d59242b4013134"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=48a5240ec3ab421057d59242b4013134"/>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
         <attributes/>
@@ -894,16 +739,16 @@
         <display_text/>
         <flow display_value="Test Catalog Item Flow">1858cd75c327021057d59242b40131ff</flow>
         <generation_source/>
-        <order>16</order>
+        <order>15</order>
         <parent_ui_id>8d3e763c-fb92-4791-a87c-6b150fb0e9dc</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 18:48:44</sys_created_on>
         <sys_id>543ed841c35312107527961d050131f2</sys_id>
-        <sys_mod_count>108</sys_mod_count>
+        <sys_mod_count>177</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:28:16</sys_updated_on>
+        <sys_updated_on>2025-01-25 18:07:09</sys_updated_on>
         <ui_id>158f88c6-f4f1-414e-a9db-e1deda4400b2</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=543ed841c35312107527961d050131f2"/>
@@ -939,10 +784,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-23 17:21:05</sys_created_on>
         <sys_id>56b35959c3db12107527961d050131cb</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>87</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:28:16</sys_updated_on>
+        <sys_updated_on>2025-01-25 18:07:09</sys_updated_on>
         <ui_id>3daa21a7-b952-4e71-ad60-047e91f3e3f0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=56b35959c3db12107527961d050131cb"/>
@@ -965,6 +810,96 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=56b35959c3db12107527961d050131cb"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Test Catalog Item Flow">1858cd75c327021057d59242b40131ff</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>c332a3e9-49fc-45a3-902d-ddc20aa2cc9c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:56:36</sys_created_on>
+        <sys_id>633c3d2dc31312107527961d05013119</sys_id>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-01-25 18:07:09</sys_updated_on>
+        <ui_id>5e667593-d0fc-4171-8a95-9ee461757acf</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=633c3d2dc31312107527961d05013119"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>633c3d2dc31312107527961d05013119</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:56:36</sys_created_on>
+        <sys_id>6b3c3d2dc31312107527961d0501311b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:56:36</sys_updated_on>
+        <value>state=4^approval=rejected</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>633c3d2dc31312107527961d05013119</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:56:36</sys_created_on>
+        <sys_id>e33c3d2dc31312107527961d0501311c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:56:36</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=633c3d2dc31312107527961d05013119"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>633c3d2dc31312107527961d05013119</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:56:36</sys_created_on>
+        <sys_id>e73c3d2dc31312107527961d0501311b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:56:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>633c3d2dc31312107527961d05013119</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:56:36</sys_created_on>
+        <sys_id>2f3c3d2dc31312107527961d0501311a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:56:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>633c3d2dc31312107527961d05013119</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:56:36</sys_created_on>
+        <sys_id>273c3d2dc31312107527961d0501311b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:56:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=633c3d2dc31312107527961d05013119"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=633c3d2dc31312107527961d05013119"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
         <attributes/>
@@ -978,10 +913,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-22 19:56:48</sys_created_on>
         <sys_id>67390179c3ab021057d59242b40131a4</sys_id>
-        <sys_mod_count>224</sys_mod_count>
+        <sys_mod_count>293</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:28:16</sys_updated_on>
+        <sys_updated_on>2025-01-25 18:07:09</sys_updated_on>
         <ui_id>77ae6ce2-aefc-4874-9fbc-8a2f243d105f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=67390179c3ab021057d59242b40131a4"/>
@@ -1004,6 +939,96 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=67390179c3ab021057d59242b40131a4"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Test Catalog Item Flow">1858cd75c327021057d59242b40131ff</flow>
+        <generation_source/>
+        <order>26</order>
+        <parent_ui_id>aae5f14c-1bde-4581-9c7c-724b533517a9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 22:05:23</sys_created_on>
+        <sys_id>7ac49e1dc31352107527961d050131bb</sys_id>
+        <sys_mod_count>69</sys_mod_count>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-01-25 18:07:09</sys_updated_on>
+        <ui_id>11590020-a0f2-45a2-9084-9b4a5e23fa7f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7ac49e1dc31352107527961d050131bb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7ac49e1dc31352107527961d050131bb</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 22:05:23</sys_created_on>
+        <sys_id>bec49e1dc31352107527961d050131bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 22:05:23</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7ac49e1dc31352107527961d050131bb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 22:05:23</sys_created_on>
+        <sys_id>fac49e1dc31352107527961d050131bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 22:05:23</sys_updated_on>
+        <value>state=3</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7ac49e1dc31352107527961d050131bb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>7ac49e1dc31352107527961d050131bb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 22:05:23</sys_created_on>
+        <sys_id>7ac49e1dc31352107527961d050131bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 22:05:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>7ac49e1dc31352107527961d050131bb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 22:05:23</sys_created_on>
+        <sys_id>f2c49e1dc31352107527961d050131bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 22:05:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>7ac49e1dc31352107527961d050131bb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 22:05:23</sys_created_on>
+        <sys_id>b6c49e1dc31352107527961d050131bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 22:05:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7ac49e1dc31352107527961d050131bb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7ac49e1dc31352107527961d050131bb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
         <attributes/>
@@ -1011,16 +1036,16 @@
         <display_text/>
         <flow display_value="Test Catalog Item Flow">1858cd75c327021057d59242b40131ff</flow>
         <generation_source/>
-        <order>8</order>
+        <order>7</order>
         <parent_ui_id>c332a3e9-49fc-45a3-902d-ddc20aa2cc9c</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-23 13:14:42</sys_created_on>
         <sys_id>87c6f402c32f421057d59242b4013192</sys_id>
-        <sys_mod_count>194</sys_mod_count>
+        <sys_mod_count>263</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:28:16</sys_updated_on>
+        <sys_updated_on>2025-01-25 18:07:09</sys_updated_on>
         <ui_id>410ffada-40ca-48c4-aec0-5d1c0c905cef</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=87c6f402c32f421057d59242b4013192"/>
@@ -1032,10 +1057,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-23 13:14:42</sys_created_on>
         <sys_id>07c6f402c32f421057d59242b4013194</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-23 13:14:42</sys_updated_on>
-        <value>Item was rejected</value>
+        <sys_updated_on>2025-01-23 22:12:35</sys_updated_on>
+        <value>Requested Item was rejected</value>
         <variable display_value="Message">23c1bcc6531003003bf1d9109ec587e5</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4^id=87c6f402c32f421057d59242b4013192"/>
@@ -1057,10 +1082,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-23 10:23:05</sys_created_on>
         <sys_id>8d8fc4cec32b421057d59242b4013136</sys_id>
-        <sys_mod_count>218</sys_mod_count>
+        <sys_mod_count>287</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:28:16</sys_updated_on>
+        <sys_updated_on>2025-01-25 18:07:09</sys_updated_on>
         <ui_id>84d7a137-aa83-4043-9b9c-70f29a6395c8</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8d8fc4cec32b421057d59242b4013136"/>
@@ -1127,11 +1152,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-23 10:23:05</sys_created_on>
         <sys_id>418fc4cec32b421057d59242b401313a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-22 18:48:44</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:01:36</sys_updated_on>
         <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
-        <value>ApprovesAnyG[{{static.3ce290c1c31312107527961d050131a5}}]</value>
+        <value>ApprovesRejectsAnyG[{{static.3ce290c1c31312107527961d050131a5}}]</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>approval_field</field>
@@ -1205,16 +1230,16 @@
         <display_text/>
         <flow display_value="Test Catalog Item Flow">1858cd75c327021057d59242b40131ff</flow>
         <generation_source/>
-        <order>14</order>
+        <order>13</order>
         <parent_ui_id>0e3b0ba3-5ffc-4a10-bde4-c8b6f5de5811</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 18:48:44</sys_created_on>
         <sys_id>903ed841c35312107527961d050131e5</sys_id>
-        <sys_mod_count>108</sys_mod_count>
+        <sys_mod_count>177</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:28:16</sys_updated_on>
+        <sys_updated_on>2025-01-25 18:07:09</sys_updated_on>
         <ui_id>c7ab5f59-c625-41bb-a817-605bcdbb3bf2</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=903ed841c35312107527961d050131e5"/>
@@ -1352,6 +1377,96 @@
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Test Catalog Item Flow">1858cd75c327021057d59242b40131ff</flow>
+        <generation_source/>
+        <order>17</order>
+        <parent_ui_id>8d3e763c-fb92-4791-a87c-6b150fb0e9dc</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 15:24:22</sys_created_on>
+        <sys_id>9292c6a5c35312107527961d05013111</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-01-25 18:07:09</sys_updated_on>
+        <ui_id>91c61c35-9e64-4f38-acb3-2e3574275352</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9292c6a5c35312107527961d05013111"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9292c6a5c35312107527961d05013111</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 15:24:22</sys_created_on>
+        <sys_id>1292c6a5c35312107527961d05013114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 15:24:22</sys_updated_on>
+        <value>sc_request</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9292c6a5c35312107527961d05013111</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 15:24:22</sys_created_on>
+        <sys_id>1a92c6a5c35312107527961d05013113</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 15:35:25</sys_updated_on>
+        <value>state=4^request_state=closed_cancelled</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9292c6a5c35312107527961d05013111"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>9292c6a5c35312107527961d05013111</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 15:24:22</sys_created_on>
+        <sys_id>9692c6a5c35312107527961d05013113</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 15:24:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Service Catalog_1.request_item.request}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>9292c6a5c35312107527961d05013111</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 15:24:22</sys_created_on>
+        <sys_id>1e92c6a5c35312107527961d05013112</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 15:24:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>9292c6a5c35312107527961d05013111</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 15:24:22</sys_created_on>
+        <sys_id>d292c6a5c35312107527961d05013113</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 15:24:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9292c6a5c35312107527961d05013111"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9292c6a5c35312107527961d05013111"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
         <action_type display_value="Create Catalog Task">af51fd0e73141300612c273ffff6a785</action_type>
         <action_type_parent display_value="Create Catalog Task">f597c41073081300612c273ffff6a767</action_type_parent>
         <attributes/>
@@ -1365,10 +1480,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-23 20:22:44</sys_created_on>
         <sys_id>9f4d319dc39f12107527961d050131a0</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>81</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:28:16</sys_updated_on>
+        <sys_updated_on>2025-01-25 18:07:09</sys_updated_on>
         <ui_id>45820056-1c71-4fc0-86f9-ce4112775a46</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9f4d319dc39f12107527961d050131a0"/>
@@ -1487,16 +1602,16 @@
         <display_text/>
         <flow display_value="Test Catalog Item Flow">1858cd75c327021057d59242b40131ff</flow>
         <generation_source/>
-        <order>12</order>
+        <order>11</order>
         <parent_ui_id>0e3b0ba3-5ffc-4a10-bde4-c8b6f5de5811</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 22:14:37</sys_created_on>
         <sys_id>cc5dc541c35712107527961d0501317b</sys_id>
-        <sys_mod_count>44</sys_mod_count>
+        <sys_mod_count>113</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:28:16</sys_updated_on>
+        <sys_updated_on>2025-01-25 18:07:09</sys_updated_on>
         <ui_id>a46abd86-4b1f-42ba-b2c7-4dd71ac26553</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cc5dc541c35712107527961d0501317b"/>
@@ -1583,10 +1698,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-23 17:21:06</sys_created_on>
         <sys_id>d2b35959c3db12107527961d050131d2</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>87</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:28:16</sys_updated_on>
+        <sys_updated_on>2025-01-25 18:07:09</sys_updated_on>
         <ui_id>609eb5c7-faf7-4de8-bcdd-a0a19f7e09e5</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d2b35959c3db12107527961d050131d2"/>
@@ -1614,16 +1729,16 @@
         <display_text/>
         <flow display_value="Test Catalog Item Flow">1858cd75c327021057d59242b40131ff</flow>
         <generation_source/>
-        <order>13</order>
+        <order>12</order>
         <parent_ui_id>0e3b0ba3-5ffc-4a10-bde4-c8b6f5de5811</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-23 13:14:43</sys_created_on>
         <sys_id>d7c6f402c32f421057d59242b40131a3</sys_id>
-        <sys_mod_count>194</sys_mod_count>
+        <sys_mod_count>263</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:28:16</sys_updated_on>
+        <sys_updated_on>2025-01-25 18:07:09</sys_updated_on>
         <ui_id>89d37717-b7bf-4a2a-a26f-788ee26060c0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d7c6f402c32f421057d59242b40131a3"/>
@@ -1660,10 +1775,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 18:48:45</sys_created_on>
         <sys_id>ec3e1c41c35312107527961d05013110</sys_id>
-        <sys_mod_count>108</sys_mod_count>
+        <sys_mod_count>177</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:28:16</sys_updated_on>
+        <sys_updated_on>2025-01-25 18:07:09</sys_updated_on>
         <ui_id>7958bfed-8d99-4490-a98d-dc88157d6533</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ec3e1c41c35312107527961d05013110"/>
@@ -1734,8 +1849,7 @@
     </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=ec3e1c41c35312107527961d05013110"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=ec3e1c41c35312107527961d05013110"/>
-    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=1858cd75c327021057d59242b40131ff"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=1858cd75c327021057d59242b40131ff^sys_idNOT IN203e1c41c35312107527961d0501310a,418fc4cec32b421057d59242b401314a,898fc4cec32b421057d59242b4013147,8d8fc4cec32b421057d59242b401313c,943e1c41c35312107527961d05013107,943ed841c35312107527961d050131ea,c34d319dc39f12107527961d05013196"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=1858cd75c327021057d59242b40131ff^sys_idNOT IN203e1c41c35312107527961d0501310a,418fc4cec32b421057d59242b401314a,7ec49e1dc31352107527961d050131b2,898fc4cec32b421057d59242b4013147,8d8fc4cec32b421057d59242b401313c,943e1c41c35312107527961d05013107,943ed841c35312107527961d050131ea,c34d319dc39f12107527961d05013196"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <attributes/>
         <block display_value="">683e1c41c35312107527961d05013109</block>
@@ -1760,10 +1874,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 18:48:45</sys_created_on>
         <sys_id>203e1c41c35312107527961d0501310a</sys_id>
-        <sys_mod_count>39</sys_mod_count>
+        <sys_mod_count>66</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:12</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:42</sys_updated_on>
         <ui_id>9f43baf8-4c87-4130-9cfe-0ec260ca5e4d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1826,7 +1940,7 @@
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>10</order>
+        <order>9</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id/>
@@ -1834,10 +1948,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-23 10:23:05</sys_created_on>
         <sys_id>418fc4cec32b421057d59242b401314a</sys_id>
-        <sys_mod_count>85</sys_mod_count>
+        <sys_mod_count>111</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:11</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:42</sys_updated_on>
         <ui_id>0e3b0ba3-5ffc-4a10-bde4-c8b6f5de5811</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1886,6 +2000,80 @@
     <sys_hub_input_scripts action="delete_multiple" query="instance=418fc4cec32b421057d59242b401314a"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <attributes/>
+        <block display_value="">72c49e1dc31352107527961d050131b2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Test Catalog Item Flow">1858cd75c327021057d59242b40131ff</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>25</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>9f43baf8-4c87-4130-9cfe-0ec260ca5e4d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 22:05:23</sys_created_on>
+        <sys_id>7ec49e1dc31352107527961d050131b2</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 15:52:42</sys_updated_on>
+        <ui_id>aae5f14c-1bde-4581-9c7c-724b533517a9</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7ec49e1dc31352107527961d050131b2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>7ec49e1dc31352107527961d050131b2</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 22:05:23</sys_created_on>
+        <sys_id>f2c49e1dc31352107527961d050131b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 22:05:23</sys_updated_on>
+        <value>Task Completed</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7ec49e1dc31352107527961d050131b2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>7ec49e1dc31352107527961d050131b2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 22:05:23</sys_created_on>
+        <sys_id>72c49e1dc31352107527961d050131b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 22:05:23</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{45820056-1c71-4fc0-86f9-ce4112775a46.Catalog Task.state}}=3</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>7ec49e1dc31352107527961d050131b2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 22:05:23</sys_created_on>
+        <sys_id>bac49e1dc31352107527961d050131b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 22:05:23</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7ec49e1dc31352107527961d050131b2"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7ec49e1dc31352107527961d050131b2"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">09fc7f96c38f52107527961d0501310d</block>
         <comment/>
         <connected_to/>
@@ -1899,7 +2087,7 @@
         <generation_source/>
         <inputs/>
         <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
-        <order>9</order>
+        <order>8</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>c332a3e9-49fc-45a3-902d-ddc20aa2cc9c</parent_ui_id>
@@ -1907,10 +2095,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-23 10:23:05</sys_created_on>
         <sys_id>898fc4cec32b421057d59242b4013147</sys_id>
-        <sys_mod_count>85</sys_mod_count>
+        <sys_mod_count>111</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:11</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:42</sys_updated_on>
         <ui_id>1f6d2f99-73b9-439b-b7db-d8616091a16a</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1942,10 +2130,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-23 10:23:05</sys_created_on>
         <sys_id>8d8fc4cec32b421057d59242b401313c</sys_id>
-        <sys_mod_count>82</sys_mod_count>
+        <sys_mod_count>105</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:11</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:42</sys_updated_on>
         <ui_id>c332a3e9-49fc-45a3-902d-ddc20aa2cc9c</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2015,10 +2203,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 18:48:45</sys_created_on>
         <sys_id>943e1c41c35312107527961d05013107</sys_id>
-        <sys_mod_count>39</sys_mod_count>
+        <sys_mod_count>66</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:12</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:42</sys_updated_on>
         <ui_id>59740eba-3a0e-4302-89c4-8f4f36ded126</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2042,7 +2230,7 @@
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>15</order>
+        <order>14</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>0e3b0ba3-5ffc-4a10-bde4-c8b6f5de5811</parent_ui_id>
@@ -2050,10 +2238,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 18:48:44</sys_created_on>
         <sys_id>943ed841c35312107527961d050131ea</sys_id>
-        <sys_mod_count>39</sys_mod_count>
+        <sys_mod_count>65</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:11</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:42</sys_updated_on>
         <ui_id>8d3e763c-fb92-4791-a87c-6b150fb0e9dc</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2124,10 +2312,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-23 20:22:44</sys_created_on>
         <sys_id>c34d319dc39f12107527961d05013196</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:12</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:42</sys_updated_on>
         <ui_id>1d50dfed-051a-4239-827c-0165ddd13917</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2174,6 +2362,7 @@
     </sys_element_mapping>
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c34d319dc39f12107527961d05013196"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=c34d319dc39f12107527961d05013196"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=1858cd75c327021057d59242b40131ff"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=1858cd75c327021057d59242b40131ff"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=1858cd75c327021057d59242b40131ff"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_1858cd75c327021057d59242b40131ff^sys_idNOT INab390179c3ab021057d59242b4013196,e7390179c3ab021057d59242b401319c"/>
@@ -2240,7 +2429,7 @@
         <description/>
         <flow_priority/>
         <internal_name>test_catalog_item_flow</internal_name>
-        <label_cache>[{"name":"{{static.1ae3d4c1c31312107527961d05013111}}","label":"GRC Approvers","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"c7ab5f59-c625-41bb-a817-605bcdbb3bf2":["approval_conditions"]}},{"name":"{{static.3ce290c1c31312107527961d050131a5}}","label":"Identity","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"84d7a137-aa83-4043-9b9c-70f29a6395c8":["approval_conditions"]}},{"name":"84d7a137-aa83-4043-9b9c-70f29a6395c8.__action_status__.message","label":"2 - Ask For Approval➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"Service Catalog_1.request_item.request","label":"Trigger - Service Catalog➛Requested Item Record➛Request","reference":"sc_request","reference_display":"Request","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"request","usedInstances":{"a46abd86-4b1f-42ba-b2c7-4dd71ac26553":["record"]}},{"name":"84d7a137-aa83-4043-9b9c-70f29a6395c8.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"8d3e763c-fb92-4791-a87c-6b150fb0e9dc":["condition"],"9f43baf8-4c87-4130-9cfe-0ec260ca5e4d":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.c9884ac30a0a0bdb3879454e8f02774e}}","label":"Annie Approver","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference"},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"c7ab5f59-c625-41bb-a817-605bcdbb3bf2":["record"],"20af9c10-3335-4ce3-baf3-145923e4beba":["record"],"7958bfed-8d99-4490-a98d-dc88157d6533":["record"],"45820056-1c71-4fc0-86f9-ce4112775a46":["ah_requested_item","request_item"]},"attributes":{"default_search_field":"number"}},{"name":"3daa21a7-b952-4e71-ad60-047e91f3e3f0.id","label":"21 - Post API Test➛ID","reference_display":"ID","type":"integer","base_type":"integer","usedInstances":{"609eb5c7-faf7-4de8-bcdd-a0a19f7e09e5":["log_message"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"dc7af9fa-a466-41a9-8ad4-f5b09355e055"}},{"name":"3daa21a7-b952-4e71-ad60-047e91f3e3f0.__action_status__.code","label":"21 - Post API Test➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"609eb5c7-faf7-4de8-bcdd-a0a19f7e09e5":["log_message"],"1d50dfed-051a-4239-827c-0165ddd13917":["condition"]},"attributes":{}},{"name":"3daa21a7-b952-4e71-ad60-047e91f3e3f0.__action_status__.message","label":"21 - Post API Test➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"609eb5c7-faf7-4de8-bcdd-a0a19f7e09e5":["log_message"]},"attributes":{}}]</label_cache>
+        <label_cache>[{"name":"45820056-1c71-4fc0-86f9-ce4112775a46.Catalog Task.state","label":"24 - Create Catalog Task➛Catalog Task➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"sc_task","column_name":"state","choices":[{"label":"Pending","used":false,"reference":false,"image":"","missing":false,"rawLabel":"Pending","selected":false,"value":"-5","parameters":{"name":"task"}},{"label":"Open","used":false,"reference":false,"image":"","missing":false,"rawLabel":"Open","selected":false,"value":"1","parameters":{"name":"task"}},{"label":"Work in Progress","used":false,"reference":false,"image":"","missing":false,"rawLabel":"Work in Progress","selected":false,"value":"2","parameters":{"name":"task"}},{"label":"Closed Complete","used":false,"reference":false,"image":"","missing":false,"rawLabel":"Closed Complete","selected":false,"value":"3","parameters":{"name":"task"}},{"label":"Closed Incomplete","used":false,"reference":false,"image":"","missing":false,"rawLabel":"Closed Incomplete","selected":false,"value":"4","parameters":{"name":"task"}},{"label":"Closed Skipped","used":false,"reference":false,"image":"","missing":false,"rawLabel":"Closed Skipped","selected":false,"value":"7","parameters":{"name":"task"}}],"usedInstances":{"aae5f14c-1bde-4581-9c7c-724b533517a9":["condition"]}},{"name":"{{static.1ae3d4c1c31312107527961d05013111}}","label":"GRC Approvers","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"c7ab5f59-c625-41bb-a817-605bcdbb3bf2":["approval_conditions"]}},{"name":"{{static.3ce290c1c31312107527961d050131a5}}","label":"Identity","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"84d7a137-aa83-4043-9b9c-70f29a6395c8":["approval_conditions"]}},{"name":"84d7a137-aa83-4043-9b9c-70f29a6395c8.__action_status__.message","label":"2 - Ask For Approval➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"Service Catalog_1.request_item.request","label":"Trigger - Service Catalog➛Requested Item Record➛Request","reference":"sc_request","reference_display":"Request","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"request","usedInstances":{"a46abd86-4b1f-42ba-b2c7-4dd71ac26553":["record"],"91c61c35-9e64-4f38-acb3-2e3574275352":["record"]}},{"name":"84d7a137-aa83-4043-9b9c-70f29a6395c8.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"8d3e763c-fb92-4791-a87c-6b150fb0e9dc":["condition"],"9f43baf8-4c87-4130-9cfe-0ec260ca5e4d":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.c9884ac30a0a0bdb3879454e8f02774e}}","label":"Annie Approver","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference"},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"c7ab5f59-c625-41bb-a817-605bcdbb3bf2":["record"],"20af9c10-3335-4ce3-baf3-145923e4beba":["record"],"7958bfed-8d99-4490-a98d-dc88157d6533":["record"],"45820056-1c71-4fc0-86f9-ce4112775a46":["ah_requested_item","request_item"],"11590020-a0f2-45a2-9084-9b4a5e23fa7f":["record"],"5e667593-d0fc-4171-8a95-9ee461757acf":["record"]},"attributes":{"default_search_field":"number"}},{"name":"3daa21a7-b952-4e71-ad60-047e91f3e3f0.id","label":"21 - Post API Test➛ID","reference_display":"ID","type":"integer","base_type":"integer","usedInstances":{"609eb5c7-faf7-4de8-bcdd-a0a19f7e09e5":["log_message"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"dc7af9fa-a466-41a9-8ad4-f5b09355e055"}},{"name":"3daa21a7-b952-4e71-ad60-047e91f3e3f0.__action_status__.code","label":"21 - Post API Test➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"609eb5c7-faf7-4de8-bcdd-a0a19f7e09e5":["log_message"],"1d50dfed-051a-4239-827c-0165ddd13917":["condition"]},"attributes":{}},{"name":"3daa21a7-b952-4e71-ad60-047e91f3e3f0.__action_status__.message","label":"21 - Post API Test➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"609eb5c7-faf7-4de8-bcdd-a0a19f7e09e5":["log_message"]},"attributes":{}}]</label_cache>
         <master>true</master>
         <name>Test Catalog Item Flow</name>
         <natlang/>
@@ -2257,7 +2446,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2f390179c3ab021057d59242b40131c6</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2265,32 +2454,36 @@
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:39</sys_updated_on>
         <type>flow</type>
+        <version>1</version>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=2f390179c3ab021057d59242b40131c6"/>
     <sys_variable_value action="delete_multiple" query="document_key=2f390179c3ab021057d59242b40131c6"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=2f390179c3ab021057d59242b40131c6^sys_idNOT IN37394179c3ab021057d59242b4013149"/>
-    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
-        <comment/>
-        <display_text/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=2f390179c3ab021057d59242b40131c6^sys_idNOT IN41467925c31312107527961d05013138,47874d49c31712107527961d05013156,7107688dc35312107527961d050131e3,7507688dc35312107527961d050131e3,7d07688dc35312107527961d050131e2,f107688dc35312107527961d050131e3,f907688dc35312107527961d050131e2,fd07688dc35312107527961d050131e2"/>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>false</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>17</component_indexes>
+        <duration>1970-01-01 00:00:00</duration>
         <flow display_value="Test Catalog Item Flow">2f390179c3ab021057d59242b40131c6</flow>
-        <name>Service Catalog</name>
-        <remote_sys_id/>
+        <label>Request Rejected by Approver</label>
+        <order>7</order>
+        <stage_id>d9ce46ea-0181-4e63-a69c-1509721013a1</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-22 19:56:49</sys_created_on>
-        <sys_id>37394179c3ab021057d59242b4013149</sys_id>
-        <sys_mod_count>92</sys_mod_count>
+        <sys_created_on>2025-01-24 14:30:30</sys_created_on>
+        <sys_id>41467925c31312107527961d05013138</sys_id>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:11</sys_updated_on>
-        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
-        <trigger_inputs/>
-        <trigger_outputs/>
-        <trigger_type>service_catalog</trigger_type>
-    </sys_hub_trigger_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=37394179c3ab021057d59242b4013149"/>
-    <sys_hub_flow_stage action="delete_multiple" query="flow=2f390179c3ab021057d59242b40131c6^sys_idNOT IN47874d49c31712107527961d05013156,7107688dc35312107527961d050131e3,7507688dc35312107527961d050131e3,7d07688dc35312107527961d050131e2,f107688dc35312107527961d050131e3,f907688dc35312107527961d050131e2,fd07688dc35312107527961d050131e2"/>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
+        <type>standard</type>
+        <value>request_rej_app</value>
+    </sys_hub_flow_stage>
     <sys_hub_flow_stage action="INSERT_OR_UPDATE">
         <always_show>true</always_show>
         <ancestor_array_position>0</ancestor_array_position>
@@ -2320,22 +2513,22 @@
         <ancestor_component_id/>
         <ancestor_stage_id/>
         <ancestral_if_else_logic/>
-        <component_indexes>5</component_indexes>
+        <component_indexes>7</component_indexes>
         <duration>1970-01-01 00:00:00</duration>
         <flow display_value="Test Catalog Item Flow">2f390179c3ab021057d59242b40131c6</flow>
-        <label>Request Cancelled</label>
+        <label>Request Rejected by Identity</label>
         <order>1</order>
         <stage_id>8697c110-8634-4f78-ab8a-32c9aeb8f512</stage_id>
         <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 19:27:20</sys_created_on>
         <sys_id>7107688dc35312107527961d050131e3</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-22 22:33:22</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <type>standard</type>
-        <value>Request Cancelled</value>
+        <value>request_rej_ident</value>
     </sys_hub_flow_stage>
     <sys_hub_flow_stage action="INSERT_OR_UPDATE">
         <always_show>true</always_show>
@@ -2343,7 +2536,7 @@
         <ancestor_component_id/>
         <ancestor_stage_id/>
         <ancestral_if_else_logic/>
-        <component_indexes>13</component_indexes>
+        <component_indexes>12</component_indexes>
         <duration>1970-01-02 00:00:00</duration>
         <flow display_value="Test Catalog Item Flow">2f390179c3ab021057d59242b40131c6</flow>
         <label>Waiting for Approval</label>
@@ -2353,10 +2546,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 19:27:20</sys_created_on>
         <sys_id>7507688dc35312107527961d050131e3</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 15:00:06</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <type>standard</type>
         <value>waiting_for_approval</value>
     </sys_hub_flow_stage>
@@ -2366,20 +2559,20 @@
         <ancestor_component_id/>
         <ancestor_stage_id/>
         <ancestral_if_else_logic/>
-        <component_indexes/>
+        <component_indexes>25</component_indexes>
         <duration>1970-01-01 00:00:00</duration>
         <flow display_value="Test Catalog Item Flow">2f390179c3ab021057d59242b40131c6</flow>
         <label>Completed</label>
-        <order>3</order>
+        <order>4</order>
         <stage_id>f02cf824-6f33-416f-a096-d596215cf523</stage_id>
         <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 19:27:20</sys_created_on>
         <sys_id>7d07688dc35312107527961d050131e2</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-22 22:14:41</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <type>standard</type>
         <value>complete</value>
     </sys_hub_flow_stage>
@@ -2393,16 +2586,16 @@
         <duration>1970-01-01 00:00:00</duration>
         <flow display_value="Test Catalog Item Flow">2f390179c3ab021057d59242b40131c6</flow>
         <label>Request Approved</label>
-        <order>4</order>
+        <order>5</order>
         <stage_id>822cdfe4-4c73-4d18-b7a1-8ddc35b26a4c</stage_id>
         <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 19:27:20</sys_created_on>
         <sys_id>f107688dc35312107527961d050131e3</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-22 22:14:41</sys_updated_on>
+        <sys_updated_on>2025-01-23 22:12:40</sys_updated_on>
         <type>standard</type>
         <value>request_approved</value>
     </sys_hub_flow_stage>
@@ -2416,16 +2609,16 @@
         <duration>1970-01-04 00:00:00</duration>
         <flow display_value="Test Catalog Item Flow">2f390179c3ab021057d59242b40131c6</flow>
         <label>Fulfillment</label>
-        <order>5</order>
+        <order>3</order>
         <stage_id>0dd4321d-a4f6-4de6-b263-b2e287737570</stage_id>
         <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 19:27:20</sys_created_on>
         <sys_id>f907688dc35312107527961d050131e2</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-22 22:14:41</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <type>standard</type>
         <value>fulfillment</value>
     </sys_hub_flow_stage>
@@ -2529,14 +2722,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-22 19:56:49</sys_created_on>
         <sys_id>23390179c3ab021057d59242b40131c9</sys_id>
-        <sys_mod_count>121</sys_mod_count>
+        <sys_mod_count>165</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2613,14 +2806,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-22 19:56:49</sys_created_on>
         <sys_id>73394179c3ab021057d59242b4013138</sys_id>
-        <sys_mod_count>59</sys_mod_count>
+        <sys_mod_count>81</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2636,7 +2829,27 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=73394179c3ab021057d59242b4013138"/>
     <sys_hub_flow_output action="delete_multiple" query="model=2f390179c3ab021057d59242b40131c6"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=2f390179c3ab021057d59242b40131c6"/>
-    <sys_hub_action_instance action="delete_multiple" query="flow=2f390179c3ab021057d59242b40131c6^sys_idNOT IN015d4941c35712107527961d05013118,1a9f88cec32b421057d59242b4013103,2bb3d959c3db12107527961d05013192,3f3edc41c35312107527961d05013124,64b5e40ec3ab421057d59242b401314d,69d67802c32f421057d59242b40131c3,6bb3d959c3db12107527961d050131a4,8d4a014ac36f421057d59242b4013141,969f88cec32b421057d59242b4013112,b4d78946c36f421057d59242b4013167,b73edc41c35312107527961d0501311e,bb3edc41c35312107527961d05013116,cc356d0ac3ef421057d59242b401315a,dc5db19dc39f12107527961d05013142,e1d67802c32f421057d59242b40131bd,fb3edc41c35312107527961d0501312a,ff394179c3ab021057d59242b4013147"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=2f390179c3ab021057d59242b40131c6^sys_idNOT IN37394179c3ab021057d59242b4013149"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Test Catalog Item Flow">2f390179c3ab021057d59242b40131c6</flow>
+        <name>Service Catalog</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-22 19:56:49</sys_created_on>
+        <sys_id>37394179c3ab021057d59242b4013149</sys_id>
+        <sys_mod_count>125</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 15:52:41</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=37394179c3ab021057d59242b4013149"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=2f390179c3ab021057d59242b40131c6^sys_idNOT IN015d4941c35712107527961d05013118,1a9f88cec32b421057d59242b4013103,2bb3d959c3db12107527961d05013192,3f3edc41c35312107527961d05013124,69d67802c32f421057d59242b40131c3,6bb3d959c3db12107527961d050131a4,77c4525dc31352107527961d05013127,8d4a014ac36f421057d59242b4013141,969f88cec32b421057d59242b4013112,b73edc41c35312107527961d0501311e,bb3edc41c35312107527961d05013116,cc356d0ac3ef421057d59242b401315a,dc5db19dc39f12107527961d05013142,e1d67802c32f421057d59242b40131bd,e3924aa5c35312107527961d05013110,fb3edc41c35312107527961d0501312a,fc4cbd2dc31312107527961d0501314f,ff394179c3ab021057d59242b4013147"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -2647,16 +2860,16 @@
         <display_text/>
         <flow display_value="Test Catalog Item Flow">2f390179c3ab021057d59242b40131c6</flow>
         <generation_source/>
-        <order>12</order>
+        <order>11</order>
         <parent_ui_id>0e3b0ba3-5ffc-4a10-bde4-c8b6f5de5811</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 22:14:41</sys_created_on>
         <sys_id>015d4941c35712107527961d05013118</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>72</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <ui_id>a46abd86-4b1f-42ba-b2c7-4dd71ac26553</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=015d4941c35712107527961d05013118"/>
@@ -2743,10 +2956,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-23 10:23:26</sys_created_on>
         <sys_id>1a9f88cec32b421057d59242b4013103</sys_id>
-        <sys_mod_count>120</sys_mod_count>
+        <sys_mod_count>164</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <ui_id>84d7a137-aa83-4043-9b9c-70f29a6395c8</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=1a9f88cec32b421057d59242b4013103"/>
@@ -2813,11 +3026,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-23 10:23:26</sys_created_on>
         <sys_id>da9f88cec32b421057d59242b4013105</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-22 18:48:58</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:01:41</sys_updated_on>
         <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
-        <value>ApprovesAnyG[{{static.3ce290c1c31312107527961d050131a5}}]</value>
+        <value>ApprovesRejectsAnyG[{{static.3ce290c1c31312107527961d050131a5}}]</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>approval_field</field>
@@ -2896,10 +3109,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-23 17:21:10</sys_created_on>
         <sys_id>2bb3d959c3db12107527961d05013192</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>56</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <ui_id>3daa21a7-b952-4e71-ad60-047e91f3e3f0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2bb3d959c3db12107527961d05013192"/>
@@ -2930,16 +3143,16 @@
         <display_text/>
         <flow display_value="Test Catalog Item Flow">2f390179c3ab021057d59242b40131c6</flow>
         <generation_source/>
-        <order>17</order>
+        <order>16</order>
         <parent_ui_id>8d3e763c-fb92-4791-a87c-6b150fb0e9dc</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 18:48:59</sys_created_on>
         <sys_id>3f3edc41c35312107527961d05013124</sys_id>
-        <sys_mod_count>64</sys_mod_count>
+        <sys_mod_count>108</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <ui_id>20af9c10-3335-4ce3-baf3-145923e4beba</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3f3edc41c35312107527961d05013124"/>
@@ -2965,10 +3178,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 18:48:59</sys_created_on>
         <sys_id>773edc41c35312107527961d05013126</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 14:51:58</sys_updated_on>
-        <value>state=4</value>
+        <sys_updated_on>2025-01-24 15:11:04</sys_updated_on>
+        <value>state=4^approval=rejected</value>
         <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=3f3edc41c35312107527961d05013124"/>
@@ -3012,96 +3225,6 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=3f3edc41c35312107527961d05013124"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
-        <attributes/>
-        <comment/>
-        <display_text/>
-        <flow display_value="Test Catalog Item Flow">2f390179c3ab021057d59242b40131c6</flow>
-        <generation_source/>
-        <order>6</order>
-        <parent_ui_id>c332a3e9-49fc-45a3-902d-ddc20aa2cc9c</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-23 11:59:59</sys_created_on>
-        <sys_id>64b5e40ec3ab421057d59242b401314d</sys_id>
-        <sys_mod_count>112</sys_mod_count>
-        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
-        <ui_id>e7524185-8e66-4ead-bc80-645c53a614aa</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=64b5e40ec3ab421057d59242b401314d"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>64b5e40ec3ab421057d59242b401314d</document_key>
-        <order>50</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-23 11:59:59</sys_created_on>
-        <sys_id>60b5e40ec3ab421057d59242b401314f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-23 11:59:59</sys_updated_on>
-        <value>sc_request</value>
-        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>64b5e40ec3ab421057d59242b401314d</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-23 11:59:59</sys_created_on>
-        <sys_id>acb5e40ec3ab421057d59242b401314e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-23 17:18:59</sys_updated_on>
-        <value>approval=rejected^request_state=closed_cancelled^state=4</value>
-        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=64b5e40ec3ab421057d59242b401314d"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>record</field>
-        <id>64b5e40ec3ab421057d59242b401314d</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-23 11:59:59</sys_created_on>
-        <sys_id>2cb5e40ec3ab421057d59242b401314e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-23 11:59:59</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>{{Service Catalog_1.request_item.request}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table_name</field>
-        <id>64b5e40ec3ab421057d59242b401314d</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-23 11:59:59</sys_created_on>
-        <sys_id>a4b5e40ec3ab421057d59242b401314e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-23 11:59:59</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>values</field>
-        <id>64b5e40ec3ab421057d59242b401314d</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-23 11:59:59</sys_created_on>
-        <sys_id>68b5e40ec3ab421057d59242b401314e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-23 11:59:59</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=64b5e40ec3ab421057d59242b401314d"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=64b5e40ec3ab421057d59242b401314d"/>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
         <attributes/>
@@ -3109,16 +3232,16 @@
         <display_text/>
         <flow display_value="Test Catalog Item Flow">2f390179c3ab021057d59242b40131c6</flow>
         <generation_source/>
-        <order>13</order>
+        <order>12</order>
         <parent_ui_id>0e3b0ba3-5ffc-4a10-bde4-c8b6f5de5811</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-23 13:14:52</sys_created_on>
         <sys_id>69d67802c32f421057d59242b40131c3</sys_id>
-        <sys_mod_count>108</sys_mod_count>
+        <sys_mod_count>152</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <ui_id>89d37717-b7bf-4a2a-a26f-788ee26060c0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=69d67802c32f421057d59242b40131c3"/>
@@ -3155,10 +3278,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-23 17:21:10</sys_created_on>
         <sys_id>6bb3d959c3db12107527961d050131a4</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>56</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <ui_id>609eb5c7-faf7-4de8-bcdd-a0a19f7e09e5</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6bb3d959c3db12107527961d050131a4"/>
@@ -3179,6 +3302,96 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=6bb3d959c3db12107527961d050131a4"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Test Catalog Item Flow">2f390179c3ab021057d59242b40131c6</flow>
+        <generation_source/>
+        <order>26</order>
+        <parent_ui_id>aae5f14c-1bde-4581-9c7c-724b533517a9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 22:05:27</sys_created_on>
+        <sys_id>77c4525dc31352107527961d05013127</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 15:52:39</sys_updated_on>
+        <ui_id>11590020-a0f2-45a2-9084-9b4a5e23fa7f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=77c4525dc31352107527961d05013127"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>77c4525dc31352107527961d05013127</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 22:05:27</sys_created_on>
+        <sys_id>73c4525dc31352107527961d05013129</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 22:05:27</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>77c4525dc31352107527961d05013127</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 22:05:27</sys_created_on>
+        <sys_id>bfc4525dc31352107527961d05013128</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 22:05:27</sys_updated_on>
+        <value>state=3</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=77c4525dc31352107527961d05013127"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>77c4525dc31352107527961d05013127</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 22:05:27</sys_created_on>
+        <sys_id>3fc4525dc31352107527961d05013128</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 22:05:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>77c4525dc31352107527961d05013127</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 22:05:27</sys_created_on>
+        <sys_id>b7c4525dc31352107527961d05013128</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 22:05:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>77c4525dc31352107527961d05013127</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 22:05:27</sys_created_on>
+        <sys_id>7bc4525dc31352107527961d05013128</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 22:05:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=77c4525dc31352107527961d05013127"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=77c4525dc31352107527961d05013127"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
         <attributes/>
@@ -3192,10 +3405,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-23 14:39:46</sys_created_on>
         <sys_id>8d4a014ac36f421057d59242b4013141</sys_id>
-        <sys_mod_count>96</sys_mod_count>
+        <sys_mod_count>140</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <ui_id>f9f2455f-31b2-4459-abed-5bcd8268a7e0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8d4a014ac36f421057d59242b4013141"/>
@@ -3226,16 +3439,16 @@
         <display_text/>
         <flow display_value="Test Catalog Item Flow">2f390179c3ab021057d59242b40131c6</flow>
         <generation_source/>
-        <order>11</order>
+        <order>10</order>
         <parent_ui_id>0e3b0ba3-5ffc-4a10-bde4-c8b6f5de5811</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-23 10:23:26</sys_created_on>
         <sys_id>969f88cec32b421057d59242b4013112</sys_id>
-        <sys_mod_count>120</sys_mod_count>
+        <sys_mod_count>164</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <ui_id>9d2b16eb-0710-4723-ab06-b8b2583c61f3</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=969f88cec32b421057d59242b4013112"/>
@@ -3308,96 +3521,6 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=969f88cec32b421057d59242b4013112"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
-        <attributes/>
-        <comment/>
-        <display_text/>
-        <flow display_value="Test Catalog Item Flow">2f390179c3ab021057d59242b40131c6</flow>
-        <generation_source/>
-        <order>7</order>
-        <parent_ui_id>c332a3e9-49fc-45a3-902d-ddc20aa2cc9c</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-23 14:29:06</sys_created_on>
-        <sys_id>b4d78946c36f421057d59242b4013167</sys_id>
-        <sys_mod_count>100</sys_mod_count>
-        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
-        <ui_id>b00553f9-77be-42ff-8050-8f954c066785</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=b4d78946c36f421057d59242b4013167"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>b4d78946c36f421057d59242b4013167</document_key>
-        <order>50</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-23 14:29:06</sys_created_on>
-        <sys_id>b0d78946c36f421057d59242b4013169</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-23 14:29:06</sys_updated_on>
-        <value>sc_req_item</value>
-        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>b4d78946c36f421057d59242b4013167</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-23 14:29:06</sys_created_on>
-        <sys_id>fcd78946c36f421057d59242b4013168</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 14:51:58</sys_updated_on>
-        <value>state=4^approval=rejected</value>
-        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=b4d78946c36f421057d59242b4013167"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>record</field>
-        <id>b4d78946c36f421057d59242b4013167</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-23 14:29:06</sys_created_on>
-        <sys_id>7cd78946c36f421057d59242b4013168</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-23 14:29:06</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>{{Service Catalog_1.request_item}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table_name</field>
-        <id>b4d78946c36f421057d59242b4013167</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-23 14:29:06</sys_created_on>
-        <sys_id>f4d78946c36f421057d59242b4013168</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-23 14:29:06</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>values</field>
-        <id>b4d78946c36f421057d59242b4013167</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-23 14:29:06</sys_created_on>
-        <sys_id>b8d78946c36f421057d59242b4013168</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-23 14:29:06</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=b4d78946c36f421057d59242b4013167"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b4d78946c36f421057d59242b4013167"/>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
         <attributes/>
@@ -3405,16 +3528,16 @@
         <display_text/>
         <flow display_value="Test Catalog Item Flow">2f390179c3ab021057d59242b40131c6</flow>
         <generation_source/>
-        <order>16</order>
+        <order>15</order>
         <parent_ui_id>8d3e763c-fb92-4791-a87c-6b150fb0e9dc</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 18:48:58</sys_created_on>
         <sys_id>b73edc41c35312107527961d0501311e</sys_id>
-        <sys_mod_count>64</sys_mod_count>
+        <sys_mod_count>108</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <ui_id>158f88c6-f4f1-414e-a9db-e1deda4400b2</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b73edc41c35312107527961d0501311e"/>
@@ -3445,16 +3568,16 @@
         <display_text/>
         <flow display_value="Test Catalog Item Flow">2f390179c3ab021057d59242b40131c6</flow>
         <generation_source/>
-        <order>14</order>
+        <order>13</order>
         <parent_ui_id>0e3b0ba3-5ffc-4a10-bde4-c8b6f5de5811</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 18:48:58</sys_created_on>
         <sys_id>bb3edc41c35312107527961d05013116</sys_id>
-        <sys_mod_count>64</sys_mod_count>
+        <sys_mod_count>108</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <ui_id>c7ab5f59-c625-41bb-a817-605bcdbb3bf2</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=bb3edc41c35312107527961d05013116"/>
@@ -3605,10 +3728,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-23 16:37:24</sys_created_on>
         <sys_id>cc356d0ac3ef421057d59242b401315a</sys_id>
-        <sys_mod_count>92</sys_mod_count>
+        <sys_mod_count>136</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <ui_id>dc16ac0c-10bb-470d-a1dc-3d1ed30bfae1</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cc356d0ac3ef421057d59242b401315a"/>
@@ -3658,10 +3781,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-23 20:22:48</sys_created_on>
         <sys_id>dc5db19dc39f12107527961d05013142</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>52</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:39</sys_updated_on>
         <ui_id>45820056-1c71-4fc0-86f9-ce4112775a46</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=dc5db19dc39f12107527961d05013142"/>
@@ -3779,16 +3902,16 @@
         <display_text/>
         <flow display_value="Test Catalog Item Flow">2f390179c3ab021057d59242b40131c6</flow>
         <generation_source/>
-        <order>8</order>
+        <order>7</order>
         <parent_ui_id>c332a3e9-49fc-45a3-902d-ddc20aa2cc9c</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-23 13:14:52</sys_created_on>
         <sys_id>e1d67802c32f421057d59242b40131bd</sys_id>
-        <sys_mod_count>108</sys_mod_count>
+        <sys_mod_count>152</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <ui_id>410ffada-40ca-48c4-aec0-5d1c0c905cef</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e1d67802c32f421057d59242b40131bd"/>
@@ -3800,15 +3923,105 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-23 13:14:52</sys_created_on>
         <sys_id>25d67802c32f421057d59242b40131be</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-07-23 13:14:52</sys_updated_on>
-        <value>Item was rejected</value>
+        <sys_updated_on>2025-01-23 22:12:40</sys_updated_on>
+        <value>Requested Item was rejected</value>
         <variable display_value="Message">23c1bcc6531003003bf1d9109ec587e5</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4^id=e1d67802c32f421057d59242b40131bd"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=e1d67802c32f421057d59242b40131bd"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=e1d67802c32f421057d59242b40131bd"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Test Catalog Item Flow">2f390179c3ab021057d59242b40131c6</flow>
+        <generation_source/>
+        <order>17</order>
+        <parent_ui_id>8d3e763c-fb92-4791-a87c-6b150fb0e9dc</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 15:24:27</sys_created_on>
+        <sys_id>e3924aa5c35312107527961d05013110</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
+        <ui_id>91c61c35-9e64-4f38-acb3-2e3574275352</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e3924aa5c35312107527961d05013110"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e3924aa5c35312107527961d05013110</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 15:24:27</sys_created_on>
+        <sys_id>2f924aa5c35312107527961d05013111</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 15:35:31</sys_updated_on>
+        <value>state=4^request_state=closed_cancelled</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e3924aa5c35312107527961d05013110</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 15:24:27</sys_created_on>
+        <sys_id>ef924aa5c35312107527961d05013111</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 15:24:27</sys_updated_on>
+        <value>sc_request</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e3924aa5c35312107527961d05013110"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>e3924aa5c35312107527961d05013110</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 15:24:27</sys_created_on>
+        <sys_id>ab924aa5c35312107527961d05013111</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 15:24:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Service Catalog_1.request_item.request}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>e3924aa5c35312107527961d05013110</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 15:24:27</sys_created_on>
+        <sys_id>27924aa5c35312107527961d05013111</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 15:24:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>e3924aa5c35312107527961d05013110</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 15:24:27</sys_created_on>
+        <sys_id>e7924aa5c35312107527961d05013111</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 15:24:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e3924aa5c35312107527961d05013110"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e3924aa5c35312107527961d05013110"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -3825,10 +4038,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 18:48:59</sys_created_on>
         <sys_id>fb3edc41c35312107527961d0501312a</sys_id>
-        <sys_mod_count>64</sys_mod_count>
+        <sys_mod_count>108</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <ui_id>7958bfed-8d99-4490-a98d-dc88157d6533</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=fb3edc41c35312107527961d0501312a"/>
@@ -3901,6 +4114,96 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=fb3edc41c35312107527961d0501312a"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Test Catalog Item Flow">2f390179c3ab021057d59242b40131c6</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>c332a3e9-49fc-45a3-902d-ddc20aa2cc9c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:56:41</sys_created_on>
+        <sys_id>fc4cbd2dc31312107527961d0501314f</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
+        <ui_id>5e667593-d0fc-4171-8a95-9ee461757acf</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fc4cbd2dc31312107527961d0501314f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fc4cbd2dc31312107527961d0501314f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:56:41</sys_created_on>
+        <sys_id>384cbd2dc31312107527961d05013151</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:56:41</sys_updated_on>
+        <value>state=4^approval=rejected</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fc4cbd2dc31312107527961d0501314f</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:56:41</sys_created_on>
+        <sys_id>f84cbd2dc31312107527961d05013151</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:56:41</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=fc4cbd2dc31312107527961d0501314f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>fc4cbd2dc31312107527961d0501314f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:56:41</sys_created_on>
+        <sys_id>b44cbd2dc31312107527961d05013151</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:56:41</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>fc4cbd2dc31312107527961d0501314f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:56:41</sys_created_on>
+        <sys_id>304cbd2dc31312107527961d05013151</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:56:41</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>fc4cbd2dc31312107527961d0501314f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:56:41</sys_created_on>
+        <sys_id>f04cbd2dc31312107527961d05013151</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:56:41</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=fc4cbd2dc31312107527961d0501314f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fc4cbd2dc31312107527961d0501314f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
         <attributes/>
@@ -3914,10 +4217,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-22 19:56:49</sys_created_on>
         <sys_id>ff394179c3ab021057d59242b4013147</sys_id>
-        <sys_mod_count>122</sys_mod_count>
+        <sys_mod_count>166</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <ui_id>77ae6ce2-aefc-4874-9fbc-8a2f243d105f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ff394179c3ab021057d59242b4013147"/>
@@ -3938,8 +4241,7 @@
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4^id=ff394179c3ab021057d59242b4013147"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=ff394179c3ab021057d59242b4013147"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=ff394179c3ab021057d59242b4013147"/>
-    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=2f390179c3ab021057d59242b40131c6"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=2f390179c3ab021057d59242b40131c6^sys_idNOT IN0c4edc41c35312107527961d05013143,169f88cec32b421057d59242b401311b,404edc41c35312107527961d05013141,9a9f88cec32b421057d59242b4013114,9a9f88cec32b421057d59242b4013118,c44edc41c35312107527961d0501313d,d85db19dc39f12107527961d05013172"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=2f390179c3ab021057d59242b40131c6^sys_idNOT IN0c4edc41c35312107527961d05013143,169f88cec32b421057d59242b401311b,404edc41c35312107527961d05013141,80d4525dc31352107527961d0501314f,9a9f88cec32b421057d59242b4013114,9a9f88cec32b421057d59242b4013118,c44edc41c35312107527961d0501313d,d85db19dc39f12107527961d05013172"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <attributes/>
         <block display_value="">683e1c41c35312107527961d05013109</block>
@@ -3964,10 +4266,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 18:48:59</sys_created_on>
         <sys_id>0c4edc41c35312107527961d05013143</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>60</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <ui_id>9f43baf8-4c87-4130-9cfe-0ec260ca5e4d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -4030,7 +4332,7 @@
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>10</order>
+        <order>9</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id/>
@@ -4038,10 +4340,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-23 10:23:26</sys_created_on>
         <sys_id>169f88cec32b421057d59242b401311b</sys_id>
-        <sys_mod_count>66</sys_mod_count>
+        <sys_mod_count>91</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <ui_id>0e3b0ba3-5ffc-4a10-bde4-c8b6f5de5811</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -4111,10 +4413,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 18:48:59</sys_created_on>
         <sys_id>404edc41c35312107527961d05013141</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>60</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <ui_id>59740eba-3a0e-4302-89c4-8f4f36ded126</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -4122,6 +4424,80 @@
     <sys_variable_value action="delete_multiple" query="document_key=404edc41c35312107527961d05013141"/>
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=404edc41c35312107527961d05013141"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=404edc41c35312107527961d05013141"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">72c49e1dc31352107527961d050131b2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Test Catalog Item Flow">2f390179c3ab021057d59242b40131c6</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>25</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>9f43baf8-4c87-4130-9cfe-0ec260ca5e4d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 22:05:28</sys_created_on>
+        <sys_id>80d4525dc31352107527961d0501314f</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 15:52:39</sys_updated_on>
+        <ui_id>aae5f14c-1bde-4581-9c7c-724b533517a9</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=80d4525dc31352107527961d0501314f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>80d4525dc31352107527961d0501314f</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 22:05:28</sys_created_on>
+        <sys_id>00d4525dc31352107527961d05013152</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 22:05:28</sys_updated_on>
+        <value>Task Completed</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=80d4525dc31352107527961d0501314f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>80d4525dc31352107527961d0501314f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 22:05:28</sys_created_on>
+        <sys_id>8cd4525dc31352107527961d05013151</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 22:05:28</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{45820056-1c71-4fc0-86f9-ce4112775a46.Catalog Task.state}}=3</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>80d4525dc31352107527961d0501314f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 22:05:28</sys_created_on>
+        <sys_id>c8d4525dc31352107527961d05013151</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 22:05:28</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=80d4525dc31352107527961d0501314f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=80d4525dc31352107527961d0501314f"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <attributes/>
         <block display_value="">7cfc7f96c38f52107527961d05013102</block>
@@ -4146,10 +4522,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-23 10:23:26</sys_created_on>
         <sys_id>9a9f88cec32b421057d59242b4013114</sys_id>
-        <sys_mod_count>63</sys_mod_count>
+        <sys_mod_count>85</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <ui_id>c332a3e9-49fc-45a3-902d-ddc20aa2cc9c</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -4211,7 +4587,7 @@
         <generation_source/>
         <inputs/>
         <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
-        <order>9</order>
+        <order>8</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>c332a3e9-49fc-45a3-902d-ddc20aa2cc9c</parent_ui_id>
@@ -4219,10 +4595,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-23 10:23:26</sys_created_on>
         <sys_id>9a9f88cec32b421057d59242b4013118</sys_id>
-        <sys_mod_count>66</sys_mod_count>
+        <sys_mod_count>91</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <ui_id>1f6d2f99-73b9-439b-b7db-d8616091a16a</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -4246,7 +4622,7 @@
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>15</order>
+        <order>14</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>0e3b0ba3-5ffc-4a10-bde4-c8b6f5de5811</parent_ui_id>
@@ -4254,10 +4630,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 18:48:59</sys_created_on>
         <sys_id>c44edc41c35312107527961d0501313d</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>59</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:38</sys_updated_on>
         <ui_id>8d3e763c-fb92-4791-a87c-6b150fb0e9dc</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -4328,10 +4704,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-23 20:22:49</sys_created_on>
         <sys_id>d85db19dc39f12107527961d05013172</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:08</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:39</sys_updated_on>
         <ui_id>1d50dfed-051a-4239-827c-0165ddd13917</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -4378,6 +4754,7 @@
     </sys_element_mapping>
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=d85db19dc39f12107527961d05013172"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=d85db19dc39f12107527961d05013172"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=2f390179c3ab021057d59242b40131c6"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=2f390179c3ab021057d59242b40131c6"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=2f390179c3ab021057d59242b40131c6"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_2f390179c3ab021057d59242b40131c6^sys_idNOT IN3b394179c3ab021057d59242b4013134,77394179c3ab021057d59242b401313c"/>
@@ -4433,24 +4810,24 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>1858cd75c327021057d59242b40131ff</sys_id>
         <latest_snapshot>2f390179c3ab021057d59242b40131c6</latest_snapshot>
-        <compiler_build>glide-washingtondc-12-20-2023__patch9-11-20-2024_11-26-2024_1946.zip</compiler_build>
+        <compiler_build>glide-xanadu-07-02-2024__patch4a-12-16-2024_01-07-2025_0947.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=1858cd75c327021057d59242b40131ff^sys_idNOT IN33394179c3ab021057d59242b4013154"/>
     <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
         <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"33394179c3ab021057d59242b4013154","name":"plan","plan_signature":null}}</plan>
         <plan_id>1858cd75c327021057d59242b40131ff</plan_id>
-        <snapshot>c89ef911c3df12107527961d05013158</snapshot>
+        <snapshot>187177bdc31392107527961d0501319e</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-07-22 19:56:50</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>33394179c3ab021057d59242b4013154</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 20:27:11</sys_updated_on>
+        <sys_updated_on>2025-01-24 15:52:41</sys_updated_on>
         <trigger display_value="">3b394179c3ab021057d59242b4013153</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=1858cd75c327021057d59242b40131ff"/>
