@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_631631_grc_contr_AutoCtrls.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+<!-- <g:ui_form> -->
+
+<g:evaluate var="jvar_entity_id" expression="RP.getWindowProperties().parent" />
+
+<g:evaluate var="jvar_auto_ctrls" jelly="true" object="true">
+var auto_ctrls = new GlideRecord('sn_compliance_control');
+auto_ctrls.addQuery('profile', jelly.jvar_entity_id);
+auto_ctrls.addEncodedQuery('attestationISEMPTY^statusINcompliant,non_compliant,not_applicable');
+auto_ctrls.query();
+auto_ctrls;
+</g:evaluate>
+
+<table width="90%">
+<tr><td>here</td></tr>
+<j:while test="${jvar_auto_ctrls.next()}">
+<tr><td>${jvar_auto_ctrls.getValue('name')}</td></tr>
+</j:while>
+</table>
+<!-- </g:ui_form> -->
+</j:jelly>
+]]></html>
+        <name>AutoCtrls</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 17:57:14</sys_created_on>
+        <sys_id>d56e7143c3a712107527961d0501310b</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>AutoCtrls</sys_name>
+        <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+        <sys_update_name>sys_ui_page_d56e7143c3a712107527961d0501310b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 20:57:52</sys_updated_on>
+    </sys_ui_page>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>d56e7143c3a712107527961d0501310b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 17:22:52</sys_created_on>
+        <sys_id>3fb00ecbc36712107527961d0501316c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 17:27:06</sys_updated_on>
+        <table>sys_ui_page</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
