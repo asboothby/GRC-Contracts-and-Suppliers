@@ -34,7 +34,8 @@
 {
 	// var dialogClass = GlideDialogWindow;
 	var dialog = new GlideDialogWindow('x_631631_grc_contr_AutoCtrls');
-	dialog.setTitle('Auto Ctrls');
+	dialog.setTitle('Acknowledge System Set Controls');
+	dialog.setSize(800, 800);
 	dialog.setPreference('parent', g_form.getUniqueValue());
 	dialog.render();
 }]]></script>
@@ -48,7 +49,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bae906cfc3a712107527961d0501312c</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Auto Ctrls</sys_name>
         <sys_overrides/>
         <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
@@ -56,7 +57,7 @@
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_update_name>sys_ui_action_bae906cfc3a712107527961d0501312c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-10 19:32:30</sys_updated_on>
+        <sys_updated_on>2025-02-12 18:55:57</sys_updated_on>
         <table>sn_grc_profile</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
