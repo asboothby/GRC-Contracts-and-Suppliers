@@ -6,7 +6,9 @@
         <caller_access/>
         <client_callable>false</client_callable>
         <description/>
+        <mobile_callable>false</mobile_callable>
         <name>ContractBusAppUtilBase</name>
+        <sandbox_callable>false</sandbox_callable>
         <script><![CDATA[var ContractBusAppUtilBase = Class.create();
 ContractBusAppUtilBase.prototype = {
     initialize: function() {
@@ -27,8 +29,64 @@ ContractBusAppUtilBase.prototype = {
 		this._updateContractCounts(curBusAppList, prevBusAppList);
 	},
 	
+	updateRegEntityTypes: function(curBusAppList, prevBusAppList, curClauseList, prevClauseList) {
+		var arrayUtil = new global.ArrayUtil();
+		var appAdded = arrayUtil.diff(curBusAppList.split(','), prevBusAppList.split(','));
+		var appRemoved = arrayUtil.diff(prevBusAppList.split(','), curBusAppList.split(','));
+		var clauseAdded = arrayUtil.diff(curClauseList.split(','), prevClauseList.split(','));
+		// var clauseRemoved = global.ArrayUtil.diff(prevClauseList, curClauseList);
+		// gs.addInfoMessage(appAdded[0]);
+		// gs.addInfoMessage(appAdded.toString() + ' - ' + appRemoved.toString() + ' - ' + clauseAdded.toString());
 
+		if(appAdded.length > 0) {
+			this.addClauseEntityType(appAdded, curClauseList);
+		}
+	},
 	
+	addClauseEntityType: function(busAppList, clauseList) {
+		var clauses = [];
+		var clauseObj1 = {"clause": "rev3", "entity_type_sys_id": "559ae1e2c31a22107527961d05013110"};
+		clauses.push(clauseObj1);
+		var clauseObj2 = {"clause": "cmmc", "entity_type_sys_id": "47aa25e2c31a22107527961d05013119"};
+		clauses.push(clauseObj2);
+		busAppList.forEach(function(busApp){
+			//Get the entity for the bus app
+			var entity = new GlideRecord('sn_grc_profile');
+			entity.get("applies_to", busApp);
+			if(entity) {
+				clauses.forEach(function(clause) {
+					gs.addInfoMessage(clause.clause + ' - ' + entity.name);
+					if(clauseList.toString().indexOf(clause.clause) >=0) {
+						var entityToType = new GlideRecord('sn_grc_m2m_profile_profile_type');
+						entityToType.addQuery('profile', entity.sys_id);
+						entityToType.addQuery('profile_type', clause.entity_type_sys_id);
+						entityToType.query();
+						if (!entityToType.hasNext()) {
+							entityToType.newRecord();
+							entityToType.profile = entity.sys_id;
+							entityToType.profile_type = clause.entity_type_sys_id;
+							entityToType.insert();
+						}
+					}
+				});
+			}
+			/*
+			var filterString = 'related_business_applicationsLIKE' + busApp;
+			busAppGA = new GlideAggregate('sn_grc_m2m_profile_profile_type');
+			busAppGA.addEncodedQuery(filterString);
+			busAppGA.addAggregate('COUNT');
+			busAppGA.query();
+			while(busAppGA.next()) {
+				gs.addInfoMessage(busAppGA.getAggregate('COUNT'));
+			}
+			*/
+		});
+	},
+
+	removeClauseEntityType: function(busappList, clauseList) {
+
+	},
+
 	_setAssessmentStatus: function(entityId)
 	{
 // 		gs.info('entityId: ' + entityId);
@@ -177,13 +235,24 @@ ContractBusAppUtilBase.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-12-05 12:22:45</sys_created_on>
         <sys_id>5692d70a97af15108c6e7b771153af3f</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>52</sys_mod_count>
         <sys_name>ContractBusAppUtilBase</sys_name>
         <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_update_name>sys_script_include_5692d70a97af15108c6e7b771153af3f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-12-07 19:09:49</sys_updated_on>
+        <sys_updated_on>2025-07-01 21:05:30</sys_updated_on>
     </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>5692d70a97af15108c6e7b771153af3f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-23 17:14:38</sys_created_on>
+        <sys_id>c85a32bdc35622107527961d05013102</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-23 17:14:38</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
 </record_update>

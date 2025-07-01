@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="clause_number" table="x_631631_grc_contr_contract" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>clause_number</element>
+            <name>x_631631_grc_contr_contract</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-25 19:28:46</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>clause_number</sys_name>
+            <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
+            <sys_update_name>sys_choice_x_631631_grc_contr_contract_clause_number</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-25 19:28:46</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>clause_number</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rev 2</label>
+            <language>en</language>
+            <name>x_631631_grc_contr_contract</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-25 19:28:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-25 19:28:46</sys_updated_on>
+            <value>rev2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>clause_number</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rev 3</label>
+            <language>en</language>
+            <name>x_631631_grc_contr_contract</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-25 19:29:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-25 19:29:13</sys_updated_on>
+            <value>rev3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>clause_number</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>CMMC</label>
+            <language>en</language>
+            <name>x_631631_grc_contr_contract</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-25 19:29:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-25 19:29:38</sys_updated_on>
+            <value>cmmc</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
