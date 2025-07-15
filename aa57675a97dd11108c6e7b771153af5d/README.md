@@ -26,5 +26,6 @@ If you find yourself unable to import your repository due to the presence of fil
    Currently listed dependencies:
    * System Import Sets
    * System (apps/system_user)
+   * GRC: Policy and Compliance Management
    * GRC: Profiles
    * Configuration Management (CMDB)

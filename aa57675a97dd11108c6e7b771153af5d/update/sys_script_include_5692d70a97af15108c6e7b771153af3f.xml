@@ -32,18 +32,22 @@ ContractBusAppUtilBase.prototype = {
 	updateRegEntityTypes: function(curBusAppList, prevBusAppList, curClauseList, prevClauseList) {
 		var arrayUtil = new global.ArrayUtil();
 		var appAdded = arrayUtil.diff(curBusAppList.split(','), prevBusAppList.split(','));
-		var appRemoved = arrayUtil.diff(prevBusAppList.split(','), curBusAppList.split(','));
+		//var appRemoved = arrayUtil.diff(prevBusAppList.split(','), curBusAppList.split(','));
 		var clauseAdded = arrayUtil.diff(curClauseList.split(','), prevClauseList.split(','));
 		// var clauseRemoved = global.ArrayUtil.diff(prevClauseList, curClauseList);
 		// gs.addInfoMessage(appAdded[0]);
 		// gs.addInfoMessage(appAdded.toString() + ' - ' + appRemoved.toString() + ' - ' + clauseAdded.toString());
 
 		if(appAdded.length > 0) {
-			this.addClauseEntityType(appAdded, curClauseList);
+			this.addRegEntityTypeToApps(appAdded, curClauseList);
+		}
+
+		if(clauseAdded.length> 0 || curClauseList != prevClauseList) {
+			this.addRegEntityTypeToApps(curBusAppList.split(','), curClauseList);
 		}
 	},
 	
-	addClauseEntityType: function(busAppList, clauseList) {
+	addRegEntityTypeToApps: function(busAppList, clauseList) {
 		var clauses = [];
 		var clauseObj1 = {"clause": "rev3", "entity_type_sys_id": "559ae1e2c31a22107527961d05013110"};
 		clauses.push(clauseObj1);
@@ -70,21 +74,12 @@ ContractBusAppUtilBase.prototype = {
 					}
 				});
 			}
-			/*
-			var filterString = 'related_business_applicationsLIKE' + busApp;
-			busAppGA = new GlideAggregate('sn_grc_m2m_profile_profile_type');
-			busAppGA.addEncodedQuery(filterString);
-			busAppGA.addAggregate('COUNT');
-			busAppGA.query();
-			while(busAppGA.next()) {
-				gs.addInfoMessage(busAppGA.getAggregate('COUNT'));
-			}
-			*/
+
 		});
 	},
 
-	removeClauseEntityType: function(busappList, clauseList) {
-
+	addEntityTypeForNewClause: function(busappList, clauseAdded) {
+			gs.addInfoMessage(clauseAdded);
 	},
 
 	_setAssessmentStatus: function(entityId)
@@ -235,14 +230,14 @@ ContractBusAppUtilBase.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-12-05 12:22:45</sys_created_on>
         <sys_id>5692d70a97af15108c6e7b771153af3f</sys_id>
-        <sys_mod_count>52</sys_mod_count>
+        <sys_mod_count>56</sys_mod_count>
         <sys_name>ContractBusAppUtilBase</sys_name>
         <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_update_name>sys_script_include_5692d70a97af15108c6e7b771153af3f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-01 21:05:30</sys_updated_on>
+        <sys_updated_on>2025-07-08 16:23:28</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>5692d70a97af15108c6e7b771153af3f</id>

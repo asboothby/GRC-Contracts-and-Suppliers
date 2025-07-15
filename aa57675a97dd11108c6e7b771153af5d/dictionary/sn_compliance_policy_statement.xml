@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="6d9e91f7c37612107527961d050131ff" extends="sn_grc_content" label="Control objective" max_length="40" name="sn_compliance_policy_statement" type="collection">
+        <element attributes="array=denormalized,no_sort=true,slushbucket_ref_no_expand=true" label="Allowed groups" max_length="1024" name="x_631631_grc_contr_allowed_groups" reference="sys_user_group" type="glide_list"/>
+        <element attributes="array=denormalized,no_sort=true,slushbucket_ref_no_expand=true" label="Allowed users" max_length="1024" name="x_631631_grc_contr_allowed_users" reference="sys_user" type="glide_list"/>
+        <element label="Confidential" max_length="40" name="x_631631_grc_contr_confidential" type="boolean"/>
+    </element>
+</database>
