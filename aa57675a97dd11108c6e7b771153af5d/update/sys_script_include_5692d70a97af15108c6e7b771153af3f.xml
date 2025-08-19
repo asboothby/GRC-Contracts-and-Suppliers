@@ -29,6 +29,26 @@ ContractBusAppUtilBase.prototype = {
 		this._updateContractCounts(curBusAppList, prevBusAppList);
 	},
 	
+	hasAddedClause: function(contractSysId) {
+		var addedContracts = new GlideRecord('x_631631_grc_contr_contract_clause_change');
+		addedContracts.addQuery('x_631631_sc_grc_co_contract', contractSysId);
+		addedContracts.query();
+		return addedContracts.hasNext();
+	},
+	
+	addContractClauseChange: function(currentContract, curClauseList, prevClauseList) {
+		var arrayUtil = new global.ArrayUtil();
+		var clauseAdded = arrayUtil.diff(curClauseList.split(','), prevClauseList.split(','));
+		gs.addInfoMessage(clauseAdded.toString() + ' - ' + currentContract.sys_id);
+		var grClauseChange = new GlideRecord('x_631631_grc_contr_contract_clause_change');
+		grClauseChange.newRecord();
+		grClauseChange.x_631631_sc_grc_co_contract = currentContract.sys_id;
+		grClauseChange.x_631631_sc_grc_co_added_clauses = clauseAdded.toString();
+		var result = grClauseChange.insert();
+		gs.addInfoMessage(result);
+
+	},
+
 	updateRegEntityTypes: function(curBusAppList, prevBusAppList, curClauseList, prevClauseList) {
 		var arrayUtil = new global.ArrayUtil();
 		var appAdded = arrayUtil.diff(curBusAppList.split(','), prevBusAppList.split(','));
@@ -230,14 +250,14 @@ ContractBusAppUtilBase.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-12-05 12:22:45</sys_created_on>
         <sys_id>5692d70a97af15108c6e7b771153af3f</sys_id>
-        <sys_mod_count>56</sys_mod_count>
+        <sys_mod_count>61</sys_mod_count>
         <sys_name>ContractBusAppUtilBase</sys_name>
         <sys_package display_value="GRC Contracts and Suppliers" source="x_631631_grc_contr">aa57675a97dd11108c6e7b771153af5d</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="GRC Contracts and Suppliers">aa57675a97dd11108c6e7b771153af5d</sys_scope>
         <sys_update_name>sys_script_include_5692d70a97af15108c6e7b771153af3f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-08 16:23:28</sys_updated_on>
+        <sys_updated_on>2025-07-21 11:36:59</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>5692d70a97af15108c6e7b771153af3f</id>
